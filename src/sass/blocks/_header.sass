@@ -1,0 +1,115 @@
+.header
+  &-search
+    display: flex
+    text-align: right
+    margin-left: 30px
+  &-cart .header-top__link i 
+    color: $color-main
+  &-search .header-top__link, &-cart .header-top__link
+    & i 
+      margin: 0px
+      font-size: 28px
+  &-top 
+    display: flex
+    height: 50px
+    align-items: center
+    justify-content: space-between
+    &__item
+      transition: 0.3s
+      width: auto
+      flex: auto
+    &__link
+      // display: flex
+      font-size: 18px
+      align-items: center
+      & i
+        margin: 0 20px
+        font-size: 20px
+  &-box 
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1)
+    background: #fff
+    display: flex
+    justify-content: space-between
+    text-align: center
+    padding: 20px 20px 0 20px
+  &-city
+    width: 23%
+    text-align-last:  left
+    align-self: center
+    &__tag
+      font-size: 18px
+      +latoBold
+      & i 
+        font-size: 28px
+    &__text
+      font-size: 18px
+      border-bottom: 1px dashed $color-text
+      +latoBold
+  &-text 
+    width: 56%
+    padding-bottom: 10px
+    &__subtitle
+      padding-right: 5px
+      &:last-child
+        padding-left: 10px
+        border-left: 1px solid #000000
+    &__slogan
+      font-size: 14px
+      white-space: nowrap
+      text-transform: uppercase
+      & span 
+        color: $color-main
+    &__title
+      display: block
+      margin: 15px 0 0 0 
+      & h1 
+        display: block
+        margin: 0
+  &-contact
+    width: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    text-align: left
+    & i
+      margin-right: 8px
+    &__number
+      font-size: 22px
+      transition: 0.3s
+      +latoBold
+    &__callme
+      display: flex
+      align-items: center
+      font-size: 16px
+      +latoBold
+      & p 
+        border-bottom: 1px dashed $color-text
+    &__time
+      font-size: 16px
+      margin-bottom: 15px
+      +latoLight
+  &-nav 
+    height: 75px
+    background: #fff
+    padding: 0 20px
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    border-bottom: 10px solid #a50103
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    & i
+      padding-right: 10px
+    &__item
+      color: $color-main
+      transition: 0.3s
+      z-index: 1
+      position: relative
+      display: block
+      padding: 25px 0 25px 0
+      flex: auto
+      text-align: center
+      font-size: 14px
+      text-transform: uppercase 
+      
