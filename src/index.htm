@@ -10,6 +10,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="description" content="Сейфы: Цены реальные, на любой бюджет. В июле скидка до 20%. Более 5000 моделей в наличии">
 
+  <link href="img/favicon.png" rel="icon">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -22,6 +23,14 @@
   <header id="header" class="header">
 
     <div class="container">
+
+      <form action="#" class="header-form">
+        <input type="text" class="header-form__input" placeholder="Введите запрос для поиска">
+        <button type="submit" class="header-form__button">Найти</button>
+        <!-- /.header-form__button -->
+        <i class="fas fa-times header-form__close"></i>
+      </form>
+      <!-- /.header-form -->
 
       <div class="header-top">
 
@@ -97,9 +106,7 @@
             <span>17 ЛЕТ </span>УСПЕШНЫХ ПРОДАЖ СЕЙФОВ И МЕТАЛЛИЧЕСКОЙ МЕБЕЛИ!</span>
             <!-- /.header-text__slogan -->
             <a class="header-text__title" href="#">
-              <h1>
-                <img src="img/header/header_title.png" alt="">
-            </h1>
+              <img src="img/header/header_title.png" alt="">
           </a>
           <!-- /.header-text__title -->
           <span class="header-text__slogan header-text__subtitle">Официальный дилер</span>
@@ -570,11 +577,12 @@
               <!-- /.header-catalog__link -->
             </li>
             <!-- /.header-catalog__li -->
-            <li class="header-catalog__li header-catalog__li-active">
+            < class="header-catalog__li header-catalog__li-active">
               <a href="#" class="header-catalog__link">Металлическая медицинская мебель</a> 
               <!-- /.header-catalog__link -->
 
               <i class="fas fa-chevron-right"></i> 
+
               <ul class="header-catalog__subItem">
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
@@ -611,11 +619,10 @@
                     <!-- /.header-catalog__link -->
                   </li>
                   <!-- /.header-catalog__subItem -->
-              </ul>
-
-            </li>
-            <!-- /.header-catalog__li -->
-            <li class="header-catalog__li">
+                  
+                </ul>
+                <!-- /.header-catalog__li -->
+                <li class="header-catalog__li">
               <a href="#" class="header-catalog__link">Мебель для балконов</a> 
               <!-- /.header-catalog__link -->
             </li>
@@ -640,12 +647,12 @@
               <!-- /.header-catalog__link -->
             </li>
             <!-- /.header-catalog__li -->
-          </li>
           <!-- /.header-catalog__item -->
+        </ul>
 
         </div>
         <!-- /.header-nav__item -->
-
+        
         <a href="#" class="header-nav__item">Бренды</a>
         <!-- /.header-nav__item -->
         <a href="#" class="header-nav__item">Спецпредложения</a>
@@ -666,7 +673,449 @@
     </div>
     <!-- /.container -->
 
+    <div class="m_header">
+      <div class="m_header-top">
+        <a href="#" class="m_header__logo"><img src="img/header/m_header_title.png" alt=""></a>
+        <!-- /.m_header-logo -->
+        <div class="m_header-links">
+          <a href="#" class="m_header-links__link"><i class="fas fa-balance-scale"></i></a> 
+          <a href="#" class="m_header-links__link"><i class="far fa-star"></i></a> 
+        </div>
+        <!-- /.m_header-links -->
+        <div class="m_header-callback">
+          <a href="tel:+74957553228" class="m_header-callback__phone">+7 (495) 755-32-28</a> 
+          <!-- /.m_header-call__back -->
+          <span class="m_header-callback__btn"><a href="#">Заказать обратный звонок</a></span> 
+          <!-- /.m_header-callback__btn -->
+        </div>
+        <!-- /.m_header-callback -->
+      </div>
+      <!-- /.m_header-top -->
+      
+      <div class="m_header-nav">
+
+
+        <div class="m_header-nav__link m_header__catalog">
+          <a class="toggleCatalog" href="#">
+            <div class="toggleCatalog__bg"></div>
+            <i class="fas fa-bars m_header-catalog__open"></i>
+            <i class="fas fa-times m_header-catalog__close"></i>
+          </a>
+
+          <ul class="m_header-catalog">
+
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Сейфы</a>
+              <i class="fas fa-chevron-right"></i> 
+
+              <ul class="m_header-catalog__subItem">
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Изготовление сейфов на заказ</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Недорогие сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы для оружия</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы огнестойкие</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы мебельные</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Пистолетные сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Взломостойкие сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Огневзломостойкие сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы для офиса</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Data-сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Депозитные сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Встраиваемые сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Гостиничные сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Темпокассы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Кэшбоксы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Серверные сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы с отделкой деревом</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы с защитой от радиации</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Холодильники (Термостаты)</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Огнестойкие картотеки</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Автомобильные сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Комплектующие к сейфам</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфы для часов</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Сейфовые комнаты</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Ювелирные сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+                <li class="m_header-catalog__link">
+                  <a href="#">Большие сейфы</a>
+                </li>
+                <!-- /.m_header-catalog__link -->
+
+              </ul>
+              <!-- /.m_header-catalog__subItem -->
+
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Металлические шкафы</a>
+              <i class="fas fa-chevron-right"></i> 
+
+              <ul class="m_header-catalog__subItem">
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Металлические шкафы на заказ</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы бухгалтерские</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы кассира</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы архивные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы для одежды</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы картотечные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Многоящичные шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Камеры хранения</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Абонентские шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Несгораемые шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Взломостойкие шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Двустворчатые шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Скамейки гардеробные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Медицинские шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Тумбы медицинские</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Тумбы мобильные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы для газовых баллонов</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы инструментальные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы для денег</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Комплектующие к шкафам</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы хозяйственные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Металлические офисные шкафы</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Металлические шкафы для раздевалок</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Шкафы сушильные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+                
+              </ul>
+
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Сейфы тайники</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Стеллажи</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Металлические почтовые ящики</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Ключницы</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Депозитные ячейки</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Верстаки металлические</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Аптечки металлические</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Металлические тележки</a>
+              <i class="fas fa-chevron-right"></i> 
+
+              <ul class="m_header-catalog__subItem">
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Тележки инструментальные</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Тележки для денег</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+              </ul>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Шредеры</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Бронированные двери</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Металлическая медицинская мебель</a>
+              <i class="fas fa-chevron-right"></i> 
+
+              <ul class="m_header-catalog__subItem">
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Медицинские столики</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Медицинские кровати</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Медицинские кушетки для осмотра</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Архивные медицинские стеллажи</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                  <li class="m_header-catalog__link">
+                    <a href="#">Тележки для перевозки больных</a>
+                  </li>
+                  <!-- /.m_header-catalog__link -->
+
+                </ul>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Мебель для балконов</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Мангалы и коптильни</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Армейская мебель</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Производственная мебель</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+            <li class="m_header-catalog__item">
+              <a href="#">Металлическая мебель</a>
+            </li>
+            <!-- /.m_header-catalog__item -->
+
+          </ul>
+          <!-- /.m_header-catalog -->
+
+        </div>
+        <!-- /.m_header-nav__link -->
+
+
+        <div class="m_header-nav__link m_header__menu">
+          <a href="#"><i class="far fa-caret-square-down"></i></a>
+        </div>
+        <!-- /.m_header-nav__link -->
+
+        <div class="m_header-nav__link m_header__search">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <!-- /.m_header-nav__link -->
+
+        <div class="m_header-nav__link m_header__cart">
+          <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+        <!-- /.m_header-nav__link -->
+
+      </div>
+      <!-- /.m_header-nav -->
+      
+    </div>
   </header>
   <!-- /#header -->
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

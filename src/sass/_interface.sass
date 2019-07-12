@@ -1,6 +1,9 @@
 * 
   box-sizing: border-box
 
+boby, html
+  font-size: 16px
+
 body 
   background: #f2f2f2
   color: $color-text
@@ -9,18 +12,29 @@ body
 a 
   color: $color-text
   text-decoration: none
-  
-i 
-  font-size: 20px
+
+button, input, a, li, ul
+  outline: none
+  &:hover
+    outline: none
+  &:focus
+    outline: none
 
 .container
-  padding: 0 3% 
+  margin: 0 3% 
+  position: relative
+
+.color-main
+  color: $color-main
 
 
 
 
 // HOVER
 @media (min-width: 1200px)
+  .header-form__button:hover
+    background: $color-main
+    color: #ffffff
   .header-comparison:hover, .header-bookmarks:hover
     & i, a
       color: $color-main
@@ -63,3 +77,19 @@ i
     .header-catalog__subItem
       opacity: 1
       transform: scaleX(1)
+
+@media (max-width: 1200px)
+  boby, html
+    font-size: 13px
+  .container
+    margin: 0 2%
+@media (max-width: 992px)
+  boby, html
+    font-size: 16px
+@media (max-width: 786px)
+  boby, html
+    font-size: 14px
+@media (max-width: 546px)
+  boby, html
+    font-size: 13px
+
