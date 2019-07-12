@@ -2,29 +2,41 @@
   &-search
     display: flex
     text-align: right
-    margin-left: 30px
+    margin-right: -40px
+    margin-left: 40px
+  &-top 
+    display: flex
+    height: 50px
+    padding: 0 20px
+    align-items: center
+    justify-content: space-between
+    &__item
+      transition: 0.3s
+      width: auto
+      // flex: auto
+    &__link
+      // display: flex
+      +latoRegular
+      color: $color-textSecond
+      font-size: 18px
+      align-items: center
+      & i
+        color: $color-textSecond
+        margin-right: 5px
+        font-size: 20px
+        transition: 0.3s
+  &-cart
+    width: 37px
+    height: 37px 
+    display: flex
+    align-items: center
+    justify-content: center
   &-cart .header-top__link i 
     color: $color-main
   &-search .header-top__link, &-cart .header-top__link
     & i 
       margin: 0px
       font-size: 28px
-  &-top 
-    display: flex
-    height: 50px
-    align-items: center
-    justify-content: space-between
-    &__item
-      transition: 0.3s
-      width: auto
-      flex: auto
-    &__link
-      // display: flex
-      font-size: 18px
-      align-items: center
-      & i
-        margin: 0 20px
-        font-size: 20px
   &-box 
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1)
     background: #fff
@@ -38,7 +50,7 @@
     align-self: center
     &__tag
       font-size: 18px
-      +latoBold
+      +latoRegular
       & i 
         font-size: 28px
     &__text
@@ -102,14 +114,58 @@
     & i
       padding-right: 10px
     &__item
+      padding: 25px 0 25px 0
       color: $color-main
+    &__item, .header-catalog
       transition: 0.3s
       z-index: 1
       position: relative
       display: block
-      padding: 25px 0 25px 0
       flex: auto
       text-align: center
       font-size: 14px
       text-transform: uppercase 
-      
+  &-catalog
+    color: $color-main
+    &__li-active
+      position: relative
+    &__li-active i
+      position: absolute
+      right: 10px
+      top: 0
+      display: block
+      color: $color-text
+      line-height: 39px
+      vertical-align: middle
+      font-size: 12px
+    &__box
+      position: relative
+    &__item, &__subItem
+      display: block
+      width: 400px
+      position: absolute
+      background: #fff
+      white-space: nowrap
+      text-align: left
+      list-style: none
+      padding: 0   
+      z-index: 1 
+      transform-origin: 0 0
+      transition: .5s ease-in-out
+      opacity: 0
+    &__item
+      left: 0
+      top: 65px
+      transform: scaleY(0)
+      margin-left: -20px
+      box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5)
+    &__subItem
+      top: 0
+      right: -402px
+      transform: scaleX(0)
+    &__link
+      display: block
+      border-bottom: 1px solid #ccc  
+      font-size: 14px
+      padding: 10px 20px
+      transition: 0.3s 

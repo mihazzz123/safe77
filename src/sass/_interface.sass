@@ -24,24 +24,42 @@ i
   .header-comparison:hover, .header-bookmarks:hover
     & i, a
       color: $color-main
-  .header-nav__item
-    &:hover
-      color: #ffffff
-      transition: 0.3s
-    &:after
-      transition: 0.3s
-      content: ""
-      z-index: -1
-      background: $color-main
-      height: 1px
-      width: 100%
-      display: block
-      position: absolute
-      bottom: 0
-      left: 0
+  .header-nav__item:hover
+    color: #ffffff
+    transition: 0.3s
     &:hover:after
       height: 65px 
+    .header-catalog
+      color: #ffffff
+      transition: 0.3s
+  .header-nav__item:after
+    transition: 0.3s
+    content: ""
+    z-index: -1
+    background: $color-main
+    height: 1px
+    width: 100%
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
+  .header-cart:hover
+    background: $color-main
+    border-radius: 50%
+  .header-cart:hover .header-top__link i 
+      color: #ffffff
   .header-contact__number:hover
     color: $color-main
     text-decoration: underline
     transition: 0.3s
+  .header-catalog__box:hover
+    .header-catalog__item
+      // display: block
+      opacity: 1
+      transform: scaleY(1)
+  .header-catalog__link:hover
+    color: $color-main
+  .header-catalog__li-active:hover
+    .header-catalog__subItem
+      opacity: 1
+      transform: scaleX(1)
