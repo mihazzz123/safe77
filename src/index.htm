@@ -21,7 +21,7 @@
 </head>
 <body>
 
-  <div class="header-modal">
+  <div class="header-modal passive">
     <div class="header-modal__box">
 
       <i class="fas fa-times header-modal__close"></i>
@@ -43,7 +43,7 @@
           <!-- /.header-form__text -->
         </div>
         <!-- /.header-form__check -->
-        <button class="header-modal__button">Отправить</button> 
+        <button class="header-modal__button border-main">Отправить</button> 
         <!-- /.header-form__button -->
 
       </form>
@@ -59,9 +59,9 @@
 
     <div class="container">
 
-      <form action="#" class="header-form">
+      <form action="#" class="header-form passive">
         <input type="text" class="header-form__input" placeholder="Введите запрос для поиска">
-        <button type="submit" class="header-form__button">Найти</button>
+        <button type="submit" class="header-form__button border-main">Найти</button>
         <!-- /.header-form__button -->
         <i class="fas fa-times header-form__close"></i>
       </form>
@@ -85,7 +85,7 @@
         </div>
         <!-- /.header-bookmarks -->
         
-        <div class="header-top__item header-address">
+        <div class="header-top__item header-address mr-auto">
           <a href="#" class="header-top__link">
             <i class="fas fa-map-marker-alt"></i>
             115419, г. Москва, ул. Орджоникидзе, д.11...</a> 
@@ -103,7 +103,13 @@
 
         <div class="header-top__item header-search">
           <a href="#" class="header-top__link">
-            <i class="fas fa-search"></i>
+              <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172">
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path d="M0,71.55a69.29,69.29,0,0,1,5.63-27.8A72.16,72.16,0,0,1,43.76,5.63,69.31,69.31,0,0,1,71.55,0a69.33,69.33,0,0,1,27.8,5.63,72.16,72.16,0,0,1,38.13,38.13,69.33,69.33,0,0,1,5.63,27.8,69.83,69.83,0,0,1-4.79,25.78,73.44,73.44,0,0,1-13.19,21.75l45.52,45.52a4.27,4.27,0,0,1,1.34,3.11,3.75,3.75,0,0,1-1.34,2.94,3.09,3.09,0,0,1-1.34,1,4.52,4.52,0,0,1-1.68.34,3.89,3.89,0,0,1-1.6-.34,4.8,4.8,0,0,1-1.43-1l-45.69-45.52a71.22,71.22,0,0,1-21.58,13.19,69.84,69.84,0,0,1-25.78,4.79,69.27,69.27,0,0,1-27.8-5.63A72.16,72.16,0,0,1,5.63,99.35,69.27,69.27,0,0,1,0,71.55ZM129.59,47.12A63.22,63.22,0,0,0,96,13.52a62.75,62.75,0,0,0-48.88,0A63.22,63.22,0,0,0,13.52,47.12a61.12,61.12,0,0,0-5,24.44,60.93,60.93,0,0,0,5,24.52,63.45,63.45,0,0,0,33.59,33.51,62.75,62.75,0,0,0,48.88,0,63.45,63.45,0,0,0,33.59-33.51,61,61,0,0,0,5-24.52A61.16,61.16,0,0,0,129.59,47.12Z"/>
+                  </g>
+                </g>
+              </svg>
           </a> 
           <!-- /.header-top__link -->
         </div>
@@ -111,8 +117,13 @@
 
         <div class="header-top__item header-cart">
           <a href="#" class="header-top__link">
-            <i class="fas fa-shopping-bag">
-            </i>
+              <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" version="1" width="50" height="50" viewBox="0 0 50 50">
+                <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans"
+                    d="M 25 1 C 19.466667 1 15 5.4666667 15 11 L 15 13 L 8 13 L 7.09375 13 L 7 13.875 L 3 48.875 L 2.875 50 L 4 50 L 46 50 L 47.125 50 L 47 48.875 L 43 13.875 L 42.90625 13 L 42 13 L 35 13 L 35 11 C 35 5.4666667 30.533333 1 25 1 z M 25 3 C 29.466667 3 33 6.5333333 33 11 L 33 13 L 17 13 L 17 11 C 17 6.5333333 20.533333 3 25 3 z M 8.90625 15 L 15 15 L 15 17.28125 C 14.403104 17.627293 14 18.260396 14 19 C 14 20.104569 14.895431 21 16 21 C 17.104569 21 18 20.104569 18 19 C 18 18.260396 17.596896 17.627293 17 17.28125 L 17 15 L 33 15 L 33 17.28125 C 32.403104 17.627293 32 18.260396 32 19 C 32 20.104569 32.895431 21 34 21 C 35.104569 21 36 20.104569 36 19 C 36 18.260396 35.596896 17.627293 35 17.28125 L 35 15 L 41.09375 15 L 44.875 48 L 5.125 48 L 8.90625 15 z"
+                    overflow="visible" enable-background="accumulate"
+                    font-family="Bitstream Vera Sans"></path>
+              </svg>
+              <span class="value">0</span
           </a> 
           <!-- /.header-top__link -->
         </div>
@@ -136,7 +147,7 @@
         </div>
         <!-- /.header-city -->
         
-        <div class="header-text">
+        <div class="header-text margin-auto">
           <span class="header-text__slogan">
             <span>17 ЛЕТ </span>УСПЕШНЫХ ПРОДАЖ СЕЙФОВ И МЕТАЛЛИЧЕСКОЙ МЕБЕЛИ!</span>
             <!-- /.header-text__slogan -->
@@ -171,195 +182,195 @@
           <a href="#" class="header-catalog">
             <i class="fas fa-bars">
             </i>Каталог</a>
-            <ul class="header-catalog__item">
+            <ul class="header-catalog__item passive">
               
               <li class="header-catalog__li header-catalog__li-active">
                 <a href="#" class="header-catalog__link">Сейфы</a>
                 <i class="fas fa-chevron-right"></i>  
 
-                <ul class="header-catalog__subItem">
+                <ul class="header-catalog__subItem passive">
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Изготовление сейфов на заказ
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Недорогие сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы для оружия
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы огнестойкие
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы мебельные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Пистолетные сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Взломостойкие сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Огневзломостойкие сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы для офиса
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Data-сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Депозитные сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Встраиваемые сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Гостиничные сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Темпокассы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Кэшбоксы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Серверные сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы с отделкой деревом
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы с защитой от радиации
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Холодильники (Термостаты)
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Огнестойкие картотеки
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Автомобильные сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Комплектующие к сейфам
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфы для часов
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Сейфовые комнаты
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Ювелирные сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Большие сейфы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                 </ul>
                 <!-- /.header-catalog__link -->
             </li>
@@ -368,177 +379,177 @@
               <a href="#" class="header-catalog__link">Металические шкафы</a> 
               <!-- /.header-catalog__link -->
               <i class="fas fa-chevron-right"></i> 
-              <ul class="header-catalog__subItem">
+              <ul class="header-catalog__subItem passive">
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Металлические шкафы на заказ
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы бухгалтерские
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы кассира
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы архивные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы для одежды
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы картотечные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li"><a href="" class="header-catalog__link"></a> <!-- /.header-catalog__link --></li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Многоящичные шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Камеры хранения
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Абонентские шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Несгораемые шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Взломостойкие шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Двустворчатые шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Скамейки гардеробные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Медицинские шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Тумбы медицинские
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Тумбы мобильные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы для газовых баллонов
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы инструментальные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы для денег
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Комплектующие к шкафам
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы хозяйственные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Металлические офисные шкафы
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Металлические шкафы для раздевалок
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Шкафы сушильные
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                 </ul>
                 <!-- /.header-catalog__link -->
             </li>
@@ -583,21 +594,21 @@
               <a href="#" class="header-catalog__link">Металлисеские тележки</a> 
               <!-- /.header-catalog__link -->
               <i class="fas fa-chevron-right"></i> 
-              <ul class="header-catalog__subItem">
+              <ul class="header-catalog__subItem passive">
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                       Тележки инструментальные
                   </a> 
                   <!-- /.header-catalog__link -->
                 </li>
-                <!-- /.header-catalog__subItem -->
+                <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                       Тележки для денег
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
               </ul>
             </li>
             <!-- /.header-catalog__li -->
@@ -618,42 +629,42 @@
 
               <i class="fas fa-chevron-right"></i> 
 
-              <ul class="header-catalog__subItem">
+              <ul class="header-catalog__subItem passive">
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Медицинские столики
                   </a> 
                   <!-- /.header-catalog__link -->
                 </li>
-                <!-- /.header-catalog__subItem -->
+                <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Медицинские кровати
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Медицинские кушетки для осмотра
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Архивные медицинские стеллажи
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   <li class="header-catalog__li">
                     <a href="#" class="header-catalog__link">
                         Тележки для перевозки больных
                     </a> 
                     <!-- /.header-catalog__link -->
                   </li>
-                  <!-- /.header-catalog__subItem -->
+                  <!-- /.header-catalog__subItem passive -->
                   
                 </ul>
                 <!-- /.header-catalog__li -->
@@ -682,7 +693,7 @@
               <!-- /.header-catalog__link -->
             </li>
             <!-- /.header-catalog__li -->
-          <!-- /.header-catalog__item -->
+          <!-- /.header-catalog__item passive -->
         </ul>
 
         </div>
@@ -718,9 +729,9 @@
         </div>
         <!-- /.m_header-links -->
         <div class="m_header-callback">
-          <a href="tel:+74957553228" class="m_header-callback__phone">+7 (495) 755-32-28</a> 
+          <a href="tel:+74957553228" class="m_header-callback__phone text-right">+7 (495) 755-32-28</a> 
           <!-- /.m_header-call__back -->
-          <span class="m_header-callback__btn callme"><a href="#">Заказать обратный звонок</a></span> 
+          <span class="m_header-callback__btn callme text-right"><a href="#">Заказать обратный звонок</a></span> 
           <!-- /.m_header-callback__btn -->
         </div>
         <!-- /.m_header-callback -->
@@ -730,20 +741,20 @@
       <div class="m_header-nav">
 
 
-        <div class="m_header-nav__link m_header__catalogs">
+        <div class="m_header-nav__link active-menu">
           <a class="toggleCatalog" href="#">
             <div class="toggleCatalog__bg"></div>
-            <i class="fas fa-bars m_header-catalog__open"></i>
-            <i class="fas fa-times m_header-catalog__close"></i>
+            <i class="fas fa-bars open"></i>
+            <i class="fas fa-times close"></i>
           </a>
-
-          <ul class="m_header-catalog">
-
+                    
+          <ul class="m_header-catalog m_activeItem passive">
+            
             <li class="m_header-catalog__item">
-              <a class="m_header-li__active" href="#">Сейфы</a>
+              <a class="m_header-li__active active-menu__active" href="#">Сейфы</a>
               <i class="fas fa-chevron-right"></i> 
-
-              <ul class="m_header-catalog__subItem">
+              
+              <ul class="m_header-catalog__subItem passive">
 
                 <li class="m_header-catalog__link">
                   <a href="#">Изготовление сейфов на заказ</a>
@@ -876,15 +887,15 @@
                 <!-- /.m_header-catalog__link -->
 
               </ul>
-              <!-- /.m_header-catalog__subItem -->
+              <!-- /.m_header-catalog__subItem passive -->
 
             </li>
             <!-- /.m_header-catalog__item -->
             <li class="m_header-catalog__item">
-              <a class="m_header-li__active" href="#">Металлические шкафы</a>
+              <a class="m_header-li__active active-menu__active" href="#">Металлические шкафы</a>
               <i class="fas fa-chevron-right"></i> 
 
-              <ul class="m_header-catalog__subItem">
+              <ul class="m_header-catalog__subItem passive">
 
                   <li class="m_header-catalog__link">
                     <a href="#">Металлические шкафы на заказ</a>
@@ -1039,10 +1050,10 @@
             </li>
             <!-- /.m_header-catalog__item -->
             <li class="m_header-catalog__item">
-              <a class="m_header-li__active" href="#">Металлические тележки</a>
+              <a class="m_header-li__active active-menu__active" href="#">Металлические тележки</a>
               <i class="fas fa-chevron-right"></i> 
 
-              <ul class="m_header-catalog__subItem">
+              <ul class="m_header-catalog__subItem passive">
 
                   <li class="m_header-catalog__link">
                     <a href="#">Тележки инструментальные</a>
@@ -1066,10 +1077,10 @@
             </li>
             <!-- /.m_header-catalog__item -->
             <li class="m_header-catalog__item">
-              <a class="m_header-li__active" href="#">Металлическая медицинская мебель</a>
+              <a class="m_header-li__active active-menu__active" href="#">Металлическая медицинская мебель</a>
               <i class="fas fa-chevron-right"></i> 
 
-              <ul class="m_header-catalog__subItem">
+              <ul class="m_header-catalog__subItem passive">
 
                   <li class="m_header-catalog__link">
                     <a href="#">Медицинские столики</a>
@@ -1122,23 +1133,93 @@
 
           </ul>
           <!-- /.m_header-catalog -->
+          
+        </div>
+        <!-- /.m_header-nav__link -->
+        
+        
+        <div class="m_header-nav__link m_header__menu active-menu">
+          <a class="toggleCatalog" href="#">
+            <div class="toggleCatalog__bg"></div>
+            <i class="far fa-caret-square-down open"></i>
+            <i class="fas fa-times close"></i>
+          </a>
+          
+          <div class="m_activeItem passive">
+
+          <div class="m_header-menu">
+            <div class="m_header-city">
+              <span class="m_header-city__tag">
+                <i class="fas fa-location-arrow"></i>
+                Город доставки:
+                <a href="#" class="m_header-city__text">
+                  Москва
+                </a> 
+                <!-- /.header-city__text -->
+              </span> 
+              <!-- /.header-city__tag -->
+            </div>
+              <!-- /.header-city -->
+              <span class="m_header-callback__btn text-left">
+                <a class="callme" href="#">Заказать обратный звонок</a></span> 
+              <!-- /.m_header-callback__btn -->
+          
+
+              <ul class="m_header-catalog">
+                
+                <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Контакты</a>
+            </li>
+            
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Бренды</a>
+            </li>
+            
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Спецпредложения</a>
+            </li>
+            
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Новости</a>
+            </li>
+            
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">О магазине safe77</a>
+            </li>
+            
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Перевозка сейфов</a>
+            </li>
+            
+            <li class="m_header-catalog__item">
+              <a class="m_header-li__active" href="#">Доставка и самовывоз</a>
+            </li>
+
+          </ul>
+          </div>
+          <!-- /.m_header-menu m_activeItem -->
+        </div>
+        <!-- /.m_header-nav__link -->
+      </div>
+          
+          <div class="m_header-nav__link m_header__search active-menu">
+          <a class="toggleCatalog" href="#">
+            <div class="toggleCatalog__bg"></div>
+            <i class="fas fa-search open"></i>
+            <i class="fas fa-times close"></i>
+          </a>
+
+          .m_activeItem
 
         </div>
         <!-- /.m_header-nav__link -->
-
-
-        <div class="m_header-nav__link m_header__menu">
-          <a href="#"><i class="far fa-caret-square-down"></i></a>
-        </div>
-        <!-- /.m_header-nav__link -->
-
-        <div class="m_header-nav__link m_header__search">
-          <a href="#"><i class="fas fa-search"></i></a>
-        </div>
-        <!-- /.m_header-nav__link -->
-
-        <div class="m_header-nav__link m_header__cart">
-          <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        
+        <div class="m_header-nav__link m_header__cart active-menu">
+          <a class="toggleCatalog" href="#">
+            <div class="toggleCatalog__bg"></div>
+            <i class="fas fa-shopping-bag open"></i>
+            <i class="fas fa-times close"></i>
+          </a>
         </div>
         <!-- /.m_header-nav__link -->
 

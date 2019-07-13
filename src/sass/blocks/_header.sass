@@ -1,22 +1,17 @@
 .header
   &-form 
-    display: flex
     background: #f2f2f2
-    width: 100%
+    display: flex
     justify-content: space-between
-    height: 50px
-    padding-top: 10px
-    padding-bottom: 5px
-    opacity: 0
     position: absolute
     transform: scaleY(0)
-    transform-origin: 0 0
-    transition: .5s ease-in-out
+    padding-top: 10px
+    padding-bottom: 5px
+    width: 100%
+    height: 50px
     top: 0
     left: 0
     &__active
-      opacity: 1
-      z-index: 9
       transform: scaleY(1)
     &__input
       flex: auto
@@ -32,7 +27,6 @@
       width: 140px
       height: 100%
       background: none
-      border: 1px solid $color-main
       color: $color-main
       transition: 0.3s
     &__close
@@ -49,16 +43,12 @@
     margin-left: 40px
     // width: 10%
     & a 
-      margin-left: auto
-  &-address
-    margin-right: auto 
-    margin-left: auto
+  &-svg
+    width: 2em
+    height: 2em
   &-comparison
     padding-right: 30px
-  &-bookmarks
-    // margin-right: auto 
   &-email 
-    // margin-left: auto
   &-top 
     display: flex
     height: 50px
@@ -67,19 +57,10 @@
     justify-content: space-between
     &__item
       transition: 0.3s
-      // width: auto
-      // flex: auto
     &__link
-      // display: flex
       +latoRegular
       color: $color-textSecond
-      font-size: 1em
       align-items: center
-      & i
-        color: $color-textSecond
-        margin-right: 5px
-        font-size: 1.2em
-        transition: 0.3s
   &-cart
     & a
       width: 37px
@@ -88,6 +69,8 @@
       align-items: center
       justify-content: center
       margin: 0 auto
+      & .header-svg
+        fill: $color-main
   &-cart .header-top__link i 
     color: $color-main
   &-search .header-top__link, &-cart .header-top__link
@@ -117,8 +100,6 @@
   &-text 
     width: 56%
     padding-bottom: 10px
-    margin-left: auto 
-    margin-right: auto
     &__subtitle
       padding-right: 5px
       &:last-child
@@ -182,7 +163,7 @@
       display: block
       flex: auto
       text-align: center
-      font-size: 1em
+      font-size: 0.9em
       text-transform: uppercase 
   &-catalog
     color: $color-main
@@ -208,10 +189,6 @@
       text-align: left
       list-style: none
       padding: 0   
-      z-index: 1 
-      transform-origin: 0 0
-      transition: .5s ease-in-out
-      opacity: 0
     &__item
       left: 0
       top: 65px
@@ -234,11 +211,8 @@
     width: 100%
     height: 100%
     z-index: 3
-    opacity: 0
     transform: scale(0)
-    transition: .5s ease-in-out
     &__active
-      opacity: 1
       transform: scale(1)
     &__close
       position: absolute
@@ -323,7 +297,6 @@
       margin-right: 10px
       border: 1px solid #ccc
     &__button
-      border: 1px solid $color-main
       color: $color-main
       background: none
       text-transform: uppercase
@@ -360,7 +333,6 @@
     width: 33%
     display: flex
     flex-direction: column
-    text-align: right
     padding-right: 15px
     margin-bottom: 5px
     margin-top: 5px
@@ -380,48 +352,33 @@
     flex-wrap: nowrap
     border-bottom: 10px solid $color-main
     border-top: 1px solid #ccc
+    position: relative
     &__link
       border-right: 1px solid #ccc
       width: 100%
-      // height: 100%
+      height: 45px
       text-align: center
-      & a 
+      font-size: 1.8em
+      & a
         padding: 10px 0
-        display: block
         width: 100%
         height: 100%
-        font-size: 1.8em
       &:last-child
         border: 0
   &-catalog, &-catalog__subItem
     list-style: none
-    background: #ffffff
-    width: 100%
-    left: 0
-    text-align: left
-    opacity: 1
-    z-index: 2
-    transform: scaleY(0)
-    transform-origin: 0 0
-    transition: .3s ease-in-out
     padding: 0
-    overflow: scroll
+    text-align: left
+    left: 0
     position: absolute
-  &-catalog
-    height: 320px
-    top: 90px
+    transform: scaleY(0)
     & a 
       padding: 0
-    &__active
-      opacity: 1
+    &__active, &__subItem-active
       transform: scaleY(1)
-      transition: .3s ease-in-out
     &__subItem-active
-      position: static
-      opacity: 1
       width: 99.9%
-      transform: scaleY(1)
-      transition: .3s ease-in-out
+      position: static
     &__link
       display: block
       height: 100%
@@ -443,16 +400,46 @@
       position: absolute
       right: 20px
       top: 10px
-
+  &-menu
+    font-size: 0.6em
+  &-city 
+    display: flex
+    flex-direction: column
+    padding: 20px
+    &__tag
+      display: flex
+      width: 100%
+      white-space: nowrap
+      align-items: center
+      & i 
+        position: static
+        margin-right: 10px
+        font-size: 1.2em
+    & a
+      margin-left: 10px
+      +latoBold
+.m_activeItem
+  // transform: scaleY(0)
+  position: absolute
+  height: 320px
+  top: 55px
+  left: 0 
+  padding: 20px
+  margin: 0
+  width: 100%
+  background: #ffffff
+  overflow: scroll
+.callme 
+  padding-left: 20px
 .toggleCatalog
+  display: block
   position: relative 
   height: 100%
   align-self: center
-  & i 
+  & i
     position: absolute
     left: 30%
     width: 40%
-    color: $color-main
 .toggleCatalog__bg
   transition: 0.2s
   position: absolute
@@ -464,6 +451,12 @@
   height: 100%
   &.toggleCatalog .fas
     color: #fff
+    font-size: 0.8em
+.open
+  color: $color-main
+.close
+  color: #ffffff
+  display: none
   
 
       
