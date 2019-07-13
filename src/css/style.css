@@ -573,6 +573,7 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
   display: -ms-flexbox;
   display: flex;
   text-align: right;
+  margin-right: 30px;
   margin-left: 40px;
 }
 
