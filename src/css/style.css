@@ -589,10 +589,6 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
   padding-right: 30px;
 }
 
-.header-bookmarks {
-  margin-right: auto;
-}
-
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,7 +665,6 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
 }
 
 .header-city {
-  width: 23%;
   text-align: left;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -696,6 +691,8 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
 .header-text {
   width: 56%;
   padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-text__subtitle {
