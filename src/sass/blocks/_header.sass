@@ -9,7 +9,6 @@
     padding-bottom: 5px
     opacity: 0
     position: absolute
-    transition: 0.3s
     transform: scaleY(0)
     transform-origin: 0 0
     transition: .5s ease-in-out
@@ -73,11 +72,13 @@
         font-size: 1.2em
         transition: 0.3s
   &-cart
-    width: 37px
-    height: 37px 
-    display: flex
-    align-items: center
-    justify-content: center
+    & a
+      width: 37px
+      height: 37px 
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 auto
   &-cart .header-top__link i 
     color: $color-main
   &-search .header-top__link, &-cart .header-top__link
@@ -216,14 +217,116 @@
       font-size: 1em
       padding: 10px 20px
       transition: 0.3s 
+  &-modal 
+    background: #000000ba
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 3
+    opacity: 0
+    transform: scale(0)
+    transition: .5s ease-in-out
+    &__active
+      opacity: 1
+      transform: scale(1)
+    &__close
+      position: absolute
+      right: -40px
+      top: -40px
+      height: 40px
+      width: 40px
+      background: $color-main
+      color: #ffffff
+      font-size: 2em
+      line-height: 40px
+      text-align: center
+    &__box
+      background: #fff 
+      width: 100%
+      max-width: 590px
+      position: absolute
+      top: 15%
+      left: calc(50% - 295px)
+      padding: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &__title
+      position: relative
+      width: 100%
+      margin: 0
+      padding-bottom: 40px
+      font-size: 2em
+      text-transform: uppercase
+      text-align: center
+      +latoRegular
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        margin-top: 5px
+        height: 2px
+        width: 100%
+        background: $color-main
+    &__form
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__input
+      width: 100%
+      padding: 15px
+      margin-bottom: 15px
+      border: 1px solid #ccc
+      font-size: 1.6em
+      +latoLight
+    &__textarea
+      width: 100%
+      height: 150px
+      resize: none
+      padding: 15px
+      margin-bottom: 20px
+      border: 1px solid #ccc
+      font-size: 1.6em
+      +latoLight
+    &__check
+      display: flex
+      position: relative
+      padding-bottom: 20px
+      justify-content: space-between
+      align-items: center
+      flex-direction: row
+      margin-bottom: 15px
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        height: 7px
+        width: 100%
+        background: $color-main
+        bottom: 0
+      & a 
+        color: $color-main
+        text-decoration: underline
+    &__checkbox
+      margin-right: 10px
+      border: 1px solid #ccc
+    &__button
+      border: 1px solid $color-main
+      color: $color-main
+      background: none
+      text-transform: uppercase
+      padding: 10px
+      margin-top: 10px
+      margin-left: auto
 
 
 
 // MOBILE
 
 .m_header
-  background: #fff
   position: relative
+  background: #fff
   &-top 
     display: flex
     justify-content: space-between
@@ -373,6 +476,13 @@
       width: 20%
     &-callback
       width: 40%
+  .header
+    &-modal
+      &__box
+        max-width: 90%
+        left: 5%
+      &__close
+        right: 0
 @media (max-width: 546px)
   .m_header
     &-links 
@@ -381,3 +491,5 @@
       width: 40%
     &-callback
       width: 60%
+  .header-modal__title
+    font-size: 1.4em

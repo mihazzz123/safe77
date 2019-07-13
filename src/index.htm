@@ -20,7 +20,42 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div class="header-modal">
+    <div class="header-modal__box">
+
+      <i class="fas fa-times header-modal__close"></i>
+
+      <h2 class="header-modal__title">Заказать обратный звонок</h2>
+      <!-- /.header-modal__title -->
+
+      <form action="#" class="header-modal__form" id="header__form">
+
+        <input required type="text" class="header-modal__input" placeholder="Ваше имя">
+        <input required type="tel" class="header-modal__input" placeholder="Телефон*">
+        <textarea cols="30" rows="10" class="header-modal__textarea"></textarea>
+        <!-- /#.header-modal__textarea -->
+        <div class="header-modal__check">
+          <input required type="checkbox" class="header-modal__checkbox">
+          <span class="header-modal__text">Даю согласие на обработку персональных данных в соответствии с
+            <a href="#" target="_blank">пользовательским соглашением</a>
+          </span> 
+          <!-- /.header-form__text -->
+        </div>
+        <!-- /.header-form__check -->
+        <button class="header-modal__button">Отправить</button> 
+        <!-- /.header-form__button -->
+
+      </form>
+      <!-- /#header__form.header-modal__form -->
+
+    </div>
+    <!-- /.modal-box -->
+  </div>
+  <!-- /.header-modal -->
+
   <header id="header" class="header">
+
 
     <div class="container">
 
@@ -119,7 +154,7 @@
         <div class="header-contact">
           <a href="#" class="header-contact__number"><i class="fas fa-mobile-alt"></i>+7 (495) 755-32-28</a>
           <!-- /.header-contact__number -->
-          <a href="#" class="header-contact__callme"><i class="fas fa-phone"></i><p>Заказать обратный звонок</p></a>
+          <a href="#" class="header-contact__callme callme"><i class="fas fa-phone"></i><p>Заказать обратный звонок</p></a>
           <!-- /.header-contact__callme -->
           <span class="header-contact__time"><i class="far fa-clock"></i>10:00 до 19:00 ПН - ВС</span>
           <!-- /.header-contact__time -->
@@ -685,7 +720,7 @@
         <div class="m_header-callback">
           <a href="tel:+74957553228" class="m_header-callback__phone">+7 (495) 755-32-28</a> 
           <!-- /.m_header-call__back -->
-          <span class="m_header-callback__btn"><a href="#">Заказать обратный звонок</a></span> 
+          <span class="m_header-callback__btn callme"><a href="#">Заказать обратный звонок</a></span> 
           <!-- /.m_header-callback__btn -->
         </div>
         <!-- /.m_header-callback -->

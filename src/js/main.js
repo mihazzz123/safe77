@@ -20,7 +20,10 @@ $(document).ready(function() {
       iconOpen = $('.m_header-catalog__open'),
       iconClose = $('.m_header-catalog__close'),
       openSub = $('.m_header-li__active'),
-      subItem = $('.m_header-catalog__subItem');
+      subItem = $('.m_header-catalog__subItem'),
+      openModal = $('.callme'),
+      headerModal = $('.header-modal'),
+      closeModal = $('.header-modal__close');
       
   iconClose.hide();
 
@@ -60,7 +63,37 @@ $(document).ready(function() {
       $('body,html').animate({scrollTop: top}, 1000);
     });
   
+    openModal.on('click', function() {
+      headerModal.addClass('header-modal__active');
+      $('body').css({'background' : '#000000ba'});
+    });
+    closeModal.on('click', function() {
+      headerModal.removeClass('header-modal__active');
+      $('body').attr('style', '');
+    });
 
- 
+    var placeholder = 'Сообщение';
+    $('.header-modal__textarea').attr('placeholder', placeholder);
+    $('.header-modal__textarea').attr('required', 'required');
+    $('.header-modal__textarea').focus(function () {
+      if($(this).val() === placeholder){
+        $(this).attr('value', '');
+      }
+    });
+    $('.header-modal__textarea').blur(function () {
+      if($(this).val() === ''){
+        $(this).attr('value', placeholder);
+      }
+  });
+
+    $(function($) {
+      $(document).mouseup(function (e) {
+        if (!$('.header-modal__box').is(e.target)
+        && $('.header-modal__box').has(e.target).length === 0) {
+          headerModal.removeClass('header-modal__active');
+          $('body').attr('style', '');
+        }
+      });
+    });
 
 });
