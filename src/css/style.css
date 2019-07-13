@@ -601,7 +601,7 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
   display: flex;
   text-align: right;
   margin-right: 30px;
-  margin-left: 40px;
+  margin-left: auto;
 }
 
 .header-svg {
@@ -642,6 +642,7 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
 }
 
 .header-cart a {
+  position: relative;
   width: 37px;
   height: 37px;
   display: -webkit-box;
@@ -654,6 +655,12 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+}
+
+.header-cart a .value {
+  position: absolute;
+  font-size: 1em;
+  bottom: 5px;
 }
 
 .header-cart a .header-svg {
@@ -1117,6 +1124,7 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
   font-weight: 700;
   display: block;
   width: 100%;
+  padding-left: 20px;
 }
 
 .m_header-callback__btn a {
@@ -1258,10 +1266,6 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
   width: 100%;
   background: #ffffff;
   overflow: scroll;
-}
-
-.callme {
-  padding-left: 20px;
 }
 
 .toggleCatalog {
