@@ -46,8 +46,11 @@
   &-search
     display: flex
     text-align: right
-    margin-right: -40px
+    // margin-right: -40px
     margin-left: 40px
+    width: 100%
+    & a 
+      margin-left: auto
   &-top 
     display: flex
     height: 50px
@@ -57,7 +60,7 @@
     &__item
       transition: 0.3s
       width: auto
-      // flex: auto
+      flex: auto
     &__link
       // display: flex
       +latoRegular
@@ -266,7 +269,7 @@
     &__link
       border-right: 1px solid #ccc
       width: 100%
-      height: 100%
+      // height: 100%
       text-align: center
       & a 
         padding: 10px 0
@@ -276,17 +279,7 @@
         font-size: 1.8em
       &:last-child
         border: 0
-  &__catalog a 
-    position: relative
-    height: 53px
-    line-height: 40px
-    & i 
-      position: absolute
-      left: 45%
-      width: 10%
-      color: $color-main
   &-catalog, &-catalog__subItem
-    position: absolute
     list-style: none
     background: #ffffff
     width: 100%
@@ -299,9 +292,12 @@
     transition: .3s ease-in-out
     padding: 0
     overflow: scroll
+    position: absolute
   &-catalog
     height: 320px
-    top: 100px
+    top: 90px
+    & a 
+      padding: 0
     &__active
       opacity: 1
       transform: scaleY(1)
@@ -313,6 +309,10 @@
       transform: scaleY(1)
       transition: .3s ease-in-out
     &__link
+      display: block
+      height: 100%
+      width: 100%
+      align-self: center
       padding-right: 20px
       padding-left: 35px
     &__item
@@ -323,13 +323,22 @@
       & a 
         display: block
         border-bottom: 1px solid #ccc
+        padding-top: 15px
+        padding-bottom: 15px
     & i 
       position: absolute
       right: 20px
-      top: 20px
+      top: 10px
 
 .toggleCatalog
   position: relative 
+  height: 100%
+  align-self: center
+  & i 
+    position: absolute
+    left: 30%
+    width: 40%
+    color: $color-main
 .toggleCatalog__bg
   transition: 0.2s
   position: absolute
