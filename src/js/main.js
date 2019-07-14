@@ -46,6 +46,13 @@ $(document).ready(function() {
       $('body').attr('style', '');
     }
     
+    $('.m_header-form__close').click(function() {
+      $('body').attr('style', '');
+      catalog.eq(2).removeClass('m_header-catalog__active active');
+      bgBtn.eq(2).removeClass('toggleCatalog__bg-active');
+      iconClose.eq(2).show(100);
+    });
+
   });
   // $('.toggleCatalog__bg-active').click(function() { 
   //   catalog.removeClass('m_header-catalog__active active');
@@ -77,12 +84,14 @@ $(document).ready(function() {
     });
   
     openModal.on('click', function() {
-      headerModal.addClass('header-modal__active');
+      headerModal.addClass('header-modal__active active');
       $('body').css({'background' : '#000000ba'});
+      headerModal.css({'background' : '#000000ba'});
     });
     closeModal.on('click', function() {
-      headerModal.removeClass('header-modal__active');
+      headerModal.removeClass('header-modal__active active');
       $('body').attr('style', '');
+       headerModal.attr('style', '');
     });
 
     var placeholder = 'Сообщение';

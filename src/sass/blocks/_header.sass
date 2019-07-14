@@ -42,8 +42,8 @@
     margin-right: 30px
     margin-left: auto
   &-svg
-    width: 2em
-    height: 2em
+    width: 1.6em
+    height: 1.6em
   &-comparison
     padding-right: 30px
   &-email 
@@ -209,12 +209,24 @@
       padding: 10px 20px
       transition: 0.3s 
   &-modal 
-    background: #000000ba
+    // background: #000000ba
     position: absolute
     width: 100%
     height: 100%
     z-index: 3
     transform: scale(0)
+    &__box
+      background: #fff 
+      width: 100%
+      max-width: 590px
+      position: absolute
+      top: 15%
+      left: calc(50% - 295px)
+      padding: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
     &__active
       transform: scale(1)
     &__close
@@ -228,18 +240,6 @@
       font-size: 2em
       line-height: 40px
       text-align: center
-    &__box
-      background: #fff 
-      width: 100%
-      max-width: 590px
-      position: absolute
-      top: 15%
-      left: calc(50% - 295px)
-      padding: 20px
-      display: flex
-      flex-direction: column
-      align-items: center
-      justify-content: center
     &__title
       position: relative
       width: 100%
@@ -364,9 +364,6 @@
       text-align: center
       font-size: 1.8em
       & a
-        padding: 10px 0
-        width: 100%
-        height: 100%
       &:last-child
         border: 0
   &-catalog, &-catalog__subItem
@@ -422,10 +419,38 @@
     & a
       margin-left: 10px
       +latoBold
+  &__cart
+    font-size: 1em
+    align-self: center
+    padding-bottom: 20px
+    border-bottom: 1px solid #ccc
+    +latoLight
+    & p 
+      margin: 5px 0
+    & span
+      margin-left: auto
+      margin-right: 10px
+      line-height: 38px
+    &-active
+      height: 220px
+      position: relative
+  &__inCart
+    padding-top: 10px
+  &__button
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 0
+.catalog
+  height: 320px
+.m_form-search
+  height: 80px
+.close-search
+  padding: 5px
+  margin-left: 20px
 .m_activeItem
   // transform: scaleY(0)
   position: absolute
-  height: 320px
   top: 55px
   left: 0 
   padding: 20px
@@ -438,10 +463,13 @@
   position: relative 
   height: 100%
   align-self: center
-  & i
+  padding: 10px 0
+  & .open, .close
+    z-index: 1
     position: absolute
     left: 30%
     width: 40%
+    height: 30px
 .toggleCatalog__bg
   transition: 0.2s
   position: absolute

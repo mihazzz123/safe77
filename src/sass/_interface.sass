@@ -24,7 +24,11 @@ button, input, a, li, ul, textarea
 .container
   margin: 0 3% 
   position: relative
-
+.button-main
+  background: $color-main
+  padding: 15px
+  font-size: 1em
+  color: #ffffff
 .color-main
   color: $color-main
 
@@ -32,18 +36,26 @@ button, input, a, li, ul, textarea
   margin-right: auto
   margin-left: auto
 
+.dflex
+  display: flex
+
+.jcontent-sb
+  justify-content: space-between 
+
 .border-main
   border: 1px solid $color-main
 
 .passive
   opacity: 0
-  z-index: 1
-  transform-origin: 0 0
+  z-index: -1
   transition: .5s ease-in-out
+  transform-origin: center center
 
 .active
   opacity: 1
   z-index: 9
+  transition: .5s ease-in-out
+  transform-origin: center center
 
 .text-right
   text-align: right
