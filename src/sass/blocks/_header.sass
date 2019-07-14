@@ -1,19 +1,21 @@
 .header
+  &-searchForm
+    height: 50px
+    transform: scaleY(0)
+    padding-top: 10px
+    padding-bottom: 5px
   &-form 
+    top: 0
+    left: 0
+    width: 100%
     background: #f2f2f2
     display: flex
     justify-content: space-between
     position: absolute
-    transform: scaleY(0)
-    padding-top: 10px
-    padding-bottom: 5px
-    width: 100%
-    height: 50px
-    top: 0
-    left: 0
     &__active
       transform: scaleY(1)
     &__input
+      width: 100%
       flex: auto
       margin-right: 20px
       padding-left: 20px
@@ -40,12 +42,18 @@
     display: flex
     text-align: right
     margin-right: 30px
-    margin-left: auto
+    margin-left: 40px
   &-svg
     width: 1.6em
     height: 1.6em
   &-comparison
     padding-right: 30px
+  &-bookmarks, &-comparison
+    & .header-svg
+      margin-right: 10px
+  &-address .header-svg
+    width: 0.9em
+    height: 0.9em
   &-email 
   &-top 
     display: flex
@@ -56,6 +64,8 @@
     &__item
       transition: 0.3s
     &__link
+      display: flex
+      align-items: center
       +latoRegular
       color: $color-textSecond
       align-items: center
@@ -126,6 +136,10 @@
     flex-direction: column
     justify-content: space-around
     text-align: left
+    & .header-svg
+      width: 1em
+      height: 1em
+      margin-right: 10px
     & i
       margin-right: 8px
     &__number
@@ -194,7 +208,7 @@
       padding: 0   
     &__item
       left: 0
-      top: 65px
+      top: 50px
       transform: scaleY(0)
       margin-left: -20px
       box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5)
@@ -349,6 +363,7 @@
       width: 100%
       padding-left: 20px
       & a 
+        font-size: 0.8em
         border-bottom: 1px dashed $color-text
   &-nav
     display: flex
@@ -366,20 +381,64 @@
       & a
       &:last-child
         border: 0
+  &-menu
+    & .m_header-catalog
+      position: static !important
+  &-city 
+    font-size: 0.6em
+    display: flex
+    flex-direction: column
+    padding: 20px
+    &__tag
+      display: flex
+      width: 100%
+      white-space: nowrap
+      align-items: center
+      & i 
+        position: static
+        margin-right: 10px
+        font-size: 1.2em
+    & a
+      font-size: 1em
+      margin-left: 10px
+      +latoBold
+  &__cart
+    font-size: 1em
+    align-self: center
+    padding-bottom: 20px
+    height: 60px
+    +latoLight
+    & p 
+      margin: 5px 0
+    & span
+      margin-left: auto
+      margin-right: 10px
+      line-height: 38px
+    &-active
+      opacity: 0
+      z-index: -2
+      padding-bottom: 60px
+      height: 180px
+      // padding-top: 20px 
+      position: relative
+  &__inCart
+    padding: 10px
+    border-bottom: 1px solid #ccc
+  &__button
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 0
+    height: 60px
   &-catalog, &-catalog__subItem
     list-style: none
     padding: 0
     text-align: left
     left: 0
     position: absolute
-    transform: scaleY(0)
+    // transform: scaleY(0)
     & a 
       padding: 0
-    &__active, &__subItem-active
-      transform: scaleY(1)
-    &__subItem-active
-      width: 99.9%
-      position: static
     &__link
       display: block
       height: 100%
@@ -401,63 +460,36 @@
       position: absolute
       right: 20px
       top: 10px
-  &-menu
-    font-size: 0.6em
-  &-city 
-    display: flex
-    flex-direction: column
-    padding: 20px
-    &__tag
-      display: flex
-      width: 100%
-      white-space: nowrap
-      align-items: center
-      & i 
-        position: static
-        margin-right: 10px
-        font-size: 1.2em
-    & a
-      margin-left: 10px
-      +latoBold
-  &__cart
-    font-size: 1em
-    align-self: center
-    padding-bottom: 20px
-    border-bottom: 1px solid #ccc
-    +latoLight
-    & p 
-      margin: 5px 0
-    & span
-      margin-left: auto
-      margin-right: 10px
-      line-height: 38px
-    &-active
-      height: 220px
-      position: relative
-  &__inCart
-    padding-top: 10px
-  &__button
-    width: 100%
-    position: absolute
-    left: 0
-    bottom: 0
 .catalog
-  height: 320px
-.m_form-search
-  height: 80px
-.close-search
-  padding: 5px
-  margin-left: 20px
+  &__subItem-active
+    width: 99.9%
+    position: static !important
+  &__active
+    transition: .5s ease-in-out
+    opacity: 1 !important
+    max-height: 320px !important
+    height: auto !important
+    z-index: 1 !important
 .m_activeItem
-  // transform: scaleY(0)
   position: absolute
   top: 55px
   left: 0 
-  padding: 20px
   margin: 0
   width: 100%
+  max-height: 0
+  height: auto
   background: #ffffff
   overflow: scroll
+  transition: .5s ease-in-out
+.m_form-search 
+  padding: 0 10px
+    // height: 80px
+  & .header-form__input, .header-form__button, .close-search 
+    margin-bottom: 10px 
+    margin-top: 10px
+.close-search
+  padding: 5px
+  margin-left: 20px
 .toggleCatalog
   display: block
   position: relative 

@@ -49,13 +49,13 @@ button, input, a, li, ul, textarea
   opacity: 0
   z-index: -1
   transition: .5s ease-in-out
-  transform-origin: center center
+  // transform-origin: center center
 
 .active
   opacity: 1
   z-index: 9
   transition: .5s ease-in-out
-  transform-origin: center center
+  // transform-origin: center center
 
 .text-right
   text-align: right
@@ -63,6 +63,9 @@ button, input, a, li, ul, textarea
   text-align: left 
 .text-center
   text-align: center
+.icon
+  font-size: 1.2em
+  margin-right: 10px
 
 
 // HOVER
@@ -71,8 +74,13 @@ button, input, a, li, ul, textarea
     background: $color-main
     color: #ffffff
   .header-comparison:hover, .header-bookmarks:hover
-    & i, a
+    & a
       color: $color-main
+    & .header-svg .st0
+      fill: none
+      stroke: #a50103
+      stroke-width: 1.0006
+      stroke-miterlimit: 10
   .header-nav__item:hover
     color: #ffffff
     transition: 0.3s
@@ -95,7 +103,10 @@ button, input, a, li, ul, textarea
   .header-cart a:hover
     background: $color-main
     border-radius: 50%
-  .header-cart:hover .header-top__link i 
+    & .header-svg
+      fill: #ffffff
+      stroke-width: 2.0006
+  .header-cart:hover .header-top__link span
       color: #ffffff
   .header-contact__number:hover
     color: $color-main
@@ -128,3 +139,4 @@ button, input, a, li, ul, textarea
   boby, html
     font-size: 13px
 
+  

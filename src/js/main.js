@@ -30,27 +30,30 @@ $(document).ready(function() {
 
   $('.m_header-nav').on('click', '.toggleCatalog', function() {
     var n = openCatalog.index($(this));
-    $('body').css({'background' : '#000000ba'});
-    catalog.eq(n).toggleClass('m_header-catalog__active active');
-    bgBtn.eq(n).toggleClass('toggleCatalog__bg-active');
-    if(catalog.eq(n).hasClass('active')){
-      catalog.eq(!n).removeClass('m_header-catalog__active active');
+    catalog.eq(n).toggleClass('catalog__active');
+    catalog.eq(!n).removeClass('catalog__active');
+    if((catalog).hasClass('catalog__active')){
+      $('body').css({'background' : '#000000ba'});
+      bgBtn.eq(n).addClass('toggleCatalog__bg-active');
       bgBtn.eq(!n).removeClass('toggleCatalog__bg-active');
-      iconClose.eq(n).show(100);
-      iconClose.eq(!n).hide(100);
       iconOpen.eq(n).hide(100);
       iconOpen.eq(!n).show(100);
-    } else {
-      iconOpen.eq(n).show(100);
-      iconClose.eq(n).hide(100);
+      iconClose.eq(n).show(100);
+      iconClose.eq(!n).hide(100);
+    } else { 
       $('body').attr('style', '');
+      bgBtn.eq(n).removeClass('toggleCatalog__bg-active');
+      iconClose.eq(n).hide(100);
+      iconOpen.eq(n).show(100);
     }
+   
     
     $('.m_header-form__close').click(function() {
       $('body').attr('style', '');
-      catalog.eq(2).removeClass('m_header-catalog__active active');
+      catalog.eq(2).removeClass('catalog__active');
       bgBtn.eq(2).removeClass('toggleCatalog__bg-active');
-      iconClose.eq(2).show(100);
+      iconOpen.eq(2).show(100);
+      iconClose.eq(2).hide(100);
     });
 
   });
@@ -62,8 +65,8 @@ $(document).ready(function() {
   
   $('.m_header-catalog').on('click', '.active-menu__active', function() {
     var n = openSub.index($(this));
-    subItem.eq(n).toggleClass('m_header-catalog__subItem-active active');
-    if(subItem.eq(n).hasClass('m_header-catalog__subItem-active')){
+    subItem.eq(n).toggleClass('catalog__subItem-active active');
+    if(subItem.eq(n).hasClass('catalog__subItem-active')){
       openSub.eq(n).css({'color' : '#a50103'});
     } else {
       openSub.eq(n).attr('style', '');
