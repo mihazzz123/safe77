@@ -1399,6 +1399,10 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus {
   height: 30px;
 }
 
+.close:before {
+  content: "\e902";
+}
+
 .toggleCatalog__bg {
   -webkit-transition: 0.2s;
   transition: 0.2s;
