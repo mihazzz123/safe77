@@ -30,12 +30,14 @@ $(document).ready(function() {
 
   $('.m_header-nav').on('click', '.toggleCatalog', function() {
     var n = openCatalog.index($(this));
+    catalog.removeClass('catalog__active');
+    bgBtn.removeClass('toggleCatalog__bg-active');
+    iconOpen.show(100);
+    iconClose.hide(100);
     catalog.eq(n).toggleClass('catalog__active');
-    catalog.eq(!n).removeClass('catalog__active');
     if((catalog).hasClass('catalog__active')){
       $('body').css({'background' : '#000000ba'});
       bgBtn.eq(n).addClass('toggleCatalog__bg-active');
-      bgBtn.eq(!n).removeClass('toggleCatalog__bg-active');
       iconOpen.eq(n).hide(100);
       iconOpen.eq(!n).show(100);
       iconClose.eq(n).show(100);
