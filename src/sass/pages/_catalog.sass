@@ -3,6 +3,141 @@
   padding-bottom: 60px
   &-title__box
     margin-bottom: 50px
+  &-sort 
+    width: auto
+    flex-direction: row
+  &-tags 
+    align-items: center
+    &__tag
+      padding-left: 10px
+    &__value
+      padding-left: 10px
+      margin: 0
+    &__pageMeter
+      display: block
+      margin-left: 30px
+      background: $color-main
+      height: 25px
+      width: 20px
+      color: #ffffff
+      text-align: center
+      line-height: 25px
+      font-size: 1.2em
+      cursor: pointer
+  &-goods
+    &__wrap
+      width: 100%
+      flex-direction: column
+      padding: 20px
+
+.good
+  background: #ffffff
+  flex-direction: column
+  width: 320px
+  transition: .25s ease-in-out
+  &:hover
+  &-image
+    position: relative
+    padding-top: 50px
+  &-buttonsTop
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+  &__buttonTop
+    background: $color-main
+    color: #ffffff
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    height: 45px
+    margin-bottom: 20px
+    width: 45px
+    &-title 
+      width: 0
+      transform: scaleX(0)
+      transition: .25s ease-in-out
+    &:hover
+      width: 100%
+      .good__buttonTop-title
+        font-size: 1.2em
+        width: auto
+        transform: scaleX(1)
+        padding-left: 40px
+        padding-right: 40px
+  &-buttonsBottom
+    display: flex
+  &__buttonBottom
+    width: 50%
+    text-align: center
+    padding: 15px 0
+    text-transform: uppercase
+  &-text
+    padding: 20px
+    flex-direction: column
+  &__title
+    font-size: 1.1em
+    margin-bottom: 20px
+  &__button
+    display: block
+    background-color: #eaeaea
+    padding: 15px
+    text-align: center
+    text-transform: uppercase
+    transition: .25s ease-in-out
+    opacity: 1
+    &_active
+      background: $color-main
+      color: #Ffffff 
+  &__priceTag
+    margin-top: 30px
+    margin-bottom: 5px
+  &__price
+    margin-bottom: 15px
+  &-desc 
+    display: flex
+    font-size: 1em
+    &__tag
+      width: 70%
+      margin-bottom: 15px
+    &__text
+      width: 30%
+  &__more
+    border-top: 1px solid #ccc
+    padding-top: 15px
+     
+  &__svg
+    width: 45px
+    height: 45px
+
+
+.sort
+  &-filters
+    font-size: 0.9em
+    display: flex
+    flex-direction: column
+  &-filter 
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin: 10px 0
+    &__text
+      margin-right: 10px
+  &-select 
+    color: $color-text
+    padding-left: 8px
+    padding-top: 5px
+    padding-bottom: 5px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    background-color: #fff
+    border: 1px solid #aaa
+    border-radius: 4px
+    &__option
 
 
 .breadcrumbs
@@ -34,7 +169,7 @@
   background: #fff
   width: 30%
   padding: 30px
-  font-size: 1.2em
+  font-size: 1em
   &-title
     border-bottom: 1px solid #ccc
     padding-bottom: 40px
@@ -47,26 +182,61 @@
     text-transform: uppercase
   &-box
     padding: 0
+    margin: 0
     list-style: none
   &-attributive
+    padding: 10px 0
     display: flex
     flex-direction: column
     flex-wrap: nowrap
     border-bottom: 1px solid #ccc
     &__title
+      // margin-bottom: 10px
       align-items: center
+  &__button
+    text-align: center
+    width: 100%
+    display: block
+    text-transform: uppercase
+    font-weight: 600
+    &-first 
+      margin-bottom: 20px
+      margin-top: 20px
+      &:hover
+        background: #8c0103
+    &-second
+      padding: 15px
+      border: none
+      background: #aaa
+      color: #ffffff
+      &:hover
+        background: #828282
+
 .attributive
+  max-height: 0px
+  height: 100%
+  transform: scaleY(0)
+  transition: .25s ease-in-out
+  transform-origin: center top
+  visibility: hidden
+  &-active
+    max-height: 350px
+    height: auto
+    transform: scaleY(1)
+    display: block
+    visibility: visible
   &-inputs
     width: 100%
     margin-top: 10px
   &__input
+    font-siz: 1em
     width: 50%
     padding: 10px
     border: 1px solid #ccc
   &-slideLine
     width: 100%
     height: 7px
-    background: $color-main
+    background: #f2f2f2
     margin-bottom: 30px
     position: relative
   &__point
@@ -95,7 +265,7 @@
       left: 30px
       top: -15px
     &__tag
-      white-space: nowrap
+      font-size: 1em
       margin-right: 20px
     &__end
       padding: 0
@@ -106,6 +276,22 @@
       margin-bottom: 10px
       &:hover
         background: #8c0103
+  &-check
+    margin-top: 10px
+    margin-bottom: 20px 
+    align-items: center
+    &__checkBox
+      cursor: pointer
+      background: #fff
+      border: 1px solid #ccc 
+      width: 15px
+      height: 15px
+      margin-right: 10px
 
 .svg-filter
   width: 20px
+  transform: rotate(45deg)
+  transition: .25s ease-in-out
+  // transform-origin: center center
+  &-active
+    transform: rotate(0deg)
