@@ -1,0 +1,72 @@
+footer
+	height: 320px
+	background-color: #fff
+	padding: 40px 0
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	width: 100%
+	& li
+		list-style-type: none
+	& ul
+		margin-left: 0
+		padding-left: 0
+
+.footer
+	&-logo
+		text-align: center
+		margin-bottom: 25px
+		& img
+			height: 30px
+			display: block
+			margin: 0 auto 5px auto
+		& span
+			font-size: 0.5em
+			display: block
+	&-phone a, &-mail a, &-phone svg, &-mail svg
+		vertical-align: middle
+		margin: 5px
+		font-size: 1.2em
+		&:hover
+			text-decoration: underline
+			color: $color-main
+	&-title
+		color: $color-main
+		font-size: 1.2em
+		font-weight: bold
+		margin-bottom: 35px
+	&-link
+		font-size: 1.1em
+		margin: 8px 0
+		&:hover a
+			color: $color-main
+			text-decoration: underline
+
+
+.footer-1
+	width: 30%
+	padding: 0px 4%
+	border-right: 1px solid #ccc
+	height: 100%
+
+.footer-2, .footer-3
+	width: 20%
+	border-right: 1px solid #ccc
+	height: 100%
+	padding-left: 3%
+
+.footer-4
+	width: 30%
+	text-align: center
+
+.copyright
+	width: 100%
+	padding: 30px 40px
+	font-style: italic
+	+latoLight
+	&-title
+		font-size: 1.15em
+		margin-bottom: 12px
+	&-desc
+		font-size: 0.75em
+		max-width: 600px

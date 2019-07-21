@@ -1,24 +1,115 @@
 .main
-  display: none
+  padding-top: 65px
   &__img
+    display: inline-block
     width: 33%
-    background: url(../img/main/main.jpg)
-  &-slider
     height: 300px
-  &-slide
-    position: relative
-    &__title
-      position: absolute
-      right: 0
-      bottom: 0
-      background: #ffffffba
-      align-items: center
-      height: 100%
-      width: 50%
-      padding-left: 40px
-      padding-right: 40px
-      font-size: 1.7em
-      text-shadow: 0px 0px 2px #f5cd0d
-    &__img
-      height: 300px
+    background: url(../img/main/main.jpg) center
+    background-size: 100% 100%
+    & a
       width: 100%
+      height: 100%
+      display: block
+  &__title
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+    font-size: 2em
+    font-weight: normal
+  &-second
+    margin-top: 50px
+    position: relative
+    &-line
+      width: 10%
+      height: 4px
+      background-color: $color-main
+      transition: all 1.2s
+      &-wrapper
+        width: 90%
+        height: 5px
+        border-bottom: 1px solid $color-main
+        margin-bottom: 50px
+  &-button
+    text-align: center
+    text-transform: uppercase
+    font-size: 1em
+    height: 75px
+    line-height: normal
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all 0.5s
+  &-third
+    width: 100%
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 20px
+      &__line
+        height: 1px
+        background-color: $color-main
+        &-1
+          width: 33%
+        &-2
+          width: 23%
+      &__title
+        color: #a50103
+        font-size: 1.3em
+        text-transform: uppercase
+      &__button
+        width: 60px
+        height: 60px
+        background-color: #fff
+        cursor: pointer
+        & svg
+          width: 13px
+          height: 25px
+          fill: $color-main
+        &:hover svg
+          fill: #555
+  &-desc
+    padding: 35px 45px
+    background-color: #fff
+    margin-bottom: 40px
+    & p
+      margin: 35px 0
+    & ol
+      padding: 0
+      & li
+        display: flex
+        align-items: flex-start
+        margin: 15px 0
+        font-size: 1.2em
+        & span
+          font-size: 1.2em
+          font-weight: bold
+          float: left
+          color: #fff
+          background-color: $color-main
+          min-width: 35px
+          height: 35px
+          margin-right: 15px
+    & h3
+      font-size: 1.5em
+      margin-top: 40px
+    & li
+      padding-left: 15px
+      margin: 15px 0
+  &-tags
+    margin-bottom: 50px
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+  &-tag
+    color: $color-main
+    border: 1px solid $color-main
+    padding: 5px
+    margin: 5px
+    transition: all 0.5s
+    border-radius: 13px
+    cursor: pointer
+    &:hover
+      background-color: $color-main
+      color: #fff

@@ -1,0 +1,156 @@
+.tdslider
+	width: 100%
+	min-height: 650px
+	margin-bottom: 30px
+	overflow-x: hidden
+	overflow-y: visible
+	position: relative
+	&-wrapper
+		height: 100%
+		position: relative
+		top: 0
+		left: 0
+		transition: all 1.2s
+
+
+.tdslide
+	position: relative
+	float: left
+	margin: 0px 10px
+	padding: 5px
+	height: 100%
+	background-color: #fff
+	&:hover .tdslide-wrapper
+		box-shadow: 0 0 14px black
+	&-wrapper
+		display: flex
+		flex-direction: column
+	&-mobbuton
+		background-color: #eaeaea
+		width: 50%
+		margin-left: auto
+		margin-right: auto
+		height: 40px
+		font-size: 1.1em
+	&-mobbutons
+		display: none
+		position: relative
+		padding: 20px 0px 10px 0px
+		&-line
+			height: 2px
+			width: 100%
+			background-color: $color-main
+			margin-bottom: 30px
+		&-icons
+			position: absolute
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			left: 50%
+			margin-left: -20px
+			top: 0
+			background-color: $color-main
+			& svg
+				width: 45%
+				fill: #fff
+				stroke: #fff
+	&-icons
+		position: absolute
+		top: 50px
+		left: 5px
+		height: 120px
+		justify-content: space-between
+		display: flex
+		flex-direction: column
+	&-icon
+		height: 50px
+		&-2
+			display: none
+			background-color: rgba(167, 1, 3, .7)
+			width: 170px
+			color: #fff
+			font-size: 0.9em
+			&:hover
+				display: flex
+		&-1
+			background-color: $color-main
+			width: 50px
+			& svg
+				width: 35px
+	&-img
+		display: flex
+		align-items: center
+		height: 310px
+		background-color: #fff
+		& img
+			width: 90%
+			margin-left: auto
+			margin-right: auto
+	&-line
+		height: 1px
+		width: 100%
+		background-color: $color-main
+	&-details
+		padding: 20px 10px 10px 10px
+	&-title
+		font-size: 1.2em
+		margin-bottom: 30px
+	& li
+		list-style-type: none
+		height: 25px
+		margin: 10px 0
+	& ul
+		margin-left: 0
+		padding-left: 0
+	&-buttons
+		margin-bottom: 25px
+	&-desc
+		&-addition
+			height: 0
+			overflow: hidden
+			transition: all 0.5s
+	&-buybuttons
+		display: none
+		position: absolute
+		width: calc(100% - 10px)
+		top: 265px
+
+
+.more-button, .tdslide-onclick-button
+	display: none
+	background-color: $color-main
+	width: 100%
+	height: 50px
+	color: #fff
+
+.tdslide-onclick-button
+	width: 60%
+	display: flex
+
+.tdslide-buy-button
+	width: 40%
+	height: 50px
+	color: $color-main
+	border: 2px solid $color-main
+	background-color: #fff
+
+.instock-button
+	width: 100%
+	height: 50px
+	color: $color-main
+	background-color: #eaeaea
+
+.label
+	width: 150px
+	display: inline-block
+	vertical-align: top
+
+.value
+	display: inline-block
+	color: #000
+	font-weight: 600
+	&-price
+		color: $color-main
+
+.tdslide-mobbutons-icons__close
+	display: none

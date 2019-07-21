@@ -7,7 +7,7 @@ boby, html
 body 
   background: #f2f2f2
   color: $color-text
-  +latoRegular
+  font-family: sans-serif
   transition: 0.5s
 
 a 
@@ -36,11 +36,19 @@ button, input, a, li, ul, textarea
   margin-right: auto
   margin-left: auto
 
+.boxsz-cb
+  box-sizing: content-box
+
 .dflex
-  display: flex
+  display: flex !important
 
 .jcontent-sb
   justify-content: space-between 
+
+.flex-center
+  display: flex
+  justify-content: center
+  align-items: center
 
 .border-main
   border: 1px solid $color-main
@@ -48,14 +56,20 @@ button, input, a, li, ul, textarea
 .passive
   opacity: 0
   z-index: -1
-  transition: .5s ease-in-out
+  transition: .25s ease-in-out
   // transform-origin: center center
 
 .active
   opacity: 1
   z-index: 9
-  transition: .5s ease-in-out
+  transition: .25s ease-in-out
   // transform-origin: center center
+
+.dblock
+  display: block !important
+
+.dnone
+  display: none !important
 
 .text-right
   text-align: right
@@ -66,6 +80,49 @@ button, input, a, li, ul, textarea
 .icon
   font-size: 1.2em
   margin-right: 10px
+
+.main-line
+  position: relative
+  &:after
+    content: ""
+    display: block
+    height: 2px
+    background: $color-main
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    margin-top: -1px
+    z-index: -1
+
+.high__title
+  position: relative
+  background: #f2f2f2
+  text-transform: uppercase
+  display: block
+  color: $color-main
+  padding-left: 50px
+  padding-right: 50px
+  margin: 0
+  font-size: 2.2em
+    
+
+.svg
+  &-small
+    fill: $color-main !important
+    margin: 0
+    padding: 0
+    vertical-align: unset !important
+  &-middle
+    width: 30px
+  &-gray
+    fill: #666
+    &:hover
+      fill: $color-main
+      stroke: $color-main
+  &-white
+    fill: #fff
+
 
 // HOVER
 @media (min-width: 1200px)
@@ -88,12 +145,14 @@ button, input, a, li, ul, textarea
     .header-catalog
       color: #ffffff
       transition: 0.3s
+    svg
+      fill: #fff
   .header-nav__item:after
     transition: 0.3s
     content: ""
     z-index: -1
     background: $color-main
-    height: 1px
+    height: 0px
     width: 100%
     display: block
     position: absolute
@@ -116,6 +175,7 @@ button, input, a, li, ul, textarea
       // display: block
       opacity: 1
       transform: scaleY(1)
+      visibility: unset
   .header-catalog__link:hover
     color: $color-main
   .header-catalog__li-active:hover
@@ -126,8 +186,6 @@ button, input, a, li, ul, textarea
 @media (max-width: 1200px)
   boby, html
     font-size: 13px
-  .container
-    margin: 0
 @media (max-width: 992px)
   boby, html
     font-size: 16px
