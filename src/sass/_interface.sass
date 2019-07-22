@@ -105,6 +105,32 @@ button, input, a, li, ul, textarea, select, option
   padding-right: 50px
   margin: 0
   font-size: 2.2em
+  font-weight: 400
+
+.breadcrumbs
+  text-transform: uppercase
+  align-items: center
+  padding-left: 30px
+  margin-bottom: 30px
+  position: relative
+  &__first, &__second
+    background: #f2f2f2
+    display: block
+    padding-right: 15px
+    padding-left: 15px
+    white-space: nowrap
+    font-size: 0.9em
+  &:after
+    content: ""
+    display: block
+    height: 1px
+    background: #cccccc
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    margin-top: -1px
+    z-index: -1
     
 
 .svg

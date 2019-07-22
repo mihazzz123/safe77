@@ -1,0 +1,42 @@
+.brands
+  &-nav
+    flex-direction: column
+    margin-bottom: 50px
+    &__item
+      color: #0c85aa
+      padding-right: 7px
+      margin-bottom: 3px
+  &-items 
+    flex-direction: column
+    &__title
+      color: #0c85aa
+      font-size: 3em
+      margin-bottom: 40px
+    &__box
+      flex-direction: row
+      flex-wrap: wrap
+      width: 100%
+      // justify-content: space-between
+  &-item 
+    flex-direction: column
+    margin-left: 5px
+    margin-right: 5px
+    margin-bottom: 30px
+    width: auto
+    &__img
+      display: block
+      width: 150px
+      height: 150px
+      background: #ffffff
+      padding: 15px
+      margin-bottom: 10px
+      transition: 0.5s
+    &__name
+      transition: 0.5s
+@media (min-width: 1200px)
+  .brands
+    &-item
+      &__img:hover
+        opacity: 0.9
+      &__name:hover
+        text-decoration: underline
