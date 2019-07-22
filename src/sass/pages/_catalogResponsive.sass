@@ -1,0 +1,63 @@
+@media (max-width: 992px)
+  .catalog-box
+    flex-direction: column
+  .filter
+    width: 100%
+    &__title
+      margin-right: auto
+  .catalog
+    &-sort
+      align-items: flex-start
+    &__good
+      max-width: 100%
+      width: 45%
+    &-goods 
+      justify-content: space-around
+@media (max-width: 786px)
+  .breadcrumbs
+    flex-direction: row
+    flex-wrap: wrap 
+    line-height: 25px 
+    &:after
+      width: 20%
+  .high__title
+    padding-left: 20px
+    padding-right: 20px
+  .catalog-sort
+    flex-direction: column
+  .sort-filters
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 100%
+  .catalog-tags
+    width: 100%
+    &__pageMeter
+      &-active
+        margin-left: auto !important
+@media (max-width: 546px)
+  .catalog
+    &__good
+      max-width: 100%
+      width: 90%
+  .sort-filter
+    flex-wrap: wrap
+  .catalog-tags
+    flex-wrap: wrap
+    align-items: flex-start
+    flex-direction: column
+    &__text
+      display: flex
+      width: 100%
+      margin-right: 100%
+    &__tag
+      padding-left: 0
+    &__pageMeter
+      &-active
+        margin-left: 0 !important
+  .catalog-tags__pageMeters
+    width: 100%
+    display: flex
+    margin-right: 100%
+    margin-top: 10px
+
