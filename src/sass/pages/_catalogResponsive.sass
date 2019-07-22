@@ -13,6 +13,10 @@
       width: 45%
     &-goods 
       justify-content: space-around
+      &__wrap
+        padding: 20px 0 20px 0
+    &__buttonMore
+      display: block
 @media (max-width: 786px)
   .breadcrumbs
     flex-direction: row
@@ -40,6 +44,8 @@
     &__good
       max-width: 100%
       width: 90%
+      &:last-child
+        margin-right: 0
   .sort-filter
     flex-wrap: wrap
   .catalog-tags
