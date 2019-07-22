@@ -1,3 +1,11 @@
+@media (max-width: 1200px)
+  .catalog
+    &__good
+      max-width: 33%
+      width: 32%
+      margin: 10px 0 20px 0
+      &:last-child
+        margin-left: 2%
 @media (max-width: 992px)
   .catalog-box
     flex-direction: column
@@ -10,7 +18,10 @@
       align-items: flex-start
     &__good
       max-width: 100%
-      width: 45%
+      width: 46%
+      &:last-child
+        margin-left: 0
+        margin-right: 0 
     &-goods 
       justify-content: space-around
       &__wrap

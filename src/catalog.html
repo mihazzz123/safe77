@@ -1376,7 +1376,6 @@
                     </span>
 
                     <div class="attributive">
-                    <div class="attributive-place">
 
                       <label class="attributive-check dflex">
                         <input type="checkbox" class="attributive-check__checkBox">
@@ -1397,7 +1396,6 @@
                       </div>
                       <button type="submit" class="attributive-result__button button-main margin-auto border-main">Показать</button>
                     </div> 
-                  </>
                   </div>
 
               </li>
@@ -1625,7 +1623,7 @@
                     </div>
                     <button type="submit" class="attributive-result__button button-main margin-auto border-main">Показать</button>
                   </div> 
-                  
+                </div>
               </li>
               <!-- /.filter-attributive -->
               <li class="filter-attributive crackResistance">
@@ -1667,8 +1665,8 @@
                       <i class="attributive-check__flag"></i>
                       <span class="attributive-check__text">30б</span>
                     </label>
-    
-
+                    
+                    
                   <div class="attributive-result">
                     <div class="attributive-result__text flex-center">
                       <span class="attributive-result__tag">Найдено товаров:</span>
@@ -1676,12 +1674,14 @@
                     </div>
                     <button type="submit" class="attributive-result__button button-main margin-auto border-main">Показать</button>
                   </div> 
-                  </div>
+                </div>
 
               </li>
               <!-- /.filter-attributive -->
-              <button class="button-main filter__button border-main filter__button-first">Подобрать</button>
-              <button class="filter__button filter__button-second">Сбросить фильтр</button>
+              <li><a href="#" class="button-main filter__button border-main filter__button-first">Подобрать</a></li>
+              <li><a href="#" class="filter__button filter__button-second">Сбросить фильтр</a></li>
+              
+             
             </menu>
             <!-- /.filter-box -->
 
@@ -1727,28 +1727,28 @@
                 </form>
               </div>
               <!-- /.sort-filter -->
-
             </div>
+
 
             <div class="catalog-tags color-main dflex">
               
-                <div class="catalog-tags__text">
-                    <span class="catalog-tags__tag">Показано </span>
-                    <!-- /.catalod-tags__tag -->
-                    <p class="catalog-tags__value"> 1 - 29 </p>
-                    <!-- /.catalog-tags__value -->
-                    <span class="catalog-tags__tag dflex">(весего товаров <p class="catalog-tags__value">29)</p></span>
-                    <!-- /.catalod-tags__tag -->
-                </div>
-                  
-                <div class="catalog-tags__pageMeters"><a class="catalog-tags__pageMeter catalog-tags__pageMeter-active catalog-tags__pageMeter-active">1</a>
-                  <a class="catalog-tags__pageMeter">2</a>
-                  <a class="catalog-tags__pageMeter">Все</a>
-                  <!-- /.catalog-tags__pageMeter -->
-                </div>
-                  
-                </div>
-                <!-- /.catalog-tags -->
+              <div class="catalog-tags__text">
+                  <span class="catalog-tags__tag">Показано </span>
+                  <!-- /.catalod-tags__tag -->
+                  <i class="catalog-tags__value"> 1 - 29 </i>
+                  <!-- /.catalog-tags__value -->
+                  <span class="catalog-tags__tag dflex">(весего товаров <i class="catalog-tags__value">29)</i></span>
+                  <!-- /.catalod-tags__tag -->
+              </div>
+                
+              <div class="catalog-tags__pageMeters"><a class="catalog-tags__pageMeter catalog-tags__pageMeter-active catalog-tags__pageMeter-active">1</a>
+                <a class="catalog-tags__pageMeter">2</a>
+                <a class="catalog-tags__pageMeter">Все</a>
+                <!-- /.catalog-tags__pageMeter -->
+              </div>
+                
+            </div>
+            <!-- /.catalog-tags -->
 
           </div>
           <!-- /.catalog-sort dflex jcontent-sb -->
@@ -2480,9 +2480,9 @@
               <div class="catalog-tags__text">
                 <span class="catalog-tags__tag">Показано </span>
                 <!-- /.catalod-tags__tag -->
-                <p class="catalog-tags__value"> 1 - 29 </p>
+                <i class="catalog-tags__value"> 1 - 29 </i>
                 <!-- /.catalog-tags__value -->
-                <span class="catalog-tags__tag dflex">(весего товаров <p class="catalog-tags__value">29)</p></span>
+                <span class="catalog-tags__tag dflex">(весего товаров <i class="catalog-tags__value">29)</i></span>
                 <!-- /.catalod-tags__tag -->
               </div>
                     
@@ -2497,7 +2497,6 @@
         
           </div>
           <!-- /.catalog-goods -->
-        </div>
         </div>
         <!-- /.catalog-box -->
 
@@ -2571,7 +2570,7 @@
     </script>
    
    <script src="js/jquery-3.4.1.min.js"></script>
-   <script type="text/javascript" src="js/hammer.js"></script>
+   <script src="js/hammer.js"></script>
    <script src="js/jquery-ui.js"></script>
    <script src="js/main.js"></script>
 

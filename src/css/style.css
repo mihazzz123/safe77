@@ -2472,7 +2472,7 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus, select:f
   display: none;
   position: absolute;
   width: calc(100% - 10px);
-  top: 265px;
+  top: 245px;
 }
 
 .more-button, .tdslide-onclick-button {
@@ -2964,6 +2964,7 @@ footer ul {
   padding-right: 10px;
   margin: 0;
   font-size: 1em;
+  font-style: normal;
 }
 
 .catalog-tags__pageMeter {
@@ -3008,10 +3009,9 @@ footer ul {
 }
 
 .catalog__good {
-  max-width: 49%;
-  width: 29%;
-  height: auto;
-  margin: 10px;
+  max-width: 350px;
+  width: 32%;
+  margin: 10p 0;
 }
 
 .catalog__good:last-child {
@@ -3352,6 +3352,17 @@ footer ul {
           transform: rotate(0deg);
 }
 
+@media (max-width: 1200px) {
+  .catalog__good {
+    max-width: 33%;
+    width: 32%;
+    margin: 10px 0 20px 0;
+  }
+  .catalog__good:last-child {
+    margin-left: 2%;
+  }
+}
+
 @media (max-width: 992px) {
   .catalog-box {
     -webkit-box-orient: vertical;
@@ -3372,7 +3383,11 @@ footer ul {
   }
   .catalog__good {
     max-width: 100%;
-    width: 45%;
+    width: 46%;
+  }
+  .catalog__good:last-child {
+    margin-left: 0;
+    margin-right: 0;
   }
   .catalog-goods {
     -ms-flex-pack: distribute;
