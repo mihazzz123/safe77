@@ -9,6 +9,7 @@
 
   <link href="img/favicon.png" rel="icon">
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!-- Собственные стили -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -1319,6 +1320,7 @@
         <div class="breadcrumbs dflex">
           <a href="index.html" class="breadcrumbs__first">Главная</a>
            <!-- /.breadcrumbs__first -->
+           <svg class="breadcrumbs__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.04 172"><title>icon-next</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M1.51,8.4A4.83,4.83,0,0,1,0,4.87,4.31,4.31,0,0,1,1.51,1.51,4.75,4.75,0,0,1,5,0,4.74,4.74,0,0,1,8.4,1.51L89.53,82.64A4.31,4.31,0,0,1,91,86a4.83,4.83,0,0,1-1.51,3.53l-81.13,81a3.61,3.61,0,0,1-1.6,1.18A5.16,5.16,0,0,1,5,172a5.63,5.63,0,0,1-1.93-.34,3.64,3.64,0,0,1-1.6-1.18,4.57,4.57,0,0,1-1.34-3.36,5.15,5.15,0,0,1,1.34-3.53L79.11,86Z"/></g></g></svg>
            <a href="" class="breadcrumbs__second text-center">Изготовление сейфов на заказ</a> 
            <!-- /.breadcrumbs__second -->
           </div>
@@ -1347,7 +1349,7 @@
 
                 
                   
-                  <div class="attributive__slider attributive">
+                  <div class="attributive__slider attributive attributive-active">
                     <div class="attributive-inputs dflex jcontent-sb">
                       <input disabled type="number" class="result1 attributive__input price__input" placeholder="2800">
                       <input disabled type="number" class="result2 attributive__input price__input" placeholder="44300">
@@ -1356,7 +1358,7 @@
                       <div class="attributive__point ui-slider-handle"></div>
                       <div class="attributive__point ui-slider-handle"></div>
                     </div>
-                    <div class="attributive-result">
+                    <div class="attributive-result attributive-result0">
                       <div class="attributive-result__text flex-center">
                         <span class="attributive-result__tag">Найдено товаров:</span>
                         <p class="attributive-result__end">48</p>
@@ -1735,14 +1737,15 @@
               <div class="catalog-tags__text">
                   <span class="catalog-tags__tag">Показано </span>
                   <!-- /.catalod-tags__tag -->
-                  <i class="catalog-tags__value"> 1 - 29 </i>
+                  <i class="catalog-tags__value catalog-tags__value-first"> 1 - 29 </i>
                   <!-- /.catalog-tags__value -->
-                  <span class="catalog-tags__tag dflex">(весего товаров <i class="catalog-tags__value">29)</i></span>
+                  <span class="catalog-tags__tag dflex">(весего товаров <i class="catalog-tags__value">29</i>)</span>
                   <!-- /.catalod-tags__tag -->
               </div>
                 
               <div class="catalog-tags__pageMeters"><a class="catalog-tags__pageMeter catalog-tags__pageMeter-active catalog-tags__pageMeter-active">1</a>
                 <a class="catalog-tags__pageMeter">2</a>
+                <a class="catalog-tags__pageMeter">3</a>
                 <a class="catalog-tags__pageMeter">Все</a>
                 <!-- /.catalog-tags__pageMeter -->
               </div>
@@ -2480,14 +2483,16 @@
               <div class="catalog-tags__text">
                 <span class="catalog-tags__tag">Показано </span>
                 <!-- /.catalod-tags__tag -->
-                <i class="catalog-tags__value"> 1 - 29 </i>
+                <i class="catalog-tags__value catalog-tags__value-first"> 1 - 29 </i>
                 <!-- /.catalog-tags__value -->
                 <span class="catalog-tags__tag dflex">(весего товаров <i class="catalog-tags__value">29)</i></span>
                 <!-- /.catalod-tags__tag -->
               </div>
                     
-              <div class="catalog-tags__pageMeters catalog-tags__pageMeters-second"><a class="catalog-tags__pageMeter catalog-tags__pageMeter-active">1</a>
+              <div class="catalog-tags__pageMeters catalog-tags__pageMeters-second">
+                <a class="catalog-tags__pageMeter catalog-tags__pageMeter-active">1</a>
                 <a class="catalog-tags__pageMeter">2</a>
+                <a class="catalog-tags__pageMeter">3</a>
                 <a class="catalog-tags__pageMeter">Все</a>
                 <!-- /.catalog-tags__pageMeter -->
               </div>
@@ -2557,22 +2562,13 @@
       <div class="copyright-title">Copyright © 2006-2019. Интернет-магазин сейфов www.safe77.ru</div>
       <div class="copyright-desc">Данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации</div>
     </div>
-    <script src="js/blazy.js"></script>
-    <script>
-      var bLazy = new Blazy({
-              success: function(element){
-            setTimeout(function(){
-          var parent = element.parentNode;
-          parent.className = parent.className.replace(/\bloading\b/,'');
-            }, 200);
-              }
-          });
-    </script>
-   
-   <script src="js/jquery-3.4.1.min.js"></script>
-   <script src="js/hammer.js"></script>
-   <script src="js/jquery-ui.js"></script>
-   <script src="js/main.js"></script>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

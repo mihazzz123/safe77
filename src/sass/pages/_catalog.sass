@@ -5,8 +5,9 @@
     margin-bottom: 50px
   &-sort 
     width: auto
+    align-items: flex-start
     flex-direction: row
-    margin-bottom: 50px
+    margin-bottom: 40px
   &-tags 
     align-items: center
     &_second
@@ -17,23 +18,24 @@
     &__pageMeters-second
       margin-left: auto 
     &__tag
-      padding-left: 10px
-      font-size: 1em
+      font-size: 0.9em
     &__value
-      padding-left: 10px
-      padding-right: 10px
       margin: 0
       font-size: 1em
       font-style: normal
+      &-first
+        padding-left: 5px
+        padding-right: 5px
     &__pageMeter
       display: block
       height: 25px
       min-width: 20px
       text-align: center
       line-height: 25px
-      font-size: 1.2em
+      font-size: 1em
       cursor: pointer
-      margin-left: 10px
+      margin-left: 1px
+      transition: .25s ease-in-out
       &-active
         margin-left: 30px
         background: $color-main
@@ -48,10 +50,10 @@
       flex-direction: column
       padding: 20px 0 20px 20px
   &__good
-    max-width: 350px
     width: 32%
-    // min-width: 270px
-    margin: 10p 0
+    max-width: 350px
+    max-height: 630px
+    // margin: 10px 0
     &:last-child
       margin-right: auto
   &__buttonMore
@@ -70,6 +72,7 @@
   height: auto
   transition: .5s
 .tdslide:hover
+  max-height: 785px
   .good__desc
     height: auto
     max-height: 200px
@@ -83,7 +86,7 @@
     display: flex
     flex-direction: row
     align-items: center
-    margin: 10px 0
+    margin-bottom: 10px
     &__text
       margin-right: 10px
   &-select 
@@ -102,11 +105,19 @@
 .filter 
   background: #fff
   width: 30%
+  height: 100%
+  max-height: 130px
+  overflow: hidden
   padding: 30px
   font-size: 1em
+  transition: .5s ease-in-out
+  &_active
+    height: 100%
+    max-height: 5000px
   &-title
     border-bottom: 1px solid #ccc
-    padding-bottom: 40px
+    padding-bottom: 50px
+    padding-top: 20px
     font-weight: 600
   &__icon
     width: 35px
@@ -193,6 +204,10 @@
     padding-bottom: 10px
     border-top: 5px solid $color-main
     position: relative
+    max-height: 0
+    transform: scaleY(0)
+    transition: .25s ease-in-out
+    transform-origin: center top
     &:after
       content: ''
       width: 0
@@ -203,6 +218,9 @@
       position: absolute
       left: 30px
       top: -15px
+    &_active
+      max-height: 100%
+      transform: scaleY(1)
     &__tag
       font-size: 1em
       margin-right: 5px
@@ -235,7 +253,10 @@
   background: url(../img/catalog/icons_attributive.png)
   background-size: 300%
   background-position: 1px 0
-
+.breadcrumbs__chevron
+  width: 0.9em
+  height: 0.9em
+  background: #f2f2f2
 .svg-filter
   width: 15px
   height: 15px
