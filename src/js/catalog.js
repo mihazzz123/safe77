@@ -1,5 +1,36 @@
 $(document).ready(function() {
 
+  if(window.matchMedia('(max-width: 992px)').matches){
+    $('.filter').removeClass('filter_active');
+  };
+
+  var btnShowAll = $('.showAll'),
+      btnShowMore = $('.showMore'),
+      btnHideAll = $('.hideAll'),
+      secFilter = $('.filterSecond');
+
+      btnShowMore.on('click', function() {
+        secFilter.addClass('filterSecond-activeShowMore');
+        btnShowMore.hide();
+        btnShowAll.show();
+        btnHideAll.show();
+      });
+      btnShowAll.on('click', function() {
+        secFilter.removeClass('filterSecond-activeShowMore');
+        secFilter.addClass('filterSecond-activeShowAll');
+        btnHideAll.show();
+        btnShowAll.hide();
+      });
+      btnHideAll.on('click', function() {
+        secFilter.removeClass('filterSecond-activeShowAll');
+        secFilter.removeClass('filterSecond-activeShowMore');
+        btnHideAll.hide();
+        btnShowAll.hide();
+        btnShowMore.show();
+      });
+
+
+
   $('.filter-title').on('click', function() {
     $('.filter').toggleClass('filter_active');
   });
