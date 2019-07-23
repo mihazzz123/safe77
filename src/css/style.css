@@ -3002,6 +3002,7 @@ footer ul {
   margin: 0;
   font-size: 1em;
   font-style: normal;
+  padding-left: 5px;
 }
 
 .catalog-tags__value-first {
