@@ -2301,7 +2301,6 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus, select:f
 }
 
 .sdslider-arrow-right {
-  z-index: -2;
   right: 10px;
 }
 
@@ -2486,7 +2485,7 @@ button:focus, input:focus, a:focus, li:focus, ul:focus, textarea:focus, select:f
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  padding-top: 50px;
+  padding-top: 30px;
   background-color: #fff;
 }
 
@@ -3087,10 +3086,10 @@ footer ul {
 
 .catalog__good {
   width: 32%;
-}
-
-.catalog__good:last-child {
-  margin-right: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .catalog__buttonMore {
@@ -3106,22 +3105,6 @@ footer ul {
 
 .catalog__buttonMore svg {
   margin-left: 10px;
-}
-
-.good__desc {
-  max-height: 0;
-  height: auto;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.tdslide:hover {
-  max-height: 785px;
-}
-
-.tdslide:hover .good__desc {
-  height: auto;
-  max-height: 200px;
 }
 
 .sort-filters {
@@ -3525,6 +3508,26 @@ footer ul {
   }
 }
 
+@media (min-width: 1400px) {
+  .catalog__good {
+    width: 23%;
+  }
+  .catalog__good .tdslide-buybuttons {
+    width: calc(100% - 20px);
+    top: 24%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .catalog__good {
+    width: 32%;
+  }
+  .catalog__good .tdslide-buybuttons {
+    width: calc(100% - 20px);
+    top: 24%;
+  }
+}
+
 @media (max-width: 1200px) {
   .catalog__good {
     width: 32%;
@@ -3532,6 +3535,10 @@ footer ul {
   }
   .catalog__good:last-child {
     margin-left: 2%;
+  }
+  .catalog__good .tdslide-buybuttons {
+    width: calc(100% - 20px);
+    top: 26%;
   }
   .filterSecond {
     height: 45px;

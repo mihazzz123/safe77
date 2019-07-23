@@ -12,14 +12,28 @@
       background: #f0f0f0
       color: #000000
       cursor: pointer
+@media (min-width: 1400px)
+    .catalog__good
+      width: 23%
+      & .tdslide-buybuttons
+        width: calc(100% - 20px)
+        top: 24%
+@media (max-width: 1400px)
+    .catalog__good
+      width: 32%
+      & .tdslide-buybuttons
+        width: calc(100% - 20px)
+        top: 24%
 @media (max-width: 1200px)
   .catalog
     &__good
-      // max-width: 33%
       width: 32%
       margin: 10px 0 20px 0
       &:last-child
         margin-left: 2%
+      & .tdslide-buybuttons
+        width: calc(100% - 20px)
+        top: 26%
   .filterSecond
     height: 45px
     &-activeShowMore
