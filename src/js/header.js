@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+  //Кнопка на верх
+  $('#btnTop').fadeOut();
+  $(window).scroll(function () { 
+    if($(this).scrollTop() > 400){
+    $('#btnTop').fadeIn();
+    } else {
+    $('#btnTop').fadeOut();
+    }
+    });
+    $('#btnTop').click(function() {
+    $('body,html').animate({scrollTop:0},900);
+  });
+
   // Фома поиска
   var searchOpen = $('.header-search'),
       search = $('.header-form'),

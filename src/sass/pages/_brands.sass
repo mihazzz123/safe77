@@ -2,6 +2,9 @@
   &-nav
     flex-direction: column
     margin-bottom: 50px
+    &__en
+      flex-wrap: wrap
+      margin-bottom: 3px
     &__item
       color: #0c85aa
       padding-right: 7px
@@ -11,7 +14,8 @@
     &__title
       color: #0c85aa
       font-size: 3em
-      margin-bottom: 40px
+      margin-bottom: 35px
+      margin-top: 10px
     &__box
       flex-direction: row
       flex-wrap: wrap
@@ -21,22 +25,24 @@
     flex-direction: column
     padding-left: 7.5px
     padding-right: 7.5px
-    margin-bottom: 50px
+    // margin-bottom: 50px
     width: 14.2%
+    &__imgBox
+      width: 100%
+      height: 100%
+      background: #ffffff
+      margin-bottom: 10px
     &__img
       display: block
-      width: 150px
-      height: 150px
-      background: #ffffff
-      padding: 15px
-      margin-bottom: 10px
+      width: 100%
+      height: 100%
+      padding: 20px
       transition: 0.5s
     &__name
+      display: block
       transition: 0.5s
-@media (min-width: 1200px)
-  .brands
-    &-item
-      &__img:hover
-        opacity: 0.9
-      &__name:hover
-        text-decoration: underline
+      height: 40px
+
+
+      
+  

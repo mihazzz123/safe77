@@ -20,6 +20,24 @@ button, input, a, li, ul, textarea, select, option
     outline: none
   &:focus
     outline: none
+#btnTop
+  width: 55px
+  height: 55px
+  background: $color-main
+  flex-direction: column
+  position: fixed
+  bottom: 15px
+  right: 10px
+  z-index: 5
+.goTop
+  transform: rotate(-90deg)
+  fill: #ffffff
+  width: 20px
+  height: 20px
+  margin-bottom: 5px
+  &-text
+    color: #ffffff
+    font-size: 0.85em
 
 .container
   margin: 0 3% 
@@ -152,6 +170,8 @@ button, input, a, li, ul, textarea, select, option
 
 // HOVER
 @media (min-width: 1200px)
+  #btnTop:hover
+    background: darken($color-main, 4%)
   .header-form__button:hover
     background: $color-main
     color: #ffffff
