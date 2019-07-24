@@ -2942,9 +2942,6 @@ footer ul {
   .m_header__logo {
     width: 40%;
   }
-  .m_header-links {
-    width: 20%;
-  }
   .m_header-callback {
     width: 40%;
   }
@@ -2976,6 +2973,9 @@ footer ul {
   }
   .m_header-callback {
     display: none;
+  }
+  .m_header-links {
+    text-align: right;
   }
   .header-modal__title {
     font-size: 1.4em;
