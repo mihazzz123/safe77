@@ -1,0 +1,75 @@
+@media (min-width: 1200px)
+  .news
+    &-item 
+      padding: 50px
+      &__title:hover 
+        color: $color-main
+@media (max-width: 1200px)
+  .news
+    &-item 
+      padding: 40px
+      margin-bottom: 35px
+      &__title
+        margin-bottom: 30px
+      &__btn
+        bottom: 40px
+        right: 40px
+@media (max-width: 992px)
+  .news
+    &-item 
+      padding: 30px
+      margin-bottom: 25px
+      &__title
+        margin-bottom: 20px
+@media (max-width: 786px)
+  .news
+    &-item 
+      padding: 20px
+      margin-bottom: 15px
+      &__title
+        margin-bottom: 20px
+      &__btn
+        display: none
+      &__desc
+        font-size: 1.1em
+@media (max-width: 546px)
+  .news
+    &-item 
+      padding: 10px
+      margin-bottom: 10px
+      &__title
+        font-size: 1.4em
+        margin-bottom: 10px
+
+// Страница с новостью
+@media (min-width: 1200px)
+  .page-news
+    &__btn:hover
+      background: $color-main
+      color: #ffffff
+@media (max-width: 1200px)
+  .page-news
+    font-size: 1.2em
+    &__title
+      margin-bottom: 30px
+@media (max-width: 992px)
+  .page-news
+    font-size: 1em
+    &__btn
+      padding: 25px
+    &__title
+      margin-bottom: 25px
+@media (max-width: 786px)
+  .page-news
+    & article
+      margin-bottom: 30px
+    &__btns
+      flex-direction: column
+      margin-bottom: 50px
+    &__btn
+      padding: 15px
+      margin-bottom: 10px
+@media (max-width: 992px)
+  .page-news
+    font-size: 1.2em
+
