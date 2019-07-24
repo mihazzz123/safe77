@@ -3239,7 +3239,7 @@ footer ul {
   height: 100%;
   max-height: 130px;
   overflow: hidden;
-  padding: 30px;
+  padding: 20px 30px;
   font-size: 1em;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -3251,9 +3251,8 @@ footer ul {
 }
 
 .filter-title {
-  border-bottom: 1px solid #ccc;
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 30px;
   font-weight: 600;
 }
 
@@ -3286,6 +3285,10 @@ footer ul {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   border-bottom: 1px solid #ccc;
+}
+
+.filter-attributive:nth-child(1) {
+  border-top: 1px solid #ccc;
 }
 
 .filter-attributive__title {
@@ -3617,6 +3620,16 @@ footer ul {
   .filterSecond-activeShowAll {
     height: auto;
   }
+  .filter {
+    max-height: 100px;
+    padding: 30px 30px;
+  }
+  .filter_active {
+    max-height: 5000px;
+  }
+  .filter-title {
+    padding: 0 0 35px 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3767,6 +3780,17 @@ footer ul {
   .filterSecond-activeShowAll {
     height: auto;
   }
+  .filter {
+    max-height: 90px;
+    padding: 30px 20px;
+  }
+  .filter_active {
+    max-height: 5000px;
+  }
+  .filter-title {
+    padding: 0 0 25px 0;
+    border-bottom: 0;
+  }
 }
 
 @media (max-width: 546px) {
@@ -3780,18 +3804,41 @@ footer ul {
   .filterSecond {
     display: none !important;
   }
+  .filter {
+    max-height: 90px;
+    padding: 30px 20px;
+  }
+  .filter_active {
+    max-height: 5000px;
+  }
+  .filter-title {
+    padding: 0 0 25px 0;
+    border-bottom: 0;
+  }
   .sort-filter {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 70%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 10px 0 10px;
     font-size: 1.2em;
+    margin-bottom: 5px;
   }
   .sort-filters {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .sort-filter__text {
+    margin-bottom: 5px;
+  }
+  .sort-filter__form {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .sort-select {
+    width: 100%;
   }
   .catalog-tags {
     -ms-flex-wrap: wrap;
@@ -3825,6 +3872,10 @@ footer ul {
     display: flex;
     margin-right: 100%;
     margin-top: 10px;
+  }
+  .good-img {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
