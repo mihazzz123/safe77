@@ -47,7 +47,7 @@
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    justify-content: space-between
+    // justify-content: space-between
     &__wrap
       width: 100%
       flex-direction: column
@@ -59,7 +59,7 @@
     padding-left: 10px
     padding-right: 10px
   &__buttonMore
-    display: none
+    display: block
     padding: 20px
     text-align: center
     background: #ffffff
@@ -69,16 +69,51 @@
     vertical-align: center
     & svg 
       margin-left: 10px
-// .good__desc
-//   max-height: 0
-//   height: auto
-//   transition: .5s
-// .tdslide:hover
-//   max-height: 785px
-//   .good__desc
-//     height: auto
-//     max-height: 200px
 
+.good
+  & .label
+    padding-bottom: 5px
+  padding: 0
+  transition: 0.4s
+  & li 
+    margin: 7px 0
+    height: auto
+  &:hover
+    box-shadow: 0 0 14px black
+    & .good-descAdd
+      box-shadow: 0 10px 10px 0 black
+  &-wrap
+    padding: 0
+    box-shadow: none !important
+  &-btnBuy
+    bottom: 0
+    width: 100%
+    top: calc(100% - 50px)
+  &-icon 
+    left: 0
+  &-img
+    position: relative
+    // height: 300px
+    &:after
+      content: ""
+      height: 1px
+      width: 100%
+      bottom: 0
+      position: absolute
+      background: $color-main
+  &-details
+    position: relative
+  &-desc
+    padding: 0
+  &-descAdd
+    transition: all 0s
+    display: block
+    position: absolute
+    background: #ffffff
+    width: 100%;
+    left: 0
+    z-index: 1
+    padding: 10px
 .sort
   &-filters
     font-size: 0.9em

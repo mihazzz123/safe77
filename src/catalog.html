@@ -1826,19 +1826,21 @@
           <!-- /.catalog-sort dflex jcontent-sb -->
 
           <div class="catalog-goods">
-
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+            
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -1854,79 +1856,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -1942,79 +1952,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2030,79 +2048,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2118,79 +2144,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2206,79 +2240,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2294,79 +2336,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2382,79 +2432,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2470,79 +2528,87 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
+           
+            <div class="tdslide catalog__good good">
+              <div class="tdslide-wrapper good-wrap">
+                <div class="tdslide-img good-img">
+                  <img class="b-lazy good__image" src="img/placeholder.svg" data-src="img/catalog/promo/catalog_img1.jpg" data-src-second="img/catalog/promo/catalog_img.jpg" alt="Image">
+                  <div class="tdslide-icons good-icon">
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+                      <style type="text/css">
+                        .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
+                      </style>
+                      <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
                     <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>Law</title>
                       <desc>A line styled icon from Orion Icon Library.</desc>
                       <path data-name="layer2"
@@ -2558,155 +2624,74 @@
                       stroke-linecap="round"></path>
                     </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
                   </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
+                  <div class="tdslide-buybuttons good-btnBuy">
+                    <a href="" class="tdslide-buy-button main-button">Купить</a>
+                    <a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a>
                   </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
+                </div>
+                <div class="tdslide-details good-details">
+                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
+                  <div class="tdslide-buttons">
+                    <a href="" class="instock-button main-button">В наличии</a>
+                    <a href="" class="more-button main-button">Подробнее..</a>
+                  </div>
+                  <div class="tdslide-desc good-desc">
+                    <ul>
+                      <li>
+                        <div class="label">Цена:</div>
+                        <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
+                      </li>
+                      <li>
+                        <div class="label">Взломостойкость:</div>
+                        <div class="value">1 класс</div>
+                      </li>
+                      <li>
+                        <div class="label">Огнестойкость:</div>
+                        <div class="value">60Б</div>
+                      </li>
+                      <li>
+                        <div class="label">Тип замка:</div>
+                        <div class="value">Электронный</div>
+                      </li>
+                      <li>
+                        <div class="label">Внешние размеры (ВхШхГ):</div>
+                        <div class="value">475х580х505</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-desc-addition good-descAdd">
+                    <ul>
+                      <li>
+                        <div class="label">Количество полок (шт):</div>
+                        <div class="value">1</div>
+                      </li>
+                      <li>
+                        <div class="label">Вес (кг):</div>
+                        <div class="value">78.00</div>
+                      </li>
+                      <li>
+                        <div class="label">Гарантия:</div>
+                        <div class="value">5 лет</div>
+                      </li>
+                      <li>
+                        <div class="label">Производитель:</div>
+                        <div class="value">Onix</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tdslide-mobbutons">
+                    <div class="tdslide-mobbutons-line"></div>
+                    <div class="flex-center tdslide-mobbutons-icons">
+                      <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
+                      <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+                    </div>
+                    <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="tdslide catalog__good">
-                <div class="tdslide-wrapper">
-                  <div class="tdslide-icons">
-                    <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 32 32" style="" stroke="#fff" xml:space="preserve">
-                    <style type="text/css">
-                      .st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10;}
-                    </style>
-                    <path class="st0" d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                    </svg></a><a href="" class="flex-center tdslide-icon-2">В закладки</a></div>
-                    <div class="dflex tdslide-icon"><a href="" class="flex-center tdslide-icon-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" 
-                    role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Law</title>
-                      <desc>A line styled icon from Orion Icon Library.</desc>
-                      <path data-name="layer2"
-                      fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="2" d="M32 16v40m-10 0h20M28 12H12L2 32"
-                      stroke-linejoin="round" stroke-linecap="round"></path>
-                      <circle data-name="layer2" cx="32" cy="12" r="4" fill="none" stroke="#ccc"
-                      stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></circle>
-                      <path data-name="layer2" fill="none" stroke="#ccc" stroke-miterlimit="10"
-                      stroke-width="2" d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin="round"
-                      stroke-linecap="round"></path>
-                      <path data-name="layer1" d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z"
-                      fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
-                      stroke-linecap="round"></path>
-                    </svg></a><a href="" class="flex-center tdslide-icon-2">В сравнение</a></div>
-                  </div>
-                  <div class="tdslide-img"><img class="b-lazy" src="img/placeholder.svg" data-src="img/main/slider_3/slide-3.jpg" alt="Image"></div>
-                  <div class="tdslide-line"></div>
-                  <div class="tdslide-details">
-                  <div class="tdslide-title">Сейф VALBERG T-17 EL</div>
-                    <div class="tdslide-buttons"><a href="" class="instock-button main-button">В наличии</a><a href="" class="more-button main-button">Подробнее</a></div>
-                    <div class="tdslide-desc">
-                      <ul>
-                        <li>
-                          <div class="label">Цена:</div>
-                          <div class="value"><span class="value-price">29 500 </span><sup> руб</sup></div>
-                        </li>
-                        <li>
-                          <div class="label">Взломостойкость:</div>
-                          <div class="value">1 класс</div>
-                        </li>
-                        <li>
-                          <div class="label">Огнестойкость:</div>
-                          <div class="value">60Б</div>
-                        </li>
-                        <li>
-                          <div class="label">Тип замка:</div>
-                          <div class="value">Электронный</div>
-                        </li>
-                        <li>
-                          <div class="label">Внешние размеры (ВхШхГ):</div>
-                          <div class="value">475х580х505</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-desc-addition good__desc">
-                      <ul>
-                        <li>
-                          <div class="label">Количество полок (шт):</div>
-                          <div class="value">1</div>
-                        </li>
-                        <li>
-                          <div class="label">Вес (кг):</div>
-                          <div class="value">78.00</div>
-                        </li>
-                        <li>
-                          <div class="label">Гарантия:</div>
-                          <div class="value">5 лет</div>
-                        </li>
-                        <li>
-                          <div class="label">Производитель:</div>
-                          <div class="value">Onix</div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tdslide-mobbutons">
-                      <div class="tdslide-mobbutons-line"></div>
-                      <div class="flex-center tdslide-mobbutons-icons">
-                        <svg class="tdslide-mobbutons-icons__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67"><title>+</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M67,38H0V29H67Z"/><path d="M38,0V20.62H29V0Z"/><path d="M29,67V46.34h9V67Z"/></g></g></svg>
-                        <svg class="tdslide-mobbutons-icons__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.74 53.74"><title>X</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-                      </div>
-                      <div class="flex-center tdslide-mobbuton"><span class="tdslide-mobbutons-icons__open">РАЗВЕРНУТЬ</span><span class="tdslide-mobbutons-icons__close">СКРЫТЬ</span></div>
-                    </div>
-                  </div>
-                  <div class="tdslide-buybuttons"><a href="" class="tdslide-buy-button main-button">Купить</a><a href="" class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
-                </div>
-              </div>
+           
+              
               
             </div>
             <!-- /.catalog__good -->
@@ -2737,6 +2722,29 @@
                 
               </div>
               <!-- /.catalog-tags -->
+
+            <div class="main-desc" style="background: none; padding: 30px 0 0 0; margin-bottom: 0;">
+
+              <p style="margin-bottom: 20px;">В интернет-магазине Safe77 клиенты могут купить сейфы тайники от российских, китайских и европейских изготовителей по привлекательным ценам с сохранением безупречного качества. Покупателям доступен обширный модельный и размерный ряд изделий, заказать которые можно на сайте или в телефонном режиме. Доставка по Москве и регионам дополняется сниженной за счет скидок стоимостью, делая вашу покупку выгоднее.
+              </p>
+              <h2>Как подобрать модель</h2>
+              <p style="margin-bottom: 20px; margin-top: 30px;">Выбирая сейф тайник, обратите внимание на:</p>
+              <ul>
+                <li>Конструктивное и дизайнерское решение. Изделие может быть имитацией книги, розетки или вентиляции, встраиваться в пол (при условии декора в виде дополнительного покрытия, например, ковра).</li>
+                <li>Размеры хранилища. Подбирайте, исходя из объема хранимого.</li>
+                <li>Тип замка. С ключом, кодовый (механический и электронный), комбинированный.</li>
+              </ul>
+              <p>Тип замка. С ключом, кодовый (механический и электронный), комбинированный.</p>
+              <h2>Плюсы приобретения в компании Safe77</h2>
+              <p style="margin-bottom: 25px;">Покупка в нашем интернет-магазине приносит покупателю ряд преимуществ:</pstyle="margin-t:>
+              <ol>
+                <li><span class="flex-center">1</span>Выбор из многогранного ассортимента.</li>
+                <li><span class="flex-center">2</span>Продукция международного качества.</li>
+                <li><span class="flex-center">3</span>Антимонопольные цены, скидки, акции и распродажи.</li>
+                <li><span class="flex-center">4</span>Консультирование и помощь в подборе.</li>
+              </ol>
+              <p>Для клиентов компания Safe77 организует оперативную адресную доставку. Предоставляется услуга индивидуального изготовления сейфа-тайника.</p>
+            </div>
         
           </div>
           <!-- /.catalog-goods -->

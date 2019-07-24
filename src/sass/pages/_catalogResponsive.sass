@@ -15,25 +15,15 @@
 @media (min-width: 1400px)
     .catalog__good
       width: 23%
-      & .tdslide-buybuttons
-        width: calc(100% - 20px)
-        top: 24%
 @media (max-width: 1400px)
     .catalog__good
       width: 32%
-      & .tdslide-buybuttons
-        width: calc(100% - 20px)
-        top: 24%
 @media (max-width: 1200px)
   .catalog
     &__good
-      width: 32%
-      margin: 10px 0 20px 0
+      width: 48%
       &:last-child
         margin-left: 2%
-      & .tdslide-buybuttons
-        width: calc(100% - 20px)
-        top: 26%
   .filterSecond
     height: 45px
     &-activeShowMore
@@ -81,6 +71,10 @@
         padding: 20px 0 20px 0
     &__buttonMore
       display: block
+    .good-descAdd
+      position: relative
+      box-shadow: none !important
+      padding: 5px
   .filterSecond
     height: 50px
     &-activeShowMore
