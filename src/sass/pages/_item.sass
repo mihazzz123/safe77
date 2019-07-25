@@ -1,0 +1,221 @@
+.item
+  &-box 
+    width: 100%
+    background: #ffffff
+    padding: 20px
+  &-slider
+    flex-basis: 35%
+    border-right: 1px solid #cccccc
+  &-text 
+    padding-left: 10px
+    flex-basis: 65%
+    flex-direction: column
+    &__title
+      border-bottom: 1px solid $color-main
+      font-size: 1.8em
+      margin: 0
+      padding-bottom: 20px
+      font-weight: 400
+    &__brand
+      padding-top: 20px
+      padding-bottom: 20px
+      border-bottom: 1px solid #cccccc
+      &Img
+        padding-left: 20px
+        padding-right: 20px
+        max-height: 80px
+      &Link 
+        display: inline-block
+        text-transform: uppercase
+        border-bottom: 1px dashed #000000
+        transition: 0.5s
+        &s 
+          flex-direction: column
+          justify-content: space-around
+          align-items: flex-start
+    &__btn
+      background: #f2f2f2
+      color: $color-text
+      width: 24%
+      text-align: center
+      padding: 15px
+      transition: 0.3s 
+      border: 0
+      &s
+        padding-top: 20px
+        padding-bottom: 5px
+        border-bottom: 2px solid $color-main
+      &Icon 
+        margin-left: 5px
+      &_active
+        background: $color-main !important
+        color: #ffffff
+  &-price 
+    padding-bottom: 15px
+    padding-top: 15px
+    border-bottom: 1px solid #cccccc
+    font-size: 1.2em
+    & p 
+      margin-top: 0
+      margin-bottom: 0
+    &__status
+      padding-left: 10px
+      padding-right: 10px
+    &__price
+      width: 60%
+      align-items: center
+      padding-left: 10px
+      padding-right: 10px
+      padding-top: 15px
+      padding-bottom: 15px
+      border-right: 1px solid #cccccc
+      border-left: 1px solid #cccccc
+    &__value
+      font-size: 1.4em
+      padding-right: 10px
+      padding-left: 10px
+    &__text
+      padding-bottom: 10px
+      margin-right: auto
+    &__btn
+      padding: 10px 20px
+      transition: 0.3s 
+      font-weight: 600
+      font-size: 1.7em
+    &__rating
+      flex-direction: column
+      &Tag 
+        margin-bottom: 10px
+  &-delivery
+    display: none
+    flex-direction: column
+    padding: 20px 10px
+    &__mkad, &__block
+      flex-direction: column
+      & p 
+        margin: 0
+        line-height: 25px
+    &__block
+      background: #f2f2f2
+      width: 30%
+    &__mkad
+      width: 33%
+      flex-direction: column
+    &__calc
+      display: flex
+      align-items: flex-end
+      &Text 
+        line-height: 16px
+    &__btnMinus, &__btnPlus, &__input
+      background: none 
+      font-size: 1.6em
+      border: none
+      max-width: 55px
+      padding: 0px 5px
+      text-align: center
+    &__input::-webkit-outer-spin-button, &__input::-webkit-inner-spin-button
+      -webkit-appearance: none
+      display: none
+      margin: 0
+    &__btnPlus
+      margin-right: 20px
+    &__desc
+      padding: 40px 0 20px 0
+  &-pickup
+    display: none
+    height: auto
+    padding: 20px
+    &__text
+      font-weight: 600
+      background: #f2f2f2
+      padding: 35px 50px
+  &-payment
+    display: none
+    flex-direction: row
+    flex-wrap: nowrap
+    padding: 20px 10px
+    &__item
+      width: 14.5%
+      padding: 20px 5px
+      text-align: center
+      font-size: 0.9em
+      background: #f2f2f2
+    &__img
+      margin-bottom: 20px
+    &__text
+      width: 15%
+      display: flex
+      flex-direction: column
+    &__link
+      text-decoration: underline
+  &-guarantee
+    display: none
+    padding: 20px 10px
+    &__desc
+      display: block
+      padding: 20px 20px 70px 20px
+      background: #f2f2f2
+      position: relative
+    &__link
+      right: 20px
+      bottom: 20px
+      text-decoration: underline
+      position: absolute
+  &-buttons
+    border: 15px solid $color-main
+    &__nav
+      background: $color-main
+    &__btn
+      padding: 25px 10px
+      background: #f2f2f2
+      border: none
+      width: 24%
+      cursor: pointer
+    &__result
+      &Desc 
+        display: none
+        padding: 30px 60px
+        line-height: 1.4em
+        font-size: 1.2em
+        background: #ffffff
+      &Spec 
+        display: none
+        padding: 30px 60px
+        background: #ffffff
+        &-desc 
+          display: block
+          text-align: center
+          padding: 30px 15px
+      &-row
+        width: 100%
+      &-lable 
+        width: 50%
+        text-align: right
+        padding-right: 10px
+        padding-bottom: 5px
+        padding-top: 5px
+        border-right: 1px solid #cccccc
+        margin: 0
+      &-value
+        width: 50%
+        margin: 0
+        padding-left: 10px
+        padding-bottom: 5px
+        padding-top: 5px
+        font-weight: 600
+        & a
+          color: #0c85aa
+@media (min-width: 1200px)
+  .item
+    &-text
+      &__brandLink:hover
+        border-bottom: none
+        color: $color-main
+      &__btn:hover
+        background: darken(#f2f2f2, 15%)
+    &-price 
+      &__btn:hover
+        background: darken($color-main, 5%)
+    &-buttons
+      &__btn:hover
+        color: $color-main
