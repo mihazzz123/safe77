@@ -112,7 +112,7 @@ $(document).ready(function() {
   
     openModal.on('click', function() {
       headerModal.addClass('header-modal__active active');
-      $('body').css({'background' : '#000000ba'});
+      $('body').css({'background' : '#000000ba', 'overflow' : 'hidden'});
       headerModal.css({'background' : '#000000ba'});
     });
     closeModal.on('click', function() {
