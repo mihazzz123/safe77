@@ -133,23 +133,26 @@ $(document).ready(function() {
         imgActive.animate({
           opacity: 1
         }, 200);
-        imgBtn.attr('style', '');
+        imgBtn.css({'border' : '0'});
         imgBtn.eq(i).css({'border' : '1px solid #ccc'});
       });
       
-      imgBtn.css({'transform' : 'translate3d(' + a + 'px, 0px, 0px)'});
+
       btnLeft.click(function() {
-        var a = 0,
-            b = 82,
-            c = a + b;
-            imgBtn.css({'transform' : 'translate3d(' + c + 'px, 0px, 0px)'});
+        var valBtn = imgBtn.attr('data-src-val');
+        var  b = 82,
+        c = +valBtn + +b;
+        imgBtn.css({'transform' : 'translate3d(' + c + 'px, 0px, 0px)'});
+        imgBtn.attr('data-src-val', c);
+        console.log(valBtn);
       });
       btnRight.click(function() {
-        var a = 0,
-            b = 82,
-            c = a - b;
-            imgBtn.css({'transform' : 'translate3d(' + c + 'px, 0px, 0px)'});
-            console.log(rightStyle);
+        var valBtn = imgBtn.attr('data-src-val');
+        var  b = 82,
+        c = +valBtn - +b;
+        imgBtn.css({'transform' : 'translate3d(' + c + 'px, 0px, 0px)'});
+        imgBtn.attr('data-src-val', c);
+        console.log(valBtn);
       });
-        
+      
 });
