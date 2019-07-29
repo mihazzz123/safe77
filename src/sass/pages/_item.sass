@@ -10,13 +10,15 @@
     cursor: pointer
   &-chevronRight
     right: 10px
-    bottom: calc(7.5% -10px)
+    bottom: calc(7.5% - 0px)
   &-chevronLeft
+    opacity: 0.5
     left: 0px
-    bottom: calc(7.5% -10px)
+    bottom: calc(7.5% - 0px)
   &-slider
     position: relative
     width: 35%
+    max-width: 600px
     height: auto
     border-right: 1px solid #cccccc
     flex-direction: column
@@ -37,26 +39,31 @@
       bottom: 30px
       right: 20px
     &__slideBar
-      overflow: hidden
-      height: 15%
+      overflow: scroll
+      scrollbar-width: none
+      height: 16%
       align-items: center
       margin-left: 30px
       margin-right: 30px
       padding-top: 10px
       padding-bottom: 10px
       border-top: 1px solid #cccccc
+      &::-webkit-scrollbar
+        display: none
     &__slideBox
+      display: block
       padding: 10px 4px
-      margin-top: -6px
+      margin-top: -20px
       height: auto
-      width: 25%
+      min-width: 25%
       transition: .3s ease
       // &:nth-child(n+5)
       //   display: none
     &__image
       display: block
-      margin: 10px 5px
-      max-width: 65px
+      margin: auto
+      width: 95%
+      max-width: 85px
       max-height: 65px
   &-text 
     padding-left: 10px
@@ -73,8 +80,8 @@
       padding-bottom: 20px
       border-bottom: 1px solid #cccccc
       &Img
-        padding-left: 20px
-        padding-right: 20px
+        padding-left: 3%
+        padding-right: 3%
         max-height: 80px
       &Link 
         display: inline-block
@@ -97,7 +104,7 @@
         padding-top: 20px
         padding-bottom: 5px
         border-bottom: 2px solid $color-main
-      &Icon 
+      &IconD
         margin-left: 5px
       &_active
         background: $color-main !important
@@ -113,6 +120,8 @@
     &__status
       padding-left: 10px
       padding-right: 10px
+      width: 20%
+      max-width: 200px
     &__price
       width: 60%
       align-items: center
@@ -122,6 +131,8 @@
       padding-bottom: 15px
       border-right: 1px solid #cccccc
       border-left: 1px solid #cccccc
+    &__tag
+      margin-left: 5%
     &__value
       font-size: 1.4em
       padding-right: 10px
@@ -134,14 +145,18 @@
       transition: 0.3s 
       font-weight: 600
       font-size: 1.7em
+      margin-right: 5%
     &__rating
+      width: 20%
       flex-direction: column
       &Tag 
         margin-bottom: 10px
   &-delivery
     display: none
     flex-direction: column
-    padding: 20px 10px
+    padding: 20px 10px 0 20px
+    max-width: 1000px
+    height: 200px
     &__mkad, &__block
       flex-direction: column
       & p 
@@ -177,14 +192,15 @@
     &__desc
       padding: 40px 0 20px 0
   &-pickup
+    height: 200px
     display: none
-    height: auto
     padding: 20px
     &__text
       font-weight: 600
       background: #f2f2f2
       padding: 35px 50px
   &-payment
+    height: 200px
     display: none
     flex-direction: row
     flex-wrap: nowrap
@@ -204,8 +220,10 @@
     &__link
       text-decoration: underline
   &-guarantee
+    height: 200px
     display: none
     padding: 20px 10px
+    max-width: 900px
     &__desc
       display: block
       padding: 20px 20px 70px 20px
@@ -371,4 +389,129 @@
     &-delivery__btnMinus, &-delivery__btnPlus
       &:hover
         color: $color-main
-
+@media (max-width: 1200px)
+  .item
+    &-slider
+      &__slideBox
+        min-width: 33%
+@media (min-width: 997px)  //MOBILE
+  .desctop
+    display: block
+  .mobile
+    display: none !important
+@media (max-width: 997px)  //MOBILE
+  .desctop
+    display: none !important
+  .mobile
+    display: flex
+    flex-direction: column
+    align-items: center
+  .item
+    &-row
+      flex-direction: row
+      width: 100%
+      justify-content: space-between    
+      border-bottom: 1px solid #cccccc
+      margin-bottom: 20px
+    &-text 
+      width: 100%
+      &__title
+        width: 100%
+        text-align-last: left
+        padding-bottom: 10px
+      &__brand
+        border: 0
+        width: 60%
+      &__rating
+        width: 40px
+    &-slider
+      width: 100%
+      max-width: 100%
+      border-right: 0
+      &__activeBox
+        width: 100%
+        padding-top: 30px
+        padding-bottom: 30px
+      &__icons
+        height: 100px
+      &__slideBar
+        padding-top: 0
+        padding-bottom: 0
+        margin-bottom: 10px
+      &__slideBox
+        margin-top: -5px
+        // margin-bottom: -5px
+        min-width: 20% 
+        height: 100%
+        padding: 20px 4px
+      &__image
+        max-width: 110px
+    &-chevronRight, &-chevronLeft
+      opacity: 0
+    &-price 
+      flex-direction: column
+      padding: 0
+      &__status
+        width: 100%
+        max-width: 100%
+        text-align: center
+        padding-top: 40px
+        padding-bottom: 40px
+        border-bottom: 2px solid #cccccc
+        border-top: 2px solid #cccccc
+        font-size: 1.8em
+      &__price
+        font-size: 1.2em
+        width: 100%
+        border: 0
+        padding-top: 40px
+        padding-bottom: 40px
+      &__tag
+        margin-left: 0
+      &__text
+        margin-right: 0
+      &__value
+        white-space: nowrap
+      &__btn
+        text-align: center
+        width: 100%
+        font-size: 1em
+        margin-bottom: 10px
+        border-bottom: 1px solid #cccccc
+    &-text 
+      &__btns
+        flex-direction: column
+        border: 0
+      &__btn
+        width: 100%
+        justify-content: space-between
+        transition: 0.5s
+        &Title 
+          text-align: left
+          width: 15%
+        &Close
+          transform: rotate(135deg)
+          width: 25px
+          height: 25px
+          margin: 0
+          transition: 0.5s
+          &_active
+            transform: rotate(90deg)
+            & svg
+              fill: #fff !important
+      &__button
+        flex-direction: column
+        height: auto
+        max-height: 66px
+        overflow: hidden
+        transition: 0.5s
+        &_active
+          max-height: 300px
+    &-delivery
+      display: flex
+    &-pickup
+      display: flex
+    &-payment
+      display: flex
+    &-guarantee
+      display: flex
