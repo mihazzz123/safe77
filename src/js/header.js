@@ -121,7 +121,7 @@ $(document).ready(function() {
        headerModal.attr('style', '');
     });
 
-    var placeholder = 'Сообщение';
+    var placeholder = 'Сообщение';555
     $('.header-modal__textarea').attr('placeholder', placeholder);
     $('.header-modal__textarea').attr('required', 'required');
     $('.header-modal__textarea').focus(function () {

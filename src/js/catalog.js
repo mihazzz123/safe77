@@ -51,7 +51,13 @@ $(document).ready(function() {
         
       
       // Ползунки в фильтре
-      
+      $('.result1').keyup(function() {
+        var inputRes1 = $('.result1').val();
+        $('.result1').attr('value', inputRes1);
+        return inputRes1;
+      });
+      console.log(inputRes1);
+      var inputRes2 = $('.result2').attr("value");
       $('.sliderUi').slider({
         animate: "slow",
         range: "min",    
@@ -62,12 +68,12 @@ $(document).ready(function() {
         classed: {
           "ui-slider": "sliderUi1"
         },
-        values: [2800, 44300],
+        values: [3222, inputRes2],
         slide : function(event, ui) {    
           $('.attributive-result').removeClass('attributive-result_active');
           $('.attributive-result0').addClass('attributive-result_active');
-          $('.result1').attr("placeholder",  ui.values[0]);        
-          $('.result2').attr("placeholder",  ui.values[1]);  
+          $('.result1').val(ui.values[0]);        
+          $('.result2').attr("value",  ui.values[1]);  
         }
       });
       $('.sliderUi2').slider({

@@ -25,12 +25,12 @@ $(document).ready(function() {
     } 
   });
 
-  $('.item-buttons__nav').on('click', '.item-buttons__btn', function() {
-    var i = $('.item-buttons__btn').index($(this));
-    $('.item-buttons__btn').removeClass('item-buttons__btn-active');
-    $('.item-buttons__btn').eq(i).addClass('item-buttons__btn-active');
-    $('.item-buttons__result').removeClass('dflex');
-    $('.item-buttons__result').eq(i).addClass('dflex');
+  $('.item-buttons__navD').on('click', '.item-buttons__btnD', function() {
+    var i = $('.item-buttons__btnD').index($(this));
+    $('.item-buttons__btnD').removeClass('item-buttons__btn-active');
+    $('.item-buttons__btnD').eq(i).addClass('item-buttons__btn-active');
+    $('.item-buttons__resultD').removeClass('dflex');
+    $('.item-buttons__resultD').eq(i).addClass('dflex');
   });
 
   // Счётчики отзывово и опций 
@@ -40,14 +40,14 @@ $(document).ready(function() {
       val2 = $('.item-options').length;
       valueFeed.text(val);
       valueOptions.text(val2);
-
-// Наведение на звездочки
-  var star1 = $('#star1'),
+      
+      // Наведение на звездочки
+      var star1 = $('#star1'),
       star2 = $('#star2'),
       star3 = $('#star3'),
       star4 = $('#star4'),
       star5 = $('#star5');
-
+      
       star1.hover(function() {
         $(this).css({"background-position" : "center -30px"});
         star2.attr("style", "");
@@ -83,30 +83,30 @@ $(document).ready(function() {
         star3.css({"background-position" : "center -30px"});
         star4.css({"background-position" : "center -30px"});
       });
-
+      
       // Присваивание аттрибутов для textarea
       var textarea1 = $('#textarea_1'),
-          textarea2 = $('#textarea_2');
-
+      textarea2 = $('#textarea_2');
+      
       textarea1.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off').attr('required', 'required');
       textarea2.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off').attr('required', 'required');
-
+      
       // Калькулятор стоимости доставки
       var minus = $('.item-delivery__btnMinus'),
-          plus = $('.item-delivery__btnPlus'),
-          input = $('.item-delivery__input'),
-          priceVal = $('.item-delivery__priceValue');
-
-          minus.click(function() {
-            if(input.val() == 0){
+      plus = $('.item-delivery__btnPlus'),
+      input = $('.item-delivery__input'),
+      priceVal = $('.item-delivery__priceValue');
+      
+      minus.click(function() {
+        if(input.val() == 0){
               return false;
             } else {
-            input.val(parseInt(input.val()) - 1);
-            input.change();
+              input.val(parseInt(input.val()) - 1);
+              input.change();
             var inputRes = +input.val();
             priceVal.text(700 + inputRes);
             return false;
-            }
+          }
           });
           
           plus.click(function() {
@@ -116,18 +116,13 @@ $(document).ready(function() {
             priceVal.text(700 + inputRes);
             return false;
           });
-
-  // Слайдер 
-  var slider = $('#slider'),
-      sliderM = $('#m_slider'),
-      imgActive = $('#imgActive'),
-      imgPasive = $('.imgPasive'),
-      imgBar = $('.item-slider__slideBar'),
-      imgBtn = $('.item-slider__slideBox'),
-      btnLeft = $('.item-chevronLeft'),
-      btnRight = $('.item-chevronRight');
-      
-      // отмена стандартного события при клике на ссылку
+          
+          // Слайдер 
+          var slider = $('#slider'),
+  sliderM = $('#m_slider');
+     
+  
+  // отмена стандартного события при клике на ссылку
       slider.on('click', 'a', function(event) {
         event.preventDefault();
       });
@@ -135,92 +130,142 @@ $(document).ready(function() {
         event.preventDefault();
       });
       
-      // Смена активной картинки
-      imgBar.on('click', '.imgPasive', function() {
-        var i = imgPasive.index($(this)),
-        srcImgPas = imgPasive.eq(i).attr('data-src');
-        imgActive.animate({
-          opacity: 0.8
-        }, 200, function() {
-          imgActive.attr('src', srcImgPas);
-        });
-        
-        imgActive.animate({
-          opacity: 1
-        }, 200);
-        imgBtn.css({'border' : '0'});
-        imgBtn.eq(i).css({'border' : '1px solid #ccc'});
-      });
       
       
-      // Стрелки навигации
-      btnLeft.click(function() {
-        var valBtn = imgBtn.attr('data-src-val');
-        var  b = 100;
-        var c = +valBtn + +b;
-        if(valBtn == 0){
-          btnRight.css({'opacity' : '1'});
-          btnLeft.css({'opacity' : '0.3'});
-        } else {
-          btnRight.css({'opacity' : '1'});
-          imgBtn.css({'transform' : 'translate3d(' + c + '%, 0px, 0px)'});
-          imgBtn.attr('data-src-val', c);
-        } console.log(c);
-      });
       
-      
-      btnRight.click(function() {
-        var valBtn = imgBtn.attr('data-src-val');
-        var  b = 100;
-        var c = +valBtn - +b;
-        if (valBtn == -200){
-          btnLeft.css({'opacity' : '1'});
-          btnRight.css({'opacity' : '0.3'});
-        } else {
-          imgBtn.css({'transform' : 'translate3d(' + c + '%, 0px, 0px)'});
-          imgBtn.attr('data-src-val', c);
-          btnLeft.css({'opacity' : '1'});
-        }
-        console.log(valBtn);
-      });
-      
-      if($(window).width() > '1200'){
-        var itemSlide = imgBtn.length;
-        if(itemSlide == 5){
-          btnLeft.hide();
-          btnRight.hide();
-        }
-      };
-      console.log(itemSlide);
-
-
-
-
       // MOBILE
-
-  $('.item-text__button').on('click', function() {
-    var active = $(this).find('.item-text__btnIconM').attr('data-src-second');
-    var pasive = $(this).find('.item-text__btnIconM').attr('data-src');
-   
-    if($(this).find('.item-text__button').hasClass('.tem-text__button_active')){
-      $(this).find('.item-text__btnIconM').attr('src', pasive);
+      
+      $('.item-text__btns').on('click', '.item-text__btnM', function() {
+        var n = $('.item-text__btnM').index($(this));
+        var active = $(this).find('.item-text__btnIconM').attr('data-src-second');
+        var pasive = $('.item-text__btnIconM').eq(0).attr('data-src');
+    var pasive1 = $('.item-text__btnIconM').eq(1).attr('data-src');
+    var pasive2 = $('.item-text__btnIconM').eq(2).attr('data-src');
+    var pasive3 = $('.item-text__btnIconM').eq(3).attr('data-src');
+    
+    if($('.item-text__btnM').eq(n).hasClass('item-text__btn_active')){
+      $('.item-text__btnIconM').eq(0).attr('src', pasive);
+      $('.item-text__btnIconM').eq(1).attr('src', pasive1);
+      $('.item-text__btnIconM').eq(2).attr('src', pasive2);
+      $('.item-text__btnIconM').eq(3).attr('src', pasive3);
       $(this).find('.item-text__btnClose').removeClass('item-text__btnClose_active');
-      $(this).find('.item-text__btn').removeClass('item-text__btn_active');
-    }
-    
-    $('.item-text__button').removeClass('item-text__button_active');
-    
-    $(this).find('.item-text__btnIconM').attr('src', active);
-    $(this).toggleClass('item-text__button_active');
-    $(this).find('.item-text__btn').toggleClass('item-text__btn_active');
-    $(this).find('.item-text__btnClose').toggleClass('item-text__btnClose_active');
-    
-    if($(this).find('.item-text__button').hasClass('.tem-text__button_active')){
-      $(this).find('.item-text__btn').addClass('item-text__btn_active');
+      $('.item-text__button').eq(n).removeClass('item-text__button_active');
+      $('.item-text__btn').eq(n).removeClass('item-text__btn_active');
+    } else {
+      $('.item-text__btnIconM').eq(0).attr('src', pasive);
+      $('.item-text__btnIconM').eq(1).attr('src', pasive1);
+      $('.item-text__btnIconM').eq(2).attr('src', pasive2);
+      $('.item-text__btnIconM').eq(3).attr('src', pasive3);
+      $('.item-text__btnClose').removeClass('item-text__btnClose_active');
+      $('.item-text__button').removeClass('item-text__button_active');
+      $('.item-text__btn').removeClass('item-text__btn_active');
+      $('.item-text__btnM').eq(n).toggleClass('item-text__btn_active');
       $(this).find('.item-text__btnIconM').attr('src', active);
+      $(this).find('.item-text__btnClose').toggleClass('item-text__btnClose_active');
+      $('.item-text__button').eq(n).toggleClass('item-text__button_active');
+      
+      if($('.item-text__btnM').eq(n).hasClass('item-text__btn_active')){
+        $(this).find('.item-text__btnClose').addClass('item-text__btnClose_active');
+        $('.item-text__button').eq(n).addClass('item-text__button_active');
+      } else {
+        $(this).find('.item-text__btnClose').removeClass('item-text__btnClose_active');
+        $('.item-text__button').eq(n).removeClass('item-text__button_active');
+      }
     }
-
-
+    
+ 
   });
+  var valueFeedM = $('#feedback_valueM'),
+      valM = $('.item-feedbackM').length,
+      valueOptionsM = $('#options_valueM'),
+      val2M = $('.item-optionsM').length;
+      valueFeedM.text(valM);
+      valueOptionsM.text(val2M);
+  // Присваивание аттрибутов для textarea
+  var textarea1M = $('#textarea_1M'),
+  textarea2M = $('#textarea_2M');
+  
+  textarea1M.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off').attr('required', 'required');
+  textarea2M.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off').attr('required', 'required');
+  
+  $('#specificationM').click(function(event) {
+    event.preventDefault();
+    var i = $(this).attr('href');
+    var top = $(i).offset().top;
+    $('body,html').animate({scrollTop: top},500);
+    $('.item-buttons__button').eq(1).addClass('item-buttons__button_active');
+  });
+  $('#optionsM').click(function() {
+    event.preventDefault();
+    var i = $(this).attr('href');
+    var top = $(i).offset().top;
+    $('body,html').animate({scrollTop: top},500);
+    $('.item-buttons__button').eq(2).addClass('item-buttons__button_active');
+  });
+
+  $('.item-buttons__navM').on('click', '.item-buttons__btnM', function() {
+    var n = $('.item-buttons__btnM').index($(this));
+    
+    if($('.item-buttons__btnM').eq(n).hasClass('item-buttons__btn_active')){
+      $('.item-buttons__button').eq(n).removeClass('item-buttons__button_active');
+      $('.item-buttons__btnM').eq(n).removeClass('item-buttons__btn_active');
+    } else {
+      $('.item-buttons__button').removeClass('item-buttons__button_active');
+      $('.item-buttons__btnM').removeClass('item-buttons__btn_active');
+      $('.item-buttons__btnM').eq(n).toggleClass('item-buttons__btn_active');
+      $('.item-buttons__button').eq(n).toggleClass('item-buttons__button_active');
+      
+      if($('.item-buttons__btnM').eq(n).hasClass('item-buttons__btn_active')){
+        $('.item-buttons__button').eq(n).addClass('item-buttons__button_active');
+      } else {
+        $('.item-buttons__button').eq(n).removeClass('item-buttons__button_active');
+      }
+    }
+        
+        
+      });
+      
+      // Клик на звездочки
+      var starM1 = $('#star1M'),
+      starM2 = $('#star2M'),
+      starM3 = $('#star3M'),
+      starM4 = $('#star4M'),
+      starM5 = $('#star5M');
+      
+      starM1.click(function() {
+        $(this).css({"background-position" : "center -30px"});
+        starM2.attr("style", "");
+        starM3.attr("style", "");
+        starM4.attr("style", "");
+        starM5.attr("style", "");
+      });
+      starM2.click(function() {
+        $(this).css({"background-position" : "center -30px"});
+        starM1.css({"background-position" : "center -30px"});
+        starM3.attr("style", "");
+        starM4.attr("style", "");
+        starM5.attr("style", "");
+      });
+      starM3.click(function() {
+        $(this).css({"background-position" : "center -30px"});
+        starM1.css({"background-position" : "center -30px"});
+        starM2.css({"background-position" : "center -30px"});
+        starM4.attr("style", "");
+        starM5.attr("style", "");
+      });
+      starM4.click(function() {
+        $(this).css({"background-position" : "center -30px"});
+        starM1.css({"background-position" : "center -30px"});
+        starM2.css({"background-position" : "center -30px"});
+        starM3.css({"background-position" : "center -30px"});
+        starM5.attr("style", "");
+      });
+      starM5.click(function() {
+        $(this).css({"background-position" : "center -30px"});
+        starM1.css({"background-position" : "center -30px"});
+        starM2.css({"background-position" : "center -30px"});
+        starM3.css({"background-position" : "center -30px"});
+        starM4.css({"background-position" : "center -30px"});
+      });
       
     });

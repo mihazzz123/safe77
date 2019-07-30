@@ -235,10 +235,19 @@
       text-decoration: underline
       position: absolute
   &-buttons
-    border: 15px solid $color-main
-    max-height: 250px
     position: relative
-    height: 100%
+    padding: 15px
+    min-height: 250px
+    &:after
+      content: ""
+      position: absolute
+      max-height: 250px
+      height: 100%
+      width: 100%
+      left: 0
+      top: 0
+      background: $color-main
+      z-index: -1
     &__nav
       background: $color-main
     &__btn
@@ -260,7 +269,7 @@
         line-height: 1.4em
         font-size: 1.2em
       &Spec
-        position: absolute
+        // position: absolute
         &-desc 
           display: block
           text-align: center
@@ -479,6 +488,7 @@
         margin-bottom: 10px
         border-bottom: 1px solid #cccccc
     &-text 
+      padding-left: 0
       &__btns
         flex-direction: column
         border: 0
@@ -506,12 +516,190 @@
         overflow: hidden
         transition: 0.5s
         &_active
-          max-height: 300px
+          max-height: 650px
+          border: 1px solid $color-main
+          margin-bottom: 10px
     &-delivery
       display: flex
+      height: auto
+      padding: 10px
+      &__row
+        flex-direction: column
+        text-align: center
+      &__mkad
+        width: 100%
+        margin-bottom: 10px
+      &__block
+        width: 100%
+        margin-bottom: 10px
+      &__desc
+        padding: 10px 0
+        margin: 0
+        text-align: center
     &-pickup
       display: flex
+      height: auto
+      padding: 10px
+      &__text
+        text-align: center
     &-payment
       display: flex
+      padding: 10px
+      flex-wrap: wrap
+      height: auto
+      &__text
+        width: 100%
+        text-align: center
+      &__title
+        margin-bottom: 25px
+      &__link
+        margin-bottom: 15px
+      &__item
+        width: 48%
+        margin-bottom: 10px
     &-guarantee
+      height: auto
       display: flex
+      font-size: 1.2em
+    &-buttons
+      border: 15px solid $color-main
+      max-height: 100%
+      padding: 0
+      &:after
+        display: none
+      &__button
+        overflow: hidden
+        margin-bottom: 5px
+        transition: 0.5s
+        max-height: 50px
+        &_active
+          height: auto
+          max-height: 1500px
+      &__svg  
+        width: 25px
+        height: 25px
+        position: absolute
+        right: 20px
+        top: 15px
+        transform: rotate(135deg)
+        transition: 0.5s
+      &__nav
+        flex-direction: column
+        width: 100%
+      &__btn
+        margin-bottom: 0
+        width: 100%
+        position: relative
+        padding: 20px 0
+        padding-right: 25px
+        &_active
+          background: darken($color-main, 7%)
+          color: #FFFFFF
+          & .item-buttons__svg 
+            transform: rotate(90deg)
+            & svg
+              fill: #ffffff !important
+      &__result
+        display: flex
+        position: relative
+        &Desc 
+          padding: 20px
+          font-size: 1em
+        &Spec 
+          padding-bottom: 0
+          font-size: 1.1em
+        &Feed
+          padding: 10px
+    &-feedback
+      width: 50%
+      &__title
+        width: 70%
+        font-size: 1em
+      &__stars
+        width: 30%
+      &__text
+        margin: 30px 0
+      &__autor
+        margin-bottom: 0
+    &-form
+      &__col:nth-child(1)
+        width: 40%
+      &__col:nth-child(2)
+        width: 60%
+      &__opinion
+        display: flex
+        justify-content: flex-start
+        align-items: center 
+        flex-wrap: wrap
+        &-text 
+          width: auto
+          margin-top: 5px
+        &-stars 
+          padding-top: 0
+@media (max-width: 786px)
+  .item
+    &-chevronRight, &-chevronLeft
+      opacity: 1
+    &-slider
+      &__slideBox
+        min-width: 33%
+    &-feedback
+      font-size: 1.2em
+      &__title
+        width: 100%
+    &-form
+      flex-direction: column
+      padding-top: 20px
+      padding-left: 0
+      &__opinion-text
+        width: 100%
+      &__col
+        width: 100% !important
+        padding: 0 10px
+      &__message
+        height: 60px
+      &__btn
+        margin-left: 0
+        margin-right: auto
+        margin-top: 25px
+        padding: 20px 35px
+@media (max-width: 546px)
+  .item
+    &-text 
+      &__brandImg
+        display: none !important
+      &__brandLink
+        margin-bottom: 10px
+      &__btnSvg
+        width: 15px
+        height: 15px
+    &-feedback
+      width: 100%
+    &-buttons
+      &__svg
+        margin: 0
+        right: 5px
+      &__result
+        &Desc
+          font-size: 1.2em
+        &-btn 
+          padding: 20px 35px
+        &Spec 
+          padding: 10px 10px
+          font-size: 1.2em
+          &-desc 
+            padding: 20px 10px
+        &-row 
+          text-align-last: left
+          justify-content: flex-start
+          border-bottom: 1px solid #cccccc
+          padding-top: 5px
+          padding-bottom: 5px
+          flex-wrap: wrap
+        &-lable 
+          width: auto 
+          border-right: 0
+          padding-right: 0
+        &-value
+          padding-left: 5px
+          width: auto
