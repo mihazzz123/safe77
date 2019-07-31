@@ -54,10 +54,15 @@ $(document).ready(function() {
       $('.result1').keyup(function() {
         var inputRes1 = $('.result1').val();
         $('.result1').attr('value', inputRes1);
-        return inputRes1;
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result0').addClass('attributive-result_active');
       });
-      console.log(inputRes1);
-      var inputRes2 = $('.result2').attr("value");
+      $('.result2').keyup(function() {
+        var inputRes2 = $('.result2').val();
+        $('.result2').attr('value', inputRes2);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result0').addClass('attributive-result_active');
+      });
       $('.sliderUi').slider({
         animate: "slow",
         range: "min",    
@@ -68,13 +73,25 @@ $(document).ready(function() {
         classed: {
           "ui-slider": "sliderUi1"
         },
-        values: [3222, inputRes2],
+        values: [3222, 44300],
         slide : function(event, ui) {    
           $('.attributive-result').removeClass('attributive-result_active');
           $('.attributive-result0').addClass('attributive-result_active');
           $('.result1').val(ui.values[0]);        
           $('.result2').attr("value",  ui.values[1]);  
         }
+      });
+      $('.result1_2').keyup(function() {
+        var inputRes1 = $('.result1_2').val();
+        $('.result1_2').attr('value', inputRes1);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result2').addClass('attributive-result_active');
+      });
+      $('.result2_2').keyup(function() {
+        var inputRes2 = $('.result2_2').val();
+        $('.result2_2').attr('value', inputRes2);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result2').addClass('attributive-result_active');
       });
       $('.sliderUi2').slider({
         animate: "slow",
@@ -94,6 +111,18 @@ $(document).ready(function() {
           $('.result2_2').attr("placeholder",  ui.values[1]);        
         }
       });
+      $('.result1_3').keyup(function() {
+        var inputRes1 = $('.result1_3').val();
+        $('.result1_3').attr('value', inputRes1);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result3').addClass('attributive-result_active');
+      });
+      $('.result2_3').keyup(function() {
+        var inputRes2 = $('.result2_3').val();
+        $('.result2_3').attr('value', inputRes2);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result3').addClass('attributive-result_active');
+      });
       $('.sliderUi3').slider({
         animate: "slow",
         range: "min",    
@@ -111,6 +140,18 @@ $(document).ready(function() {
           $('.result1_3').attr("placeholder",  ui.values[0]);        
           $('.result2_3').attr("placeholder",  ui.values[1]);        
         }
+      });
+      $('.result1_4').keyup(function() {
+        var inputRes1 = $('.result1_4').val();
+        $('.result1_4').attr('value', inputRes1);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result4').addClass('attributive-result_active');
+      });
+      $('.result2_4').keyup(function() {
+        var inputRes2 = $('.result2_4').val();
+        $('.result2_4').attr('value', inputRes2);
+        $('.attributive-result').removeClass('attributive-result_active');
+        $('.attributive-result4').addClass('attributive-result_active');
       });
       $('.sliderUi4').slider({
         animate: "slow",
@@ -132,7 +173,5 @@ $(document).ready(function() {
       });
 
 
-      // Подмена картинки в карточке
-      $('.good')
 
 });

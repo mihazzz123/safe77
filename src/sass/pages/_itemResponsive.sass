@@ -1,0 +1,325 @@
+@media (min-width: 1200px)
+  .item
+    &-text
+      &__brandLink:hover
+        border-bottom: none
+        color: $color-main
+      &__btn:hover
+        background: darken(#f2f2f2, 15%)
+    &-price 
+      &__btn:hover
+        background: darken($color-main, 5%)
+    &-buttons
+      &__btn:hover
+        color: $color-main
+      &__result-btn:hover
+        background: $color-main
+        color: #ffffff
+    &-delivery__btnMinus, &-delivery__btnPlus
+      &:hover
+        color: $color-main
+@media (max-width: 1200px)
+  .item
+    &-slider
+      &__slideBox
+        min-width: 33%
+@media (min-width: 997px)  //MOBILE
+  .desctop
+    display: block
+  .mobile
+    display: none !important
+@media (max-width: 997px)  //MOBILE
+  .desctop
+    display: none !important
+  .mobile
+    display: flex
+    flex-direction: column
+    align-items: center
+  .item
+    &-row
+      flex-direction: row
+      width: 100%
+      justify-content: space-between    
+      border-bottom: 1px solid #cccccc
+      margin-bottom: 20px
+    &-text 
+      width: 100%
+      &__title
+        width: 100%
+        text-align-last: left
+        padding-bottom: 10px
+      &__brand
+        border: 0
+        width: 60%
+      &__rating
+        width: 40px
+    &-slider
+      width: 100%
+      max-width: 100%
+      border-right: 0
+      &__activeBox
+        width: 100%
+        padding-top: 30px
+        padding-bottom: 30px
+      &__icons
+        height: 100px
+      &__slideBar
+        padding-top: 0
+        padding-bottom: 0
+        margin-bottom: 10px
+      &__slideBox
+        margin-top: -5px
+        // margin-bottom: -5px
+        min-width: 20% 
+        height: 100%
+        padding: 20px 4px
+      &__image
+        max-width: 110px
+    &-chevronRight, &-chevronLeft
+      opacity: 0
+    &-price 
+      flex-direction: column
+      padding: 0
+      &__status
+        width: 100%
+        max-width: 100%
+        text-align: center
+        padding-top: 40px
+        padding-bottom: 40px
+        border-bottom: 2px solid #cccccc
+        border-top: 2px solid #cccccc
+        font-size: 1.8em
+      &__price
+        font-size: 1.2em
+        width: 100%
+        border: 0
+        padding-top: 40px
+        padding-bottom: 40px
+      &__tag
+        margin-left: 0
+      &__text
+        margin-right: 0
+      &__value
+        white-space: nowrap
+      &__btn
+        text-align: center
+        width: 100%
+        font-size: 1em
+        margin-bottom: 10px
+        border-bottom: 1px solid #cccccc
+    &-text 
+      padding-left: 0
+      &__btns
+        flex-direction: column
+        border: 0
+      &__btn
+        width: 100%
+        justify-content: space-between
+        transition: 0.5s
+        &Title 
+          text-align: left
+          width: 15%
+        &Close
+          transform: rotate(135deg)
+          width: 25px
+          height: 25px
+          margin: 0
+          transition: 0.5s
+          &_active
+            transform: rotate(90deg)
+            & svg
+              fill: #fff !important
+      &__button
+        flex-direction: column
+        height: auto
+        max-height: 66px
+        overflow: hidden
+        transition: 0.5s
+        &_active
+          max-height: 650px
+          border: 1px solid $color-main
+          margin-bottom: 10px
+    &-delivery
+      display: flex
+      height: auto
+      padding: 10px
+      &__row
+        flex-direction: column
+        text-align: center
+      &__mkad
+        width: 100%
+        margin-bottom: 10px
+      &__block
+        width: 100%
+        margin-bottom: 10px
+      &__desc
+        padding: 10px 0
+        margin: 0
+        text-align: center
+    &-pickup
+      display: flex
+      height: auto
+      padding: 10px
+      &__text
+        text-align: center
+    &-payment
+      display: flex
+      padding: 10px
+      flex-wrap: wrap
+      height: auto
+      &__text
+        width: 100%
+        text-align: center
+      &__title
+        margin-bottom: 25px
+      &__link
+        margin-bottom: 15px
+      &__item
+        width: 48%
+        margin-bottom: 10px
+    &-guarantee
+      height: auto
+      display: flex
+      font-size: 1.2em
+    &-buttons
+      border: 15px solid $color-main
+      max-height: 100%
+      padding: 0
+      &:after
+        display: none
+      &__button
+        overflow: hidden
+        margin-bottom: 5px
+        transition: 0.5s
+        max-height: 50px
+        &_active
+          height: auto
+          max-height: 1500px
+      &__svg  
+        width: 25px
+        height: 25px
+        position: absolute
+        right: 20px
+        top: 15px
+        transform: rotate(135deg)
+        transition: 0.5s
+      &__nav
+        flex-direction: column
+        width: 100%
+      &__btn
+        margin-bottom: 0
+        width: 100%
+        position: relative
+        padding: 20px 0
+        padding-right: 25px
+        &_active
+          background: darken($color-main, 7%)
+          color: #FFFFFF
+          & .item-buttons__svg 
+            transform: rotate(90deg)
+            & svg
+              fill: #ffffff !important
+      &__result
+        display: flex
+        position: relative
+        &Desc 
+          padding: 20px
+          font-size: 1em
+        &Spec 
+          padding-bottom: 0
+          font-size: 1.1em
+        &Feed
+          padding: 10px
+    &-feedback
+      width: 50%
+      &__title
+        width: 70%
+        font-size: 1em
+      &__stars
+        width: 30%
+      &__text
+        margin: 30px 0
+      &__autor
+        margin-bottom: 0
+    &-form
+      &__col:nth-child(1)
+        width: 40%
+      &__col:nth-child(2)
+        width: 60%
+      &__opinion
+        display: flex
+        justify-content: flex-start
+        align-items: center 
+        flex-wrap: wrap
+        &-text 
+          width: auto
+          margin-top: 5px
+        &-stars 
+          padding-top: 0
+@media (max-width: 786px)
+  .item
+    &-chevronRight, &-chevronLeft
+      opacity: 1
+    &-slider
+      &__slideBox
+        min-width: 33%
+    &-feedback
+      font-size: 1.2em
+      &__title
+        width: 100%
+    &-form
+      flex-direction: column
+      padding-top: 20px
+      padding-left: 0
+      &__opinion-text
+        width: 100%
+      &__col
+        width: 100% !important
+        padding: 0 10px
+      &__message
+        height: 60px
+      &__btn
+        margin-left: 0
+        margin-right: auto
+        margin-top: 25px
+        padding: 20px 35px
+@media (max-width: 546px)
+  .item
+    &-text 
+      &__brandImg
+        display: none !important
+      &__brandLink
+        margin-bottom: 10px
+      &__btnSvg
+        width: 15px
+        height: 15px
+    &-feedback
+      width: 100%
+    &-buttons
+      &__svg
+        margin: 0
+        right: 5px
+      &__result
+        &Desc
+          font-size: 1.2em
+        &-btn 
+          padding: 20px 35px
+        &Spec 
+          padding: 10px 10px
+          font-size: 1.2em
+          &-desc 
+            padding: 20px 10px
+        &-row 
+          text-align-last: left
+          justify-content: flex-start
+          border-bottom: 1px solid #cccccc
+          padding-top: 5px
+          padding-bottom: 5px
+          flex-wrap: wrap
+        &-lable 
+          width: auto 
+          border-right: 0
+          padding-right: 0
+        &-value
+          padding-left: 5px
+          width: auto

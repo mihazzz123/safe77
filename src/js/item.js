@@ -135,10 +135,10 @@ $(document).ready(function() {
       
       // MOBILE
       
-      $('.item-text__btns').on('click', '.item-text__btnM', function() {
-        var n = $('.item-text__btnM').index($(this));
-        var active = $(this).find('.item-text__btnIconM').attr('data-src-second');
-        var pasive = $('.item-text__btnIconM').eq(0).attr('data-src');
+  $('.item-text__btns').on('click', '.item-text__btnM', function() {
+    var n = $('.item-text__btnM').index($(this));
+    var active = $(this).find('.item-text__btnIconM').attr('data-src-second');
+    var pasive = $('.item-text__btnIconM').eq(0).attr('data-src');
     var pasive1 = $('.item-text__btnIconM').eq(1).attr('data-src');
     var pasive2 = $('.item-text__btnIconM').eq(2).attr('data-src');
     var pasive3 = $('.item-text__btnIconM').eq(3).attr('data-src');
@@ -150,7 +150,7 @@ $(document).ready(function() {
       $('.item-text__btnIconM').eq(3).attr('src', pasive3);
       $(this).find('.item-text__btnClose').removeClass('item-text__btnClose_active');
       $('.item-text__button').eq(n).removeClass('item-text__button_active');
-      $('.item-text__btn').eq(n).removeClass('item-text__btn_active');
+      $('.item-text__btnM').eq(n).removeClass('item-text__btn_active');
     } else {
       $('.item-text__btnIconM').eq(0).attr('src', pasive);
       $('.item-text__btnIconM').eq(1).attr('src', pasive1);
@@ -158,7 +158,7 @@ $(document).ready(function() {
       $('.item-text__btnIconM').eq(3).attr('src', pasive3);
       $('.item-text__btnClose').removeClass('item-text__btnClose_active');
       $('.item-text__button').removeClass('item-text__button_active');
-      $('.item-text__btn').removeClass('item-text__btn_active');
+      $('.item-text__btnM').removeClass('item-text__btn_active');
       $('.item-text__btnM').eq(n).toggleClass('item-text__btn_active');
       $(this).find('.item-text__btnIconM').attr('src', active);
       $(this).find('.item-text__btnClose').toggleClass('item-text__btnClose_active');
