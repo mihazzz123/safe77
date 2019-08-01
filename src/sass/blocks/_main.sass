@@ -23,7 +23,7 @@
       width: 10%
       height: 4px
       background-color: $color-main
-      transition: all 1.2s
+      transition: all 0.3s
       &-wrapper
         width: 90%
         height: 5px
@@ -60,8 +60,10 @@
       &__button
         width: 60px
         height: 60px
-        background-color: #fff
+        background: #fff
         cursor: pointer
+        &-left
+          background: transparent
         & svg
           width: 13px
           height: 25px
@@ -76,11 +78,25 @@
       margin: 35px 0
     & ol
       padding: 0
+      list-style-type: none
+      counter-reset: num
       & li
-        display: flex
-        align-items: flex-start
+        list-style: none
         margin: 15px 0
         font-size: 1.2em
+        &::before 
+          content: counter(num)
+          counter-increment: num
+          color: white
+          background: $color-main
+          display: inline-block
+          text-align: center
+          margin: 5px 10px
+          line-height: 35px
+          width: 35px
+          height: 35px
+          font-size: 1.2em
+          font-weight: bold
         & span
           font-size: 1.2em
           font-weight: bold
@@ -93,6 +109,8 @@
     & h3
       font-size: 1.5em
       margin-top: 40px
+    & ul
+      margin-top: 25px
     & li
       padding-left: 15px
       margin: 15px 0

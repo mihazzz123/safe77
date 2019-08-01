@@ -77,13 +77,18 @@ button, input, a, li, ul, textarea, select, option
 .passive
   opacity: 0
   z-index: -1
+  height: 0
   transition: .25s ease-in-out
   // transform-origin: center center
 
+.bold
+  font-weight: bold !important
+
 .active
   opacity: 1
+  height: unset
   z-index: 9
-  transition: .25s ease-in-out
+  transition: .3s ease-in-out
   // transform-origin: center center
 
 .dblock
@@ -189,16 +194,18 @@ button, input, a, li, ul, textarea, select, option
       stroke-miterlimit: 10
   .header-nav__item:hover
     color: #ffffff
-    transition: 0.3s
+    transition: 0s
     &:hover:after
-      height: 65px 
+      height: 65px
+      box-shadow: inset 0px -1px 0px 0px #fff
+      transition: 0s
     .header-catalog
       color: #ffffff
-      transition: 0.3s
+      transition: 0s
     svg
       fill: #fff
   .header-nav__item:after
-    transition: 0.3s
+    transition: 0s
     content: ""
     z-index: -1
     background: $color-main
@@ -210,7 +217,6 @@ button, input, a, li, ul, textarea, select, option
     left: 0
   .header-cart a:hover
     background: $color-main
-    border-radius: 50%
     & .header-svg
       fill: #ffffff
       stroke-width: 2.0006
@@ -220,20 +226,12 @@ button, input, a, li, ul, textarea, select, option
     color: $color-main
     text-decoration: underline
     transition: 0.3s
-  .header-catalog__box:hover
-    .header-catalog__item
-      // display: block
-      opacity: 1
-      transform: scaleY(1)
-      visibility: unset
   .header-catalog__link:hover
     color: $color-main
   .header-catalog__li-active:hover
     .header-catalog__subItem
       opacity: 1
-      transform: scaleX(1)
-  .breadcrumbs__first:hover, .breadcrumbs__second:hover
-    text-decoration: underline
+      transition-delay: 0s
 
 @media (max-width: 1200px)
   boby, html

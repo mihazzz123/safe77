@@ -1,0 +1,2 @@
+
+$(document).ready(function(){$('.brands-nav').on('click','.brands-nav__item',function(event){event.preventDefault();var i=$(this).attr('href'),top=$(i).offset().top;$('body,html').animate({scrollTop:top},1000);});});

@@ -4,7 +4,6 @@
   &-title__box
     margin-bottom: 30px
   &-sort 
-    width: auto
     align-items: flex-start
     flex-direction: row
     margin-bottom: 40px
@@ -71,73 +70,92 @@
       margin-left: 10px
 
 .good
-  & .label
-    padding-bottom: 5px
+  margin-bottom: 20px
   padding: 0
   transition: 0.4s
-  & li 
-    margin: 7px 0
-    height: auto
-  &:hover
-    box-shadow: 0 0 14px black
-    & .good-descAdd
-      box-shadow: 0 10px 10px 0 black
-  &-wrap
-    padding: 0
-    box-shadow: none !important
-  &-btnBuy
-    bottom: 0
+  &-title__second
     width: 100%
-    top: calc(100% - 50px)
-  &-icon 
-    left: 0
-  &-img
-    position: relative
-    // height: 300px
-    &:after
-      content: ""
-      height: 1px
-      width: 100%
-      bottom: 0
-      position: absolute
-      background: $color-main
-  &-details
-    position: relative
-  &-desc
-    padding: 0
-  &-descAdd
-    transition: all 0s
-    display: block
-    position: absolute
-    background: #ffffff
-    width: 100%;
-    left: 0
-    z-index: 1
-    padding: 10px
 .sort
-  &-filters
-    font-size: 0.9em
-    display: flex
-    flex-direction: column
-  &-filter 
-    display: flex
-    flex-direction: row
+  &-filter
+    width: 100%
     align-items: center
-    justify-content: flex-start
     margin-bottom: 10px
+    &s
+      width: 50%
     &__text
-      margin-right: 10px
-  &-select 
-    color: $color-text
-    padding-left: 8px
-    padding-top: 5px
-    padding-bottom: 5px
-    overflow: hidden
-    text-overflow: ellipsis
-    white-space: nowrap
-    background-color: #fff
-    border: 1px solid #aaa
-    border-radius: 4px
+      display: block
+      white-space: nowrap
+      padding-right: 5px
+    &__box
+      color: #888888
+      position: relative
+      min-height: 30px
+      width: 100%
+    &__form
+      display: flex
+      flex-direction: column
+      top: 0
+      left: 0
+      min-height: 30px
+      height: 100%
+      width: 52%
+      border-radius: 4px
+      background: #ffffff
+      border: 1px solid #aaa
+      text-overflow: ellipsis
+      border-radius: 5px
+      &-second
+        width: 17%
+        & .sort-filter__arrow
+          left: 12%
+    &__items
+      position: absolute
+      background: #ffffff
+      display: flex
+      flex-direction: column
+      transition: 0.3s
+      overflow: hidden
+      height: 0px
+      left: 0
+      top: 31px
+      width: calc(52% - 2px)
+      border-radius: 5px
+      &_active
+        border: 1px solid #aaa
+        z-index: 2
+        height: 210px
+        height: 210px
+        overflow-y: scroll
+        overflow: auto
+        color: $color-text
+      &_second
+        max-height: 130px
+        width: 17%
+    &__arrow
+      border-color: #888 transparent transparent transparent
+      border-style: solid
+      border-width: 5px 4px 0 4px
+      height: 0
+      left: 47%
+      margin-left: -4px
+      margin-top: -2px
+      position: absolute
+      top: 50%
+      width: 0
+      transition: 0.3s
+      z-index: 1
+      &_active
+        transform: rotate(180deg)
+    &__option, &__selected
+      padding-right: 20px
+      display: block
+      min-height: 30px
+      cursor: pointer
+      padding: 5px
+      max-width: 250px
+      width: 100%
+  &-selected
+    background: lighten(#cccccc, 10%)
 
 
 .filter 
@@ -185,6 +203,7 @@
     display: block
     text-transform: uppercase
     font-weight: 600
+    line-height: 21px
     &-first 
       margin-bottom: 20px
       margin-top: 20px

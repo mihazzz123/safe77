@@ -1,8 +1,25 @@
 @media (min-width: 1440px)
   .ftslider, .main__img
     height: 400px
+  .header-catalog__box 
+    border-bottom: 7px solid #a50103
+    margin-bottom: -6px
+  .header-nav
+    font-size: 1.2em
+  .header-nav svg
+    width: 32px
+    height: 18px
 
 @media (max-width: 1200px)
+  .header-catalog__box
+    border-bottom: 8px solid #a50103
+    margin-bottom: -6px
+    padding-bottom: 25px
+  .header-nav__item, .header-nav .header-catalog
+    font-size: 1em
+    line-height: 1.3em
+  .header-cart a .value
+    bottom: 7px
   .header
     &-search, &-cart
       margin-right: 0
@@ -10,16 +27,54 @@
     width: 30%
   .news-top__buttons
     display: flex
+  .header-nav__item
+    font-size: 0.9em !important
 @media (min-width: 992px)
   .m_header, .tdslide-icons
     display: none
 @media (max-width: 992px)
+  .m_header-city
+    font-size: 1em
+  .button-main
+    line-height: 21px
+  .m_header-catalog, .m_header-catalog__subItem
+    font-size: 1.7em
+  .catalog__subItem-active
+    font-size: 1em
+  .m_header-nav ul, .m_header-nav div, .m_header-nav form
+    &::-webkit-scrollbar
+      -webkit-appearance: none
+    &::-webkit-scrollbar:vertical
+      width: 12px
+    &::-webkit-scrollbar:horizontal
+      height: 12px
+    &::-webkit-scrollbar-thumb
+      background-color: rgba(0, 0, 0, .5)
+      border-radius: 10px
+      border: 2px solid #ffffff
+    &::-webkit-scrollbar-track
+      border-radius: 10px
+      background-color: #ffffff
+
+  .sdslide__button
+    font-size: 0.8em
+  .sdslider-arrow-right
+    right: 0
+  .sdslider-arrow-left
+    left: 0
   .footer-2, .footer-3
     width: 50%
     margin-bottom: 20px
   .footer-1, .footer-4
     width: 100%
     margin-bottom: 20px
+  .header-search-items
+    font-size: 1em
+  .header-search-items ol li
+    height: 33px
+    text-align: left
+  .callme
+    display: none
   footer
     text-align: center
     height: auto
@@ -47,15 +102,19 @@
   .main-third-top__title
     font-size: 1.4em
 @media (max-width: 786px)
-  .high__title
-    font-size: 1.8em
+  .header-modal-city-search, .header-search-items3
+    width: 290px
+  .tdslide-img
+    margin: 65px 0
+  .m_header-cart
+    font-size: 0.9em
   .main-tags
     display: none
   .m_header
     &__logo
       width: 40%
     &-links
-      // width: 20%
+      width: 20%
     &-callback
       width: 40%
   .header
@@ -68,19 +127,36 @@
   .ftslider-wrapper, .sdslider-wrapper, .tdslider-wrapper, .news-slider-wrapper
     transition: all 0.5s
 @media (max-width: 546px)
-  .high__title
+  .header-modal-city-search, .header-search-items3
+    width: 270px
+  .header-modal-cities ul li
     font-size: 1.4em
+    width: 100%
+  .header-search-items3
+    top: 125px
+    & li
+      font-size: 1.5em
+  .m_header-callback 
+    width: 60%
+  .m_header-catalog
+    margin-top: 0
+    font-size: 1.8em
+  .m_header-links
+    width: 30%
+    &-1
+      display: none
+    &-2
+      display: block
+  .m_header__logo img
+    height: auto
+    width: 100%
   .main-desc
     padding: 1px 11px
   .footer-title
     margin-bottom: 20px
   .m_header
     &__logo
-      width: 40%
-    &-callback
-      display: none
-    &-links 
-      text-align: right
+      width: 25%
   .header-modal__title
     font-size: 1.4em
   .main-third-top__line-2, .main-third-top__line-1, .news-top-line
@@ -90,3 +166,17 @@
   .ftslide__title
     width: 100%
     justify-content: center
+  .header-form__input
+    padding-left: 0
+  .header-form__input
+    margin-right: 10px
+    font-size: 0.85em
+
+@media (max-width: 350px)
+  .header-modal-city-search
+    width: 250px
+    font-size: 1.2em
+  .header-search-items
+    font-size: 0.8em
+  .header-search-items3
+    width: 250px

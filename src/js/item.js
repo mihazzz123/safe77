@@ -35,9 +35,9 @@ $(document).ready(function() {
 
   // Счётчики отзывово и опций 
   var valueFeed = $('#feedback_value'),
-      val = $('.item-feedback').length,
+      val = $('.item-feedbackD').length,
       valueOptions = $('#options_value'),
-      val2 = $('.item-options').length;
+      val2 = $('.item-optionsD').length;
       valueFeed.text(val);
       valueOptions.text(val2);
       
@@ -96,34 +96,57 @@ $(document).ready(function() {
       plus = $('.item-delivery__btnPlus'),
       input = $('.item-delivery__input'),
       priceVal = $('.item-delivery__priceValue');
+
+      input.keyup(function() {
+        var inputRes = +input.val();
+        input.val(parseInt(input.val()) - 1);
+        input.change();
+        priceVal.text(700 + inputRes);
+
+      });
       
       minus.click(function() {
         if(input.val() == 0){
-              return false;
-            } else {
-              input.val(parseInt(input.val()) - 1);
-              input.change();
-            var inputRes = +input.val();
-            priceVal.text(700 + inputRes);
             return false;
-          }
-          });
-          
-          plus.click(function() {
-            input.val(parseInt(input.val()) + 1);
+          } else {
+            input.val(parseInt(input.val()) - 1);
             input.change();
-            var inputRes = +input.val();
-            priceVal.text(700 + inputRes);
-            return false;
-          });
+          var inputRes = +input.val();
+          priceVal.text(700 + inputRes);
+          return false;
+        }
+      });
           
-          // Слайдер 
-          var slider = $('#slider'),
-  sliderM = $('#m_slider');
+      plus.click(function() {
+        input.val(parseInt(input.val()) + 1);
+        input.change();
+        var inputRes = +input.val();
+        priceVal.text(700 + inputRes);
+        return false;
+      });
+          
+  // Слайдер 
+    var sliderD = $('#sliderD'),
+        sliderM = $('#sliderM');
+
+        sliderD.slick({
+          slideToShow: 1,
+          slideToScroll: 1,
+          arrows: false,
+          asNavFor: '#slider-bar_D'
+        });
+        $('#slider-bar_D').slick({
+          slideToShow: 4,
+          slideToScroll: 1,
+          asNavFor: sliderD,
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true
+        });
      
   
   // отмена стандартного события при клике на ссылку
-      slider.on('click', 'a', function(event) {
+      sliderD.on('click', 'a', function(event) {
         event.preventDefault();
       });
       sliderM.on('click', 'a', function(event) {
@@ -193,6 +216,7 @@ $(document).ready(function() {
     var i = $(this).attr('href');
     var top = $(i).offset().top;
     $('body,html').animate({scrollTop: top},500);
+    $('.item-buttons__button').removeClass('item-buttons__button_active');
     $('.item-buttons__button').eq(1).addClass('item-buttons__button_active');
   });
   $('#optionsM').click(function() {
@@ -200,6 +224,7 @@ $(document).ready(function() {
     var i = $(this).attr('href');
     var top = $(i).offset().top;
     $('body,html').animate({scrollTop: top},500);
+    $('.item-buttons__button').removeClass('item-buttons__button_active');
     $('.item-buttons__button').eq(2).addClass('item-buttons__button_active');
   });
 
