@@ -1,5 +1,16 @@
+@media (min-width: 1400px)
+  .item
+    &-slider
+      &__activeBox
+        height: 80%
+        padding: 40px
+      &__slideBar
+        height: 20%
+       
 @media (min-width: 1200px)
   .item
+    &-modal__btn:hover
+      transform: rotate(90deg)
     &-text
       &__brandLink:hover
         border-bottom: none
@@ -18,11 +29,6 @@
     &-delivery__btnMinus, &-delivery__btnPlus
       &:hover
         color: $color-main
-@media (max-width: 1200px)
-  .item
-    &-slider
-      &__slideBox
-        min-width: 33%
 @media (min-width: 997px)  //MOBILE
   .desctop
     display: block
