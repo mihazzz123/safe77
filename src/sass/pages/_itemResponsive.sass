@@ -6,8 +6,14 @@
         padding: 40px
       &__slideBar
         height: 20%
-       
+  .item-modal__slide
+    width: 70%
+@media (max-width: 1200px)
+  .item-modal__slide
+    width: 70%
 @media (min-width: 1200px)
+  .item-modal__slide
+    width: 45%
   .item
     &-modal__btn:hover
       transform: rotate(90deg)
@@ -63,26 +69,42 @@
       width: 100%
       max-width: 100%
       border-right: 0
+      padding-right: 0
+      &__zoom
+        top: 55%
       &__activeBox
+        // max-width: 300px
+        // max-height: 300px
         width: 100%
-        padding-top: 30px
-        padding-bottom: 30px
+        // height: 100%
+      &__slide
+        // margin-left: 35px
+        // margin-right: 35px
+        padding-bottom: 20px
+      &__imgActive
+        max-height: 350px
+        width: 50%
+        margin-right: auto
+        margin-left: auto
       &__icons
         height: 100px
+        top: 20%
       &__slideBar
         padding-top: 0
         padding-bottom: 0
-        margin-bottom: 10px
-      &__slideBox
-        margin-top: -5px
-        // margin-bottom: -5px
-        min-width: 20% 
+        // margin-bottom: 10px
+        // padding-right: 20px
+        // padding-left: 20px
         height: 100%
-        padding: 20px 4px
+      &__slideBox
+        margin-top: 0
+        height: 100%
+        padding: 20px 4px 10px 4px
       &__image
-        max-width: 110px
+        // max-width: 110px
     &-chevronRight, &-chevronLeft
-      opacity: 0
+      opacity: 1
+      height: 30px
     &-price 
       flex-direction: column
       padding: 0
@@ -262,13 +284,24 @@
           margin-top: 5px
         &-stars 
           padding-top: 0
+  #slider-bar_M 
+    & .slick-list
+      width: 100%
+      // margin-right: 20px
+      // margin-left: 20px
+    & .slick-track
+      align-items: flex-start
 @media (max-width: 786px)
   .item
     &-chevronRight, &-chevronLeft
       opacity: 1
     &-slider
-      &__slideBox
-        min-width: 33%
+      &__slide
+        padding-bottom: 0
+      &__imgActive
+        width: 60%
+        // min-width: 250px
+        // min-height: 250px
     &-feedback
       font-size: 1.2em
       &__title
@@ -289,8 +322,13 @@
         margin-right: auto
         margin-top: 25px
         padding: 20px 35px
+  .item-modal__slide
+    width: 80%
 @media (max-width: 546px)
   .item
+    &-chevronRight, &-chevronLeft
+      width: 10px
+      bottom: 13%
     &-text 
       &__brandImg
         display: none !important
@@ -329,3 +367,13 @@
         &-value
           padding-left: 5px
           width: auto
+    &-slider
+      &__imgActive
+        width: 80%
+      &__zoom
+        top: 60%
+  // #slider-bar_M 
+  //   & .slick-list
+  //     width: 100%
+  //     margin: 0
+  //     padding: 0 

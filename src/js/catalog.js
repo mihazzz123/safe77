@@ -39,6 +39,7 @@ $(document).ready(function() {
   attributive = $('.attributive');
 
   $('.filter').on('click', '.filter-attributive__title', function() {
+    $('.attributive-result').removeClass('attributive-result_active');
     var i = attrOpen.index($(this));
     attributive.eq(i).toggleClass('attributive-active');
     $('.svg-filter').eq(i).toggleClass('svg-filter-active');
