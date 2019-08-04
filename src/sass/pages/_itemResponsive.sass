@@ -10,16 +10,16 @@
     width: 70%
 @media (max-width: 1200px)
   .item-modal__slide
-    width: 70%
+    max-width: 70%
 @media (min-width: 1200px)
   .item-modal__slide
-    width: 45%
+    max-width: 45%
   .item
     &-modal__btn:hover
       transform: rotate(90deg)
     &-text
-      &__brandLink:hover
-        border-bottom: none
+      &__brandLink span:hover
+        border-bottom: 1px dashed #ffffff
         color: $color-main
       &__btn:hover
         background: darken(#f2f2f2, 15%)
@@ -65,6 +65,8 @@
         width: 60%
       &__rating
         width: 40px
+      &__btn
+        padding: 15px 0  15px 0
     &-slider
       width: 100%
       max-width: 100%
@@ -323,7 +325,7 @@
         margin-top: 25px
         padding: 20px 35px
   .item-modal__slide
-    width: 80%
+    max-width: 80%
 @media (max-width: 546px)
   .item
     &-chevronRight, &-chevronLeft
@@ -372,6 +374,15 @@
         width: 80%
       &__zoom
         top: 60%
+    &-modal 
+      &__prev, &__next
+        top: 40%
+      &__prev
+        left: 5px
+        padding-left: 0
+      &__next
+        right: 5px
+        padding-right: 0
   // #slider-bar_M 
   //   & .slick-list
   //     width: 100%

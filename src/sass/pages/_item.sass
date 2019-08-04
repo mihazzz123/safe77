@@ -15,8 +15,8 @@
       height: 100%
       flex-direction: row
     &__slide
-      min-width: 40%
-      width: 85%
+      min-width: 20%
+      max-width: 85%
       margin: auto
     &__sliderBox
       outline: none
@@ -71,12 +71,11 @@
     height: 20px
     position: absolute
     cursor: pointer
+    bottom: 5%
   &-chevronRight
     right: 10px
-    bottom: calc(7.5% - 0px)
   &-chevronLeft
     left: 0px
-    bottom: calc(7.5% - 0px)
   &-slider
     position: relative
     width: 35%
@@ -87,11 +86,22 @@
     padding-right: 15px
     &__activeBox
       position: relative
-      height: 85%
+      height: 100%
+    &__slide
+      display: flex
+      justify-content: center
+    &__imgActive
+      display: inline-block
+      height: auto
+      width: auto
+      max-width: 100%
+      vertical-align: middle 
+      margin-right: auto
+      margin-left: auto
     &__icons
       z-index: 1
       height: 150px
-      top: calc(50% - 75px)
+      top: 30%
       left: 0
     &__zoom
       cursor: pointer
@@ -140,10 +150,11 @@
         padding-right: 3%
         max-height: 80px
       &Link 
-        display: inline-block
-        text-transform: uppercase
-        border-bottom: 1px dashed #000000
-        transition: 0.5s
+        display: block
+        & span 
+          text-transform: uppercase
+          transition: 0.3s
+          border-bottom: 1px dashed #000000
         &s 
           flex-direction: column
           justify-content: space-around
@@ -153,15 +164,20 @@
       color: $color-text
       width: 24%
       text-align: center
-      padding: 15px
+      padding: 10px 0px
+      font-size: 1.1em
       transition: 0.3s 
       border: 0
       &s
         padding-top: 20px
         padding-bottom: 5px
         border-bottom: 2px solid $color-main
-      &IconD
+      &IconD, &IconM
         margin-left: 5px
+        width: 28px
+        height: 28px
+        &:first-child
+          width: 35px
       &_active
         background: $color-main !important
         color: #ffffff
@@ -326,6 +342,7 @@
         font-size: 1.2em
       &Spec
         // position: absolute
+        font-size: 1.1em
         &-desc 
           display: block
           text-align: center
@@ -352,8 +369,7 @@
         padding-bottom: 5px
         padding-top: 5px
         font-weight: 600
-        & a
-          color: #0c85aa
+        color: #333333
       &-btn 
         display: inline-block
         background: #ffffff

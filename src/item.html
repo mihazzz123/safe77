@@ -1051,11 +1051,11 @@
 
           <div id="sliderD" class="flex-center item-slider__activeBox">
             <!-- <div class="item-slider__imageActive"> -->
-              <img src="img/placeholder.png" data-src="img/item/slide_1.jpg" alt="" class="b-lazy item-slider__imgActive">
-              <img src="img/placeholder.png" data-src="img/item/slide_2.jpg" alt="" class="b-lazy item-slider__imgActive">
-              <img src="img/placeholder.png" data-src="img/item/slide_3.jpg" alt="" class="b-lazy item-slider__imgActive">
-              <img src="img/placeholder.png" data-src="img/item/slide_4.jpg" alt="" class="b-lazy item-slider__imgActive">
-              <img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-slider__imgActive">
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_1.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_2.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_3.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_4.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
               <!-- <img class="b-lazy item-slider__imgActive" src="img/placeholder.png" data-src="img/item/slide_1.jpg" alt=""> -->
               
             <!-- </div> -->
@@ -1081,8 +1081,8 @@
           <div class="item-text__brand dflex"> 
             <img src="img/item/item_brand.png" alt="" class="item-text__brandImg">
             <div class="item-text__brandLinks dflex">
-              <a href="#specification" class="item-text__brandLink">Все характеристики</a>
-              <a href="#options" class="item-text__brandLink">Дополнительные опции</a>
+              <a id="specification-link" href="#item-buttons" class="item-text__brandLink"><span>Все характеристики</span></a>
+              <a id="options-link" href="#item-buttons" class="item-text__brandLink"><span>Дополнительные опции</span></a>
             </div>
           </div>
         
@@ -1116,19 +1116,19 @@
 
         <div class="item-text__btns item-text__btnsD dflex jcontent-sb">
           <button class="item-text__btn item-text__btnD item-text__btn_active flex-center">ДОСТАВКА
-            <img alt="" class="item-text__btnIconD" src="img/item/ribbon-2.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg">
+            <img alt="" class="item-text__btnIconD" src="img/item/mkad-truck-2.svg" data-src="img/item/mkad-truck.svg" data-src-second="img/item/mkad-truck-2.svg">
           </button>
           <!-- /.item-text__btn -->
           <button class="item-text__btn item-text__btnD flex-center">САМОВЫВОЗ
-            <img alt="" class="item-text__btnIconD" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
+            <img alt="" class="item-text__btnIconD" src="img/item/самовывоз.svg" data-src="img/item/самовывоз.svg" data-src-second="img/item/самовывоз-2.svg">
           </button>
           <!-- /.item-text__btn -->
           <button class="item-text__btn item-text__btnD flex-center">ОПЛАТА
-            <img alt="" class="item-text__btnIconD" src="img/item/ribbon.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg"> 
+            <img alt="" class="item-text__btnIconD" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
           </button>
           <!-- /.item-text__btn -->
           <button class="item-text__btn item-text__btnD flex-center">ГАРАНТИИ
-            <img alt="" class="item-text__btnIconD" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
+            <img alt="" class="item-text__btnIconD" src="img/item/ribbon.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg"> 
           </button>
           <!-- /.item-text__btn -->
         </div>
@@ -1222,13 +1222,13 @@
       </div>
       <!-- /.item-box dflex jcontent-sb -->
 
-      <div class="item-buttons desctop">
+      <div id="item-buttons" class="item-buttons desctop">
         <div class="item-buttons__nav item-buttons__navD dflex jcontent-sb">
           <button class="item-buttons__btn item-buttons__btnD item-buttons__btn-active btnDesc">ОПИСАНИЕ</button>
           <!-- /.item-buttons__btn -->
-          <button class="item-buttons__btn item-buttons__btnD btnSpecifications">ХАРАКТЕРИСТИКИ</button>
+          <button id="btnSpecifications" class="item-buttons__btn item-buttons__btnD btnSpecifications">ХАРАКТЕРИСТИКИ</button>
           <!-- /.item-buttons__btn -->
-          <button class="item-buttons__btn item-buttons__btnD btnOptions">ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ (<span id="options_value"></span>)</button>
+          <button id="btnOptions" class="item-buttons__btn item-buttons__btnD btnOptions">ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ (<span id="options_value"></span>)</button>
           <!-- /.item-buttons__btn -->
           <button class="item-buttons__btn item-buttons__btnD btnFeedback">ОТЗЫВЫ (<span id="feedback_value"></span>)</button>
           <!-- /.item-buttons__btn -->
@@ -1361,8 +1361,8 @@
             <div class="item-text__brand dflex">
               <img src="img/item/item_brand.png" alt="" class="item-text__brandImg">
               <div class="item-text__brandLinks dflex">
-                <a id="specificationM_link" href="#specificationM" class="item-text__brandLink">Все характеристики</a>
-                <a id="optionsM_link" href="#optionsM" class="item-text__brandLink">Дополнительные опции</a>
+                <a id="specificationM_link" href="#item-buttonsM" class="item-text__brandLink"><span>Все характеристики</span></a>
+                <a id="optionsM_link" href="#item-buttonsM" class="item-text__brandLink"><span>Дополнительные опции</span></a>
               </div>
             </div>
             <div class="item-price__rating flex-center margin-auto">
@@ -1465,7 +1465,7 @@
           <div class="item-text__button">
             <div class="item-text__btn item-text__btnM flex-center">
               <span class="item-text__btnTitle">ДОСТАВКА</span>
-              <img alt="" class="item-text__btnIconM" src="img/item/ribbon.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg">
+              <img alt="" class="item-text__btnIconM" src="img/item/mkad-truck.svg" data-src="img/item/mkad-truck.svg" data-src-second="img/item/mkad-truck-2.svg">
               <i class="fas fa-times item-text__btnClose header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i>
             </div>
             <!-- /.item-text__btn -->
@@ -1508,7 +1508,7 @@
         <div class="item-text__button">
           <div class="item-text__btn item-text__btnM flex-center">
             <span class="item-text__btnTitle">САМОВЫВОЗ</span>
-            <img alt="" class="item-text__btnIconM" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
+            <img alt="" class="item-text__btnIconM" src="img/item/самовывоз.svg" data-src="img/item/самовывоз.svg" data-src-second="img/item/самовывоз-2.svg">
             <i class="fas fa-times item-text__btnClose header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i>
           </div>
           <!-- /.item-text__btn -->
@@ -1522,7 +1522,7 @@
         <div class="item-text__button">
           <div class="item-text__btn item-text__btnM flex-center">
             <span class="item-text__btnTitle">ОПЛАТА</span>
-            <img alt="" class="item-text__btnIconM" src="img/item/ribbon.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg"> 
+            <img alt="" class="item-text__btnIconM" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
             <i class="fas fa-times item-text__btnClose header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i>
           </div>
           <!-- /.item-text__btn -->
@@ -1570,7 +1570,7 @@
           <div class="item-text__button">
           <div class="item-text__btn item-text__btnM flex-center">
             <span class="item-text__btnTitle">ГАРАНТИИ</span>
-            <img alt="" class="item-text__btnIconM" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
+            <img alt="" class="item-text__btnIconM" src="img/item/ribbon.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg"> 
             <i class="fas fa-times item-text__btnClose header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i>
           </div>
           <!-- /.item-text__btns -->
@@ -1591,7 +1591,7 @@
     </div>
     <!-- /.item-box dflex jcontent-sb -->
     
-    <div class="item-buttons mobile">
+    <div id="item-buttonsM" class="item-buttons mobile">
       <div class="item-buttons__nav item-buttons__navM dflex jcontent-sb">
         
         <div class="item-buttons__button">

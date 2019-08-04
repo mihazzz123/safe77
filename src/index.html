@@ -963,6 +963,29 @@ Data-сейфы
 <div class=m_header-wrapper></div>
 </div>
 </header>
+
+<div class="click-modal click-modal1 passive">
+    <div class="header-modal__box click-modal__box">
+    <i class="fas fa-times flex-center click-modal__close header-modal__close">
+    <svg xmlns=http://www.w3.org/2000/svg style=fill:#fff;width:25px;height:25px viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+    </i>
+    <p class=header-modal__title>Купить в 1 клик</p>
+    <form action=# class=header-modal__form id=header__form>
+    <input required type=text class=header-modal__input placeholder="Ваше имя">
+    <input required type=email class=header-modal__input placeholder="Email">
+    <input required type=tel class=header-modal__input placeholder=Телефон*>
+    <span class="click-modal__lable">Ваш заказ:<span class="click-modal__value"></span></span>
+    <div class=header-modal__check>
+    <input required type=checkbox checked=checked class=header-modal__checkbox>
+    <span class=header-modal__text>Даю согласие на обработку персональных данных в соответствии с
+    <a href=# target=_blank>пользовательским соглашением</a>
+    </span>
+    </div>
+    <button class="click-modal__button border-main">Отправить</button>
+    </form>
+    </div>
+</div>
+
 <section class=main>
 <div class=container>
 <h1 class="main__title text-center color-main">СЕЙФЫ</h1>
@@ -1056,20 +1079,38 @@ Data-сейфы
 <div class="tdslider-wrapper tdslider-wrapper-1">
 <div class="tdslide tdslide-1" data-item=1>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1132,22 +1173,45 @@ Data-сейфы
 </div>
 </div>
 </div>
-<div class="tdslide tdslide-1" data-item=2>
-<div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
+  <div class="tdslide tdslide-1" data-item=2>
+  <div class="tdslide-wrapper tdslide-wrapper-1">
+      <div class="tdslide-discount good-discount"><span class="tdslide-discount__value">-5%</span></div>
+
+  <div class=tdslide-icons>
+
+  <div class="tdslide-icon">
+    <a href=# class="flex-center tdslide-icon-1">
+      <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+        <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+        <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+      </svg>
+      <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+      </svg>
+    </a>
+    <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+  </div>
+  <div class="tdslide-icon">
+    <a href=# class="flex-center tdslide-icon-1">
+      <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+        <title>Law</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+        <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+        <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+        <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+      </svg>
+      <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+        <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+      </svg>
+    </a>
+    <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+  </div>
+
+
 </div>
+
+
+
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1212,20 +1276,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-1" data-item=3>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1290,20 +1372,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-1" data-item=4>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1368,20 +1468,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-1" data-item=5>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1446,20 +1564,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-1" data-item=6>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1524,20 +1660,40 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-1" data-item=7>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class="tdslide-discount good-discount"><span class="tdslide-discount__value">-5%</span></div>
+
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1602,20 +1758,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-1" data-item=8>
 <div class="tdslide-wrapper tdslide-wrapper-1">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1701,20 +1875,38 @@ Data-сейфы
 <div class="tdslider-wrapper tdslider-wrapper-2">
 <div class="tdslide tdslide-2" data-item=1>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1779,20 +1971,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=2>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1857,20 +2067,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=3>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -1935,20 +2163,40 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=4>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class="tdslide-discount good-discount"><span class="tdslide-discount__value">-5%</span></div>
+
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2013,20 +2261,40 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=5>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class="tdslide-discount good-discount"><span class="tdslide-discount__value">-5%</span></div>
+
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2091,20 +2359,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=6>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2169,20 +2455,40 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=7>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class="tdslide-discount good-discount"><span class="tdslide-discount__value">-5%</span></div>
+
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2247,20 +2553,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-2" data-item=8>
 <div class="tdslide-wrapper tdslide-wrapper-2">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-2.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2346,20 +2670,38 @@ Data-сейфы
 <div class="tdslider-wrapper tdslider-wrapper-3">
 <div class="tdslide tdslide-3" data-item=1>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2424,20 +2766,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=2>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2502,20 +2862,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=3>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2580,20 +2958,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=4>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2658,20 +3054,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=5>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2736,20 +3150,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=6>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2814,20 +3246,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=7>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>
@@ -2892,20 +3342,38 @@ Data-сейфы
 </div>
 <div class="tdslide tdslide-3" data-item=8>
 <div class="tdslide-wrapper tdslide-wrapper-3">
-<div class=tdslide-icons>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-<style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-<path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В закладки</a></div>
-<div class="dflex tdslide-icon"><a href=# class="flex-center tdslide-icon-1"><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
-<title>Law</title>
-<desc>A line styled icon from Orion Icon Library.</desc>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
-<circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
-<path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
-<path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
-</svg></a><a href=# class="flex-center tdslide-icon-2">В сравнение</a></div>
-</div>
+    <div class=tdslide-icons>
+
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
+              <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
+              <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В закладки" data-text="Удалить">В закладки</a>
+        </div>
+        <div class="tdslide-icon">
+          <a href=# class="flex-center tdslide-icon-1">
+            <svg class="add" xmlns=http://www.w3.org/2000/svg viewBox="0 0 64 64" role=img xmlns:xlink=http://www.w3.org/1999/xlink>
+              <title>Law</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M32 16v40m-10 0h20M28 12H12L2 32" stroke-linejoin=round stroke-linecap=round></path>
+              <circle data-name=layer2 cx=32 cy=12 r=4 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></circle>
+              <path data-name=layer2 fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 d="M12 12l10 20m14-20h16l10 20M52 12L42 32" stroke-linejoin=round stroke-linecap=round></path>
+              <path data-name=layer1 d="M12 42a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10zm40 0a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" fill=none stroke=#ccc stroke-miterlimit=10 stroke-width=2 stroke-linejoin=round stroke-linecap=round></path>
+            </svg>
+            <svg class="remove" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
+              <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a href=# class="flex-center tdslide-iconAdd tdslide-icon-2" data-text-default="В сравнение" data-text="Удалить">В сравнение</a>
+        </div>
+      
+      
+      </div>
 <div class=tdslide-img><img class=b-lazy src=img/placeholder.png data-src=img/main/slider_3/slide-3.jpg alt=Image></div>
 <div class=tdslide-line>
 <div class=tdslide-buybuttons><a href=# class="tdslide-buy-button main-button">Купить</a><a href=# class="tdslide-onclick-button main-button">Купить в 1 клик</a></div>

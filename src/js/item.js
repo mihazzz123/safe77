@@ -131,6 +131,7 @@ $(document).ready(function() {
   $('#sliderD').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    fade: true,
     infinite: false,
     arrows: false,
     asNavFor: '#slider-bar_D'
@@ -212,6 +213,26 @@ $(document).ready(function() {
     });
   });
   
+  $('#specification-link').click(function(event) {
+    event.preventDefault();
+    var i = $(this).attr('href');
+    var top = $(i).offset().top;
+    $('body,html').animate({scrollTop: top},500);
+    $('.item-buttons__result').removeClass('dflex');
+    $('.item-buttons__btnD').removeClass('item-buttons__btn-active');
+    $('#btnSpecifications').addClass('item-buttons__btn-active');
+    $('#specification').addClass('dflex');
+  });
+  $('#options-link').click(function(event) {
+    event.preventDefault();
+    var i = $(this).attr('href');
+    var top = $(i).offset().top;
+    $('body,html').animate({scrollTop: top},500);
+    $('.item-buttons__btnD').removeClass('item-buttons__btn-active');
+    $('#btnOptions').addClass('item-buttons__btn-active');
+    $('.item-buttons__result').removeClass('dflex');
+    $('#options').addClass('dflex');
+  });
   
   
   
@@ -223,6 +244,7 @@ $(document).ready(function() {
   // slider
   $('#sliderM').slick({
     slidesToShow: 1,
+    fade: true,
     slidesToScroll: 1,
     infinite: false,
     arrows: false,
@@ -295,7 +317,6 @@ $(document).ready(function() {
     setTimeout(function() {
       $('.slick-track').removeClass('notransition');
     }, 500);
-    console.log(n);
   });
   
   $('#sliderM').on('click', '.slick-current', function() {
@@ -356,6 +377,9 @@ $(document).ready(function() {
       val2M = $('.item-optionsM').length;
       valueFeedM.text(valM);
       valueOptionsM.text(val2M);
+  if(val2M == +0){
+    $('.btnOptions').css({'color' : '#c0c0c0'});
+  } 
   // Присваивание аттрибутов для textarea
   var textarea1M = $('#textarea_1M'),
   textarea2M = $('#textarea_2M');
@@ -363,7 +387,7 @@ $(document).ready(function() {
   textarea1M.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off').attr('required', 'required');
   textarea2M.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off').attr('required', 'required');
   
-  $('#specificationM').click(function(event) {
+  $('#specificationM_link').click(function(event) {
     event.preventDefault();
     var i = $(this).attr('href');
     var top = $(i).offset().top;
@@ -371,7 +395,7 @@ $(document).ready(function() {
     $('.item-buttons__button').removeClass('item-buttons__button_active');
     $('.item-buttons__button').eq(1).addClass('item-buttons__button_active');
   });
-  $('#optionsM').click(function() {
+  $('#optionsM_link').click(function(event) {
     event.preventDefault();
     var i = $(this).attr('href');
     var top = $(i).offset().top;
