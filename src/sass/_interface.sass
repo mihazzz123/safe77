@@ -196,27 +196,24 @@ button, input, a, li, ul, textarea, select, option, img
       stroke-miterlimit: 10
   .header-nav__item:hover
     color: #ffffff
-    transition: 0s
-    &:hover:after
-      height: 65px
-      box-shadow: inset 0px -1px 0px 0px #fff
-      transition: 0s
+    &:before
+      height: 100%
     .header-catalog
       color: #ffffff
       transition: 0s
     svg
       fill: #fff
-  .header-nav__item:hover
-    transition: 0s
-    // content: ""
-    // z-index: -1
+  .header-nav__item:before
+    content: ""
+    transition: 0.3s
     background: $color-main
-    // height: 0px
-    // width: 100%
-    // display: block
-    // position: absolute
-    // bottom: -1px
-    // left: 0
+    z-index: -1
+    height: 0
+    width: 100%
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
   .header-cart a:hover
     background: $color-main
     & .header-svg

@@ -1,0 +1,75 @@
+.about
+  &-block
+    &-1
+      padding-top: 30px
+      align-items: center
+  &-main 
+    width: 55%
+    &__image
+      position: relative
+      width: 35%
+      &:after
+        content: ""
+        width: 100% 
+        height: 100%
+        position: absolute
+        display: block
+        right: 15px
+        top: 15px
+        background: #000
+        opacity: 0.25
+    &__img  
+      display: block
+      width: 100%
+    &__title
+      font-size: 1.8em
+      font-weight: normal
+      margin-top: 0
+      margin-bottom: 30px
+    &__desc 
+      display: inline-block
+      margin-bottom: 25px
+      font-size: 1.1em
+    &__partner
+      align-items: center
+      position: relative
+      &:before
+        content: ""
+        height: 2px
+        width: 150%
+        left: 0
+        top: 0
+        position: absolute
+        background: $color-main
+      &-img
+        display: block
+        width: 50% 
+        height: 100%
+      &-text 
+        display: block
+        width: 50% 
+        margin-left: 20px
+        color: $color-main
+        font-size: 1.2em
+@media (max-width: 1200px)
+  .about
+    &-main 
+      &__image 
+        width: 40%
+      &__partner
+        padding-top: 20px
+@media (max-width: 997px)
+  .about
+    &-main 
+      width: 48%
+      &__image
+        width: 50%
+      &__title
+        margin-bottom: 20px
+        font-size: 1.6em
+      &__desc
+        font-size: 1em
+        margin-bottom: 15px
+      &__partner
+        &-text 
+          font-size: 0.8em
