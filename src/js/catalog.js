@@ -58,10 +58,15 @@ $(document).ready(function() {
     $('.svg-filter').eq(i).toggleClass('svg-filter-active');
     $('.attributive-result').eq(i).addClass('attributive-result'+[i]);
     attributive.eq(i).on('click', '.attributive-check', function() {
-      // $('.attributive-result').removeClass('attributive-result_active');
+      $('.attributive-result').removeClass('attributive-result_active');
       $('.attributive-result').eq(i).addClass('attributive-result_active');
     });
   });
+
+  // attributive.on('click', '.attributive-check__flag', function() {
+  //   $('.attributive-result').removeClass('attributive-result_active');
+  //   $(this).parents('.attributive').find('.attributive-result').addClass('attributive-result_active');
+  // });
     
   
   // Ползунки в фильтре
