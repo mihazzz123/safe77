@@ -34,9 +34,10 @@ $(document).ready(function() {
       btnShowAll.hide();
       btnHideAllSec.show();
     });   
-    (btnHideAll, btnHideAllSec).on('click', function() {
+    btnHideAll.add(btnHideAllSec).on('click', function() {
       $('.added').addClass('hiden').removeClass('added').attr('style', '');
       btnShowMore.show();
+      btnShowAll.hide();
       btnHideAll.hide();
       btnHideAllSec.hide();
     }); 
