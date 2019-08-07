@@ -234,12 +234,12 @@
   border-style: solid
   border-color: #C0C0C0
   overflow: hidden
-  height: 50px
-  transition: all .3s
+  height: auto
+  // transition: all .3s
   &-activeShowMore
-    height: 210px
+    // height: 210px
   &-activeShowAll
-    height: auto
+    // height: auto
   &-touchstone
     flex-wrap: wrap
     margin-top: 10px
@@ -251,7 +251,10 @@
       max-height: 30px
       margin-right: 10px
       margin-bottom: 10px
-      transition: all .3s
+      // transition: all .3s
+      display: none
+      &:nth-child(-n+2)
+        display: block
   &-nav 
     flex-direction: column
     justify-content: space-between
