@@ -44,5 +44,5 @@ gulp.task('move-js', function(done) {
   .pipe(gulp.dest('dist/js/'));
 });
   
-gulp.task('default', gulp.series('minify-css', 'min-js', 'move-js', 'tinypng', 'htmlmin', function(done) {
+gulp.task('default', gulp.series('minify-css', 'min-js', 'move-js', 'htmlmin', function(done) {
 }));
