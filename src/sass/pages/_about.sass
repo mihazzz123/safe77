@@ -72,8 +72,31 @@
   &-slider
     margin-top: 50px
     position: relative
+  & .slick-dots
+    position: absolute
+    left: 23%
+    top: 335px
+    display: flex
+    flex-direction: row
+    padding: 0
+    margin: 0
+    & li
+      font-size: 0
+      margin-left: 5px
+      margin-right: 5px
+      width: 20px
+      height: 20px
+      background: $color-main
+      border-radius: 50%
+      opacity: 0.25
+      cursor: pointer
+    & button 
+      display: none
+    & .slick-active
+      opacity: 1
   &-slide
     align-items: center
+    outline: none
     &__image
       width: 50%
       height: 300px
@@ -81,6 +104,8 @@
       background-position: center center
       background-size: cover
       background-repeat: no-repeat
+      margin-bottom: 15px
+      box-shadow: 5px 5px 6px 0px #909090f2
       &_1
         background-image: url(../img/about/slide_1.jpg)
       &_2
@@ -100,18 +125,19 @@
     &__text
       width: 47%
       font-size: 1.2em
-  &-dots
-    position: absolute
-    left: 23%
-    bottom: -25px
-    &__dots
-      margin-left: 5px
-      margin-right: 5px
-      width: 20px
-      height: 20px
-      background: $color-main
-      border-radius: 50%
-      // opacity: 0.25
+  &-text 
+    &__box
+      display: flex
+      flex-direction: column
+    &__title
+      text-transform: uppercase
+      font-size: 1.2em
+      margin-bottom: 15px
+    &__desc
+      margin-bottom: 15px
+  &-block__image
+    width: 130px
+    height: 90px
 @media (max-width: 1200px)
   .about
     &-main 
@@ -136,9 +162,12 @@
           font-size: 0.8em
 @media (max-width: 786px)
   .about
-    &-block-1
-      padding-top: 0
-      flex-direction: column
+    &-block
+      &-1
+        padding-top: 0
+        flex-direction: column
+      &__image
+        display: none
     &-main 
       width: 100%
       &__partner
@@ -167,3 +196,14 @@
           width: 80%
       &__imgM
         width: 100%
+    &-slide 
+      flex-direction: column
+      &r .slick-dots
+        left: 44%
+        top: 235px
+      &__image
+        width: 90%
+        max-height: 230px
+        margin-bottom: 50px
+      &__text
+        width: 98%

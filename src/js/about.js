@@ -4,9 +4,9 @@ $(document).ready(function() {
     slickToshow: 1,
     slickToScroll: 1,
     arrows: false,
-    dots: true,
-    appendDots: $('.about-dots__dots'),
-    dotsClass: 'about-dots'
+    dots: true
+    // appendDots: $('.about-dots'),
+    // dotsClass: 'about-dots'
   });
 
 

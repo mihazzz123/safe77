@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 5.1.316 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" style="" sketchjs:metadata="eyJ0aXRsZSI6IjE4YmFiNjIzLWM0ZDktNDQ2Zi1hNjRkLTk5MzJmYmZmMjIzYSIsImRlc2NyaXB0aW9uIjoiTWFkZSB3aXRoIFNrZXRjaHBhZCAtIGh0dHBzOi8vc2tldGNoLmlvL3NrZXRjaHBhZCIsIm1ldGFkYXRhIjp7fSwiY2xpcFBhdGgiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsImxpbmVXaWR0aCI6MX19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjE5NzYuMDEwMDAwMDAwMDAwNCwiaGVpZ2h0IjoxMzkyLCJwYWdlcyI6eyJsZW5ndGgiOjEsImRhdGEiOlt7IndpZHRoIjoxOTc2LjAxMDAwMDAwMDAwMDQsImhlaWdodCI6MTM5Mn1dfX0=" width="1976.0100000000004" height="1392" viewBox="0 0 1976.0100000000004 1392" sketchjs:version="5.1.316">
+<path sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over; vector-effect: non-scaling-stroke;" d="M0 0 L1976.01 0 1976.01 1392 0 1392 z"/>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;">
+	<g id="Ð¡Ð»Ð¾Ð¹_2" sketchjs:uid="1" style="">
+		<g id="Ð¡Ð»Ð¾Ð¹_1-2" sketchjs:uid="2" style="">
+			<path d="M1735,0c4.56,1.35,9.22,2.42,13.66,4.08a60.34,60.34,0,0,1,39.15,56.3q.06,266.49,0,533v4.37h-21v-6.87q0-263.74,0-527.47c0-22.65-13.68-38.81-35.43-41.92a42.31,42.31,0,0,0-6-.29H62.52c-24.11,0-41.35,17.16-41.35,41.15q0,613,0,1225.93c0,24.49,16.92,41.26,41.61,41.26h1422.3v21.33H63c-32,0-56.06-19.85-62.08-51.19A6.25,6.25,0,0,0,0,1298Q0,675.5,0,53a29.33,29.33,0,0,0,1-3.17C5.56,28.41,17.72,13.16,37.92,4.63,42.74,2.6,48,1.52,53,0Z" sketchjs:uid="3" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M1976,895c-.94,6.51-1.81,13-2.82,19.53a215.74,215.74,0,0,1-181.34,180.64c-116.82,17.57-225.37-61-245.58-177.76-20-115.23,57.72-227.22,172.41-248.56,115.85-21.56,226,50.63,251.95,165.35,2.23,9.86,3,20.05,4.5,30.09.19,1.25.59,2.48.89,3.71ZM1759.79,685.83c-108,0-195.72,87.36-195.79,195.09-.07,108,87.86,196.21,195.55,196.08,106.8-.13,194.86-87.69,195.61-193.07C1956,773.57,1866.65,685.37,1759.79,685.83Z" sketchjs:uid="4" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M1605,1392c.17-2.31.48-4.61.48-6.92q0-120.47,0-240.95v-6.78H1626V1359c2.29-1.22,3.86-2,5.36-2.86q61.73-36.37,123.41-72.84c3.39-2,5.86-2.2,9.39-.13q62,36.48,124.11,72.62c1.68,1,3.42,1.87,5.8,3.16V1144.34H1915V1392h-7a8,8,0,0,0-1.36-1.31q-72.18-42.2-144.46-84.24c-1.48-.86-4.47-.44-6.1.51q-69.79,40.88-139.4,82a30.63,30.63,0,0,0-3.67,3Z" sketchjs:uid="5" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M219,578.71V558.58h1334.8v20.13Z" sketchjs:uid="6" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M1553.57,234.19v20H219v-20Z" sketchjs:uid="7" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M1553.57,384.19v20H219v-20Z" sketchjs:uid="8" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M1289.64,729.82v19.95H222.53V729.82Z" sketchjs:uid="9" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+			<path d="M1297.83,900.53v20.14H235.17V900.53Z" sketchjs:uid="10" style="fill: #a50103; fill-rule: nonzero; fill-opacity: 1;"/>
+		</g>
+	</g>
+</g>
+</svg>
