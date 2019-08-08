@@ -1,0 +1,102 @@
+.transport  
+  padding-top: 50px
+  &__title
+    margin-top: 50px
+    margin-bottom: 60px
+  &-block 
+    &-1
+      margin-bottom: 50px
+    &-2
+      color: #ffffff
+      background-image: url(../img/transport/steps.png)
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
+      padding: 50px 0
+    &__title
+      width: 100%
+      display: block
+      font-size: 1.8em
+      font-weight: normal
+      margin-top: 0
+      margin-bottom: 60px
+    &__text
+      width: 60%
+      margin-top: 60px
+      font-size: 1.3em
+      height: auto
+    &__desc
+      display: block
+      padding-right: 40px
+      width: 100%
+      position: relative
+      &-sec
+        padding-right: 0
+        padding-left: 40px
+        &:after
+          right: 0
+      &:after
+        content: ""
+        position: absolute
+        display: block
+        height: 1px
+        width: calc(100% - 15px)
+        // left: 0
+        bottom: -20px
+        background: $color-main
+    &__image
+      width: 40%
+      position: relative
+      &:after
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        right: 15px
+        top: 15px
+        background: #000
+        opacity: 0.25
+        z-index: -1
+      &-sec 
+        &:after
+          left: 15px
+    &__img
+      width: 100%
+      height: auto
+  &-steps 
+    &__title
+      font-weight: normal
+      margin-bottom: 50px
+      margin-top: 0
+    & p
+      border-radius: 50%
+      font-size: 2em
+      background: #ffffff
+      color: $color-main
+      width: 80px
+      height: 80px
+      margin-right: 20px
+      margin-top: 0
+      margin-bottom: 0
+    &__step
+      margin-right: 30px
+      font-size: 1.4em
+  &-block
+    &-3
+      margin-top: 50px
+      margin-bottom: 50px
+    &__item
+      background: #ffffff
+      width: 48%
+      align-items: center
+      font-size: 1.2em
+      &-text 
+        padding: 50px 50px 50px 30px
+    &__icon
+      display: block
+      margin-left: 30px
+      min-width: 80px
+      width: 80px
+      height: 80px
+      padding: 10px
+

@@ -4933,4 +4933,103 @@ footer {
       margin-bottom: 50px; }
     .about-slide__text {
       width: 98%; } }
+
+.transport {
+  padding-top: 50px; }
+  .transport__title {
+    margin-top: 50px;
+    margin-bottom: 60px; }
+  .transport-block-1 {
+    margin-bottom: 50px; }
+  .transport-block-2 {
+    color: #ffffff;
+    background-image: url(../img/transport/steps.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0; }
+  .transport-block__title {
+    width: 100%;
+    display: block;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 60px; }
+  .transport-block__text {
+    width: 60%;
+    margin-top: 60px;
+    font-size: 1.3em;
+    height: auto; }
+  .transport-block__desc {
+    display: block;
+    padding-right: 40px;
+    width: 100%;
+    position: relative; }
+    .transport-block__desc-sec {
+      padding-right: 0;
+      padding-left: 40px; }
+      .transport-block__desc-sec:after {
+        right: 0; }
+    .transport-block__desc:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: calc(100% - 15px);
+      bottom: -20px;
+      background: #a50103; }
+  .transport-block__image {
+    width: 40%;
+    position: relative; }
+    .transport-block__image:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      background: #000;
+      opacity: 0.25;
+      z-index: -1; }
+    .transport-block__image-sec:after {
+      left: 15px; }
+  .transport-block__img {
+    width: 100%;
+    height: auto; }
+  .transport-steps__title {
+    font-weight: normal;
+    margin-bottom: 50px;
+    margin-top: 0; }
+  .transport-steps p {
+    border-radius: 50%;
+    font-size: 2em;
+    background: #ffffff;
+    color: #a50103;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .transport-steps__step {
+    margin-right: 30px;
+    font-size: 1.4em; }
+  .transport-block-3 {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .transport-block__item {
+    background: #ffffff;
+    width: 48%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2em; }
+    .transport-block__item-text {
+      padding: 50px 50px 50px 30px; }
+  .transport-block__icon {
+    display: block;
+    margin-left: 30px;
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    padding: 10px; }
 /*# sourceMappingURL=style_min.css.map */
