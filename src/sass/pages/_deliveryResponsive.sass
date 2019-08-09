@@ -1,0 +1,111 @@
+@media (min-width: 1400px)
+  .delivery
+    &-column
+      width: 65%
+    &-item 
+      &_1
+        width: 48.5%
+      &_2
+        width: 48.5%
+      &_3
+        width: 34%
+      &_4
+        width: 100%
+@media (max-width: 1200px)
+  .delivery
+    &-column
+      width: 52.5%
+    &-item 
+      &_1
+        width: 47%
+        margin-right: 0
+      &_2
+        width: 47%
+        margin-right: 0
+      &_3
+        width: 44%
+        margin-left: 0
+      &_4
+        width: 100%
+        margin-right: 0
+@media (max-width: 992px)
+  .delivery
+    &-box 
+      min-height: auto
+    &-column
+      width: 48%
+    &-item 
+      padding: 25px 20px
+      height: auto
+      &_1
+        width: 100%
+      &_2
+        width: 100%
+        margin-left: 0
+      &_3
+        width: 49%
+        max-height: 100%
+      &_4
+        width: 100%
+        margin-top: 0
+        padding-bottom: 60px
+        & .delivery-item__img
+          height: 100px
+      &__title, &__desc
+        font-size: 0.9em
+    &-attention
+      &__text
+        width: 75%
+        font-size: 0.9em
+      &__img
+        width: 25%
+        padding: 30px
+@media (min-width: 786px)
+  .delivery
+    &-itemM
+      display: none
+    &-itemD 
+      display: block
+@media (max-width: 786px)
+  .delivery
+    &__subtitle
+      font-size: 1.1em
+    &-itemM
+      display: block
+    &-itemD 
+      display: none
+    &-column
+      width: 98%
+      margin-left: auto
+      margin-right: auto
+    &-item 
+      font-size: 1.1em
+      &_1
+        width: 98%
+      &_2
+        width: 98%
+      &_3
+        width: 98%
+        max-width: 98%
+        margin-bottom: 20px
+      &_4
+        width: 98%
+    &-info 
+      flex-direction: column
+      align-items: center
+      font-size: 1.1em
+      &__item
+        width: 98%
+        margin-bottom: 30px
+      &__img
+        width: 60px
+        height: 60px
+    &-attention
+      flex-direction: column
+      align-items: center
+      &__img
+        padding: 5px
+      &__text
+        width: 98%
+        font-size: 1em
+        margin-top: 0

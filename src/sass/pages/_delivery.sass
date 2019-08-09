@@ -1,0 +1,122 @@
+.delivery
+  padding-top: 50px
+  &__subtitle
+    margin: 0
+    padding-bottom: 25px
+    font-size: 1em
+    font-weight: normal
+  &-column 
+    flex-wrap: wrap
+    width: 49%
+  &-box 
+    min-height: 700px
+    height: 100%
+    flex-wrap: wrap
+    margin-bottom: 50px
+  &-item 
+    background: #ffffff
+    padding: 45px 30px  
+    &__img
+      height: 60px
+      width: auto
+      margin-bottom: 20px
+    &__icon
+      width: 47px
+      height: 45px
+      position: absolute
+      right: 20px
+      bottom: 20px
+    &_1, &_2
+      width: 45.5%
+      height: 350px
+      margin-bottom: 20px
+      margin-right: 15px
+    &_2
+      margin-left: 15px
+    &_3
+      max-width: 49%
+      // height: 100%
+      max-height: 700px
+      margin-left: 15px
+    &_4
+      width: 98%
+      margin-top: 15px
+      margin-right: 15px
+      height: 310px
+      position: relative
+      & .delivery-item__img
+        width: 120px
+        height: 110px
+      & .delivery-item__desc
+        padding-right: 40px
+    &__title
+      font-size: 1em
+      margin-top: 0
+      margin-bottom: 15px
+    &__desc
+      display: inline-block
+      font-size: 1em
+      margin-bottom: 15px
+  &-table
+    background: #ffffff
+    width: 100%
+  &-tbody 
+    display: block
+    margin-top: 30px
+    padding-bottom: 50px
+  &-string 
+    display: inline-table
+    width: 100%
+    height: 50px
+    &:nth-child(odd)
+      background: lighten(#cccccc, 15%)
+    &__first
+      border-bottom: 5px solid #cccccc
+      font-weight: bold
+      background: none !important
+  &-coll 
+    width: 50%
+    text-align: center
+  &-info
+    width: 100%
+    margin-top: 50px
+    margin-bottom: 50px
+    &__item
+      width: 32%
+      background: #ffffff
+      padding: 30px
+    &__img
+      width: 150px
+      height: 150px
+      margin-bottom: 20px
+  &-attention
+    margin-bottom: 70px
+    position: relative
+    &:after, &:before
+      content: ""
+      height: 2px
+      width: 100%
+      position: absolute
+      background: $color-main
+    &:before
+      left: 0
+      top: 0
+    &:after
+      bottom: 0
+      left: 0
+    &__img
+      width: 30%
+    &__text
+      width: 70%
+      margin-top: 30px
+      margin-bottom: 30px
+      & p 
+        margin-top: 0
+        margin-bottom: 7px
+        font-size: 1.1em
+        font-style: italic 
+
+@media (min-width: 1200px)
+  .delivery
+    &-string:hover
+      background: lighten(#cccccc, 10%)
