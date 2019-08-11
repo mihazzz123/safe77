@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="fill:#a50103; string:#a50103; enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#a50103;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#a50103;stroke:#a50103;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<title>Law</title>
+<desc>A line styled icon from Orion Icon Library.</desc>
+<path class="st0" d="M32,16v40 M22,56h20 M28,12H12L2,32"/>
+<circle class="st0" cx="32" cy="12" r="4"/>
+<path class="st0" d="M12,12l10,20 M36,12h16l10,20 M52,12L42,32"/>
+<path class="st1" d="M12,42c5.5,0,10-4.5,10-10H2C2,37.5,6.5,42,12,42z M52,42c-5.5,0-10-4.5-10-10h20C62,37.5,57.5,42,52,42z"/>
+</svg>

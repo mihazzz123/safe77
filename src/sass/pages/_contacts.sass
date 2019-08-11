@@ -1,0 +1,162 @@
+.contacts
+  &-block
+    margin-bottom: 50px
+    &-1
+    &-2
+      flex-wrap: wrap
+      overflow: hidden
+  &__item
+    flex-direction: column
+    flex-wrap: nowrap
+    width: 49%
+    min-height: 100%
+  &-light 
+    // font-weight: lighter
+    margin-bottom: 7px
+    margin-top: 13px
+    font-size: 1.1em
+  &-normal
+    font-weight: normal
+    margin-bottom: 3px
+    padding-right: 70px
+    // font-size: 0.9em
+  &__email
+    margin-bottom: 20px
+  &-button
+    background: #ffffff
+    padding: 15px 30px
+    transition: 0.3s
+    max-width: 270px
+  &-warning 
+    background: $color-main
+    color: #ffffff
+    padding: 10px 20px
+    margin-bottom: 5px
+    &__text
+      font-size: 1em
+  &-steps 
+    background: #ffffff
+    flex-direction: column
+    padding: 20px
+    &__box
+      align-items: flex-start
+      padding: 20px 20px 0 20px
+    &__step
+      margin: 5px 20px
+      width: 31%
+      flex-direction: column
+      text-align: center
+      position: relative
+      &:nth-child(-1n+2)
+        &:after
+          content: url(../img/contacts/icon-arrow-right.svg)
+          position: absolute
+          display: block
+          width: 25px
+          height: 25px
+          top: 25px
+          right: -25px
+    &__img
+      margin: 10px
+  &-item 
+    &__wrap
+      background: #ffffff
+      padding-left: 70px
+      padding-top: 30px
+      padding-bottom: 30px
+      padding-right: 30px
+      height: 100%
+    &__title
+      padding-top: 15px
+      padding-bottom: 15px
+      margin: 0
+      font-weight: normal
+      font-size: 1.3em
+      position: relative
+      &-auto:before,
+        content: url(../img/contacts/car.svg)
+      &-go:before,
+        content: url(../img/contacts/go.svg)
+      &-auto:before, &-go:before
+        display: block
+        width: 50px
+        height: 50px
+        position: absolute
+        left: -55px
+        top: 0
+    &__nav
+      display: inline-block
+      line-height: 20px
+      font-size: 1.1em
+      margin-bottom: 5px
+      position: relative
+      &-mark
+        margin-top: 30px
+        &:before
+          content: url(../img/contacts/mark.svg)
+      &-mark2:before
+        content: url(../img/contacts/mark2.svg)
+      &-mark:before, &-mark2:before
+        position: absolute
+        left: -40px
+        top: -5px
+        width: 25px
+    &__img
+      display: block
+      width: 100%
+      margin-bottom: 10px
+    &__video
+      margin-top: 30px
+  &-form 
+    margin-bottom: 50px
+    &__coll
+      width: 49%
+      flex-direction: column
+    &__input
+      padding: 10px 15px
+      height: 40px
+      margin-bottom: 15px
+      border: 1px solid #ccc
+    &__input::-webkit-outer-spin-button, &__input::-webkit-inner-spin-button
+      -webkit-appearance: none
+      display: none
+      margin: 0
+    &__textarea
+      border: 1px solid #ccc
+      height: 150px
+      resize: none
+      padding: 10px 15px
+    &__input::placeholder, &__textarea::placeholder
+      color: #c3c3c3
+    &__check
+      background: none
+    &__check-box
+      & .attributive-check__flag
+        width: 20px
+        height: 15px
+    &__btn
+      max-width: 200px
+      margin-left: auto
+
+
+
+.Whatsapp:before
+  content: url(../img/contacts/whatsapp.png)
+.Viber:before
+  content: url(../img/contacts/viber.png)
+.Whatsapp, .Viber
+  padding-left: 37px
+  position: relative
+  margin-bottom: 5px
+  margin-top: 5px
+  line-height: 32px
+  &:before
+    position: absolute
+    width: 32px
+    height: 32px
+    display: block
+    left: 0
+    top: 0
+
+
+

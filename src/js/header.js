@@ -265,18 +265,30 @@ $(document).ready(function() {
   });
 
   var placeholder = 'Сообщение';
+    $('.contacts-form__textarea').attr('placeholder', placeholder);
+    $('.contacts-form__textarea').attr('required', 'required');
     $('.header-modal__textarea').attr('placeholder', placeholder);
     $('.header-modal__textarea').attr('required', 'required');
     $('.header-modal__textarea').focus(function () {
     if($(this).val() === placeholder){
       $(this).attr('value', '');
     }
-  });
-  $('.header-modal__textarea').blur(function () {
-    if($(this).val() === ''){
-      $(this).attr('value', placeholder);
+    });
+    $('.header-modal__textarea').blur(function () {
+      if($(this).val() === ''){
+        $(this).attr('value', placeholder);
+      }
+    });
+    $('.contacts-form__textarea').focus(function () {
+    if($(this).val() === placeholder){
+      $(this).attr('value', '');
     }
-  });
+    });
+    $('.contacts-form__textarea').blur(function () {
+      if($(this).val() === ''){
+        $(this).attr('value', placeholder);
+      }
+    });
 
   $(function($) {
     $(document).mouseup(function (e) {
