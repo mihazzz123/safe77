@@ -9,6 +9,8 @@
     flex-direction: column
     flex-wrap: nowrap
     max-width: 230px
+    min-width: 230px
+    // width: 20%
     margin-right: 2px
     padding-bottom: 50px
     &__box-1
@@ -17,7 +19,7 @@
       padding-bottom: 15px
       border-bottom: 2px solid $color-main
       flex-direction: column
-      height:  255px
+      height:  295px
     &__value
       display: flex
       align-items: center
@@ -54,17 +56,26 @@
       align-items: center
     &__name
       height: 75px
-  &-item 
+  &-item
+    background: #ffffff
     flex-direction: column
+    flex-wrap: nowrap
+    // max-width: 230px
+    width: 25%
+    margin-right: 2px
+    padding-bottom: 50px
     &__box-1
-      height:  255px
+      height:  295px
       position: relative
-      padding: 40px 15px
+      padding: 20px 15px
       border-bottom: 2px solid $color-main
+    &__image
+      width: 100%
     &__img  
-      display: inline-block
+      display: block
       width: 100%
       height: auto
+      max-height: 100%
     &__name
       display: inline-block
       margin: 0
@@ -148,22 +159,48 @@
       &-img 
         width: 46px
         height: 46px
+        padding: 7px
         background: $color-main
+        cursor: pointer
       &-desc 
-        display: flex
+        display: none
         align-items: center
+        text-align: center
         color: #ffffff
         height: 46px
-        width: 140px
+        width: 160px
         background: #a5010394
-        padding-left: 20px
+        justify-content: center
+        cursor: pointer
       &-bookmarks
         margin-bottom: 10px
         visibility: hidden
-      &__bookmarks
-        display: none
+      // &__bookmarks
+      //   display: none
+  &-slider
+    width: 100%
+    &__box
+      height: 100%
+      width: calc(100% - 230px)
+      position: relative
+      // overflow: hidden
+    &__buttons
+      position: absolute
+      top: -60px
+      right: 0px
+      & .slick-disabled
+        background: #ffffff !important
+        opacity: 0.5 !important
+    &__button
+      background: #ffffff
+      &:last-child
+        margin-left: 10px
 
-      
+
+.slick-slide
+  outline: none
+
+
 
 
 
@@ -178,5 +215,7 @@
       display: inline-block
     .compare-item__icon-bookmarks
       visibility: visible
-  .compare-item__icon-img:hover
+  .compare-item__icon:hover
+    .compare-item__icon-desc
+      display: flex
       
