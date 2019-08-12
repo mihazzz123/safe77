@@ -3,6 +3,7 @@
   &-no 
     display: none
   &-box 
+    margin-top: 70px
     display: flex
   &-list
     background: #ffffff
@@ -186,7 +187,7 @@
       // overflow: hidden
     &__buttons
       position: absolute
-      top: -60px
+      top: -65px
       right: 0px
       & .slick-disabled
         background: #ffffff !important
@@ -204,18 +205,69 @@
 
 
 
+// HOVER
+.compare-item:hover
+  .compare-item__buttons
+    display: flex
+  .compare-item__more
+    display: inline-block
+  .compare-item__icon-bookmarks
+    visibility: visible
+.compare-item__icon:hover
+  .compare-item__icon-desc
+    display: flex
 
 
 
-@media (min-width:1200px)
-  .compare-item:hover
-    .compare-item__buttons
-      display: flex
-    .compare-item__more
-      display: inline-block
-    .compare-item__icon-bookmarks
-      visibility: visible
-  .compare-item__icon:hover
-    .compare-item__icon-desc
-      display: flex
+@media (max-width:1200px)
+  .compare
+    &-list
+      min-width: 190px
+      max-width: 190px
+    &-slider__box
+      width: calc(100% - 190px)
+@media (max-width:997px)
+  .compare
+    &-list
+      min-width: 170px
+      max-width: 170px
+    &-slider__box
+      width: calc(100% - 170px)
+    &-slider
+      &__buttons
+        top: -45px
+@media (max-width:786px)
+  .compare
+    &-list
+      min-width: 130px
+      max-width: 130px
+      &__lable, &__name
+        padding-left: 10px
+        line-height: 12px
+        display: flex
+        align-items: center
+      &__box-1
+        height: 250px
+        padding-left: 10px
+      &__value
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &-slider__box
+      width: calc(100% - 130px)
+    &-item 
+      &__box-1
+        height: 250px
+      &__name
+        padding-left: 10px
+@media (max-width:546px)
+  .compare
+    &-list
+      min-width: 100px
+      max-width: 100px
+    &-slider__box
+      width: calc(100% - 100px)
+
+
+
       

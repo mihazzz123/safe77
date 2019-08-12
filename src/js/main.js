@@ -242,6 +242,15 @@ $(document).ready(function() {
     $('.click-modal__value').text(name);
     console.log(name);
   });
+  $('.compare-item').on('click', '.compare-item__click', function(event) {
+    event.preventDefault();
+    $('body').css({'overflow' : 'hidden'})
+    $('.click-modal').removeClass('passive').addClass('active');
+    $('.click-modal__box').css({'transform' : 'scale(1)'});
+    var name = $(this).parents('.compare-item').find('.compare-item__name').text();
+    $('.click-modal__value').text(name);
+    console.log(name);
+  });
   $('.click-modal__close').click(function() {
     $('.click-modal').addClass('passive').removeClass('active');
     $('.click-modal__box').attr('style', '');
