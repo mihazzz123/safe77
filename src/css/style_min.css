@@ -5540,7 +5540,10 @@ footer {
     background: none; }
   .contacts-form__check-box .attributive-check__flag {
     width: 20px;
-    height: 15px; }
+    height: 15px;
+    background-position: 1px -22px; }
+  .contacts-form .attributive-check__checkBox:checked + .attributive-check__flag {
+    background-position: 1px 0px; }
   .contacts-form__btn {
     max-width: 200px;
     margin-left: auto; }
