@@ -16,6 +16,33 @@ $(document).ready(function() {
     $(this).parents('.compare-item').remove();
     num = $('.compare-item').length;
     $('.compare-list__value-numb').text(num);
+    if(window.matchMedia('(min-width: 1400px)').matches){
+      if(num <= 5){
+        $('.compare-slider__buttons').hide();
+      }
+    }
+    $('.compare-list__value-numb').text(num);
+    if(window.matchMedia('(min-width: 300px)').matches){
+      if(num <= 1){
+        $('.compare-slider__buttons').hide();
+      }
+    }
+    if(window.matchMedia('(min-width: 427px)').matches){
+      if(num <= 2){
+        $('.compare-slider__buttons').hide();
+      }
+    }
+    if(window.matchMedia('(min-width: 800px)').matches){
+      if(num <= 3){
+        $('.compare-slider__buttons').hide();
+      }
+    }
+    if(window.matchMedia('(min-width: 1200px)').matches){
+      if(num <= 4){
+        $('.compare-slider__buttons').hide();
+      }
+    }
+   
     if(num == 0){
       $('.compare-box').remove();
       $('.compare-no').show();
@@ -56,6 +83,8 @@ $(document).ready(function() {
       }
     ]
   });
+
+  
  
   $('.compare-list__clean').click(function() {
     num = $('.compare-item').length;

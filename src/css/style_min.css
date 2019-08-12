@@ -5961,4 +5961,72 @@ footer {
     max-width: 100px; }
   .compare-slider__box {
     width: calc(100% - 100px); } }
+
+.bookmark-no {
+  display: none;
+  margin-bottom: 50px; }
+
+.bookmark-box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.bookmark-clean {
+  margin-bottom: 20px;
+  font-size: 1.1em; }
+
+.bookmark-item__add {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.bookmark-item .tdslide-icon-1 {
+  width: 46px;
+  height: 46px; }
+
+.bookmark-item .tdslide-icon {
+  height: 46px; }
+
+.bookmark-item .tdslide-icon-2 {
+  height: 46px; }
+
+.bookmark-item .tdslide-icons {
+  left: 0; }
+
+.bookmark-item .tdslide-img {
+  max-height: 19em; }
+  .bookmark-item .tdslide-img img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%; }
+
+@media (min-width: 1700px) {
+  .bookmark-item {
+    width: 22.8%;
+    margin-left: 1%;
+    margin-right: 1%; } }
+
+@media (max-width: 1200px) {
+  .bookmark-item {
+    width: 47.3%;
+    margin-left: 1%;
+    margin-right: 1%; }
+    .bookmark-item .tdslide-img {
+      height: 19em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .bookmark-box .catalog__good:last-child {
+    margin-left: 1%; } }
+
+@media (max-width: 546px) {
+  .bookmark-item {
+    width: 97%;
+    margin-left: 1%;
+    margin-right: 1%; } }
 /*# sourceMappingURL=style_min.css.map */
