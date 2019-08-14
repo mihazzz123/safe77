@@ -1,0 +1,404 @@
+.cart
+  margin-bottom: 50px
+  &-box-1
+    width: 100%
+    flex-direction: column
+  &-item 
+    background: #ffffff
+    padding: 30px
+    position: relative
+    height: 250px
+    &:after
+      position: absolute
+      content: ""
+      height: 1px
+      width: 98%
+      background: #cccccc
+      left: 1%
+      bottom: 0
+    &__image
+      width: 25%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 30px
+    &__img
+      display: block
+      width: auto
+      max-width: 100%
+      height: auto 
+      max-height: 100%
+    &__box
+      padding-top: 25px
+      flex-direction: column
+      width: 65%
+    &__name
+      display: block
+      padding-bottom: 20px
+      margin-bottom: 20px
+      font-size: 1.5em
+      position: relative
+      text-transform: uppercase
+      &:after
+        content: ""
+        position: absolute
+        height: 1px
+        width: 100px
+        left: 0
+        bottom: 0
+        background: $color-main
+    &__info
+      width: 100%
+    &__weight
+      width: 100%
+      max-width: 150px
+      font-size: 1.1em
+    &__calc
+    &__button
+      background: none
+      border: none
+      color: #0c85aa
+      font-size: 2em
+      cursor: pointer
+    &__amount
+      background: none
+      border: none
+      width: 40px
+      font-size: 2em
+      text-align: center
+    &__amount::-webkit-outer-spin-button, &__amount::-webkit-inner-spin-button
+      display: none
+    &__price
+      font-size: 2em
+      width: 100%
+      max-width: 240px
+      text-align: right
+      &-value
+        margin-left: auto
+        display: inline-block
+        padding-right: 5px
+        white-space: nowrap
+    &__remove
+      position: absolute
+      width: 25px
+      height: 25px
+      right: 30px
+      top: calc(50% - 12.5px)
+      cursor: pointer
+      & svg 
+        fill: $color-text
+  &-buttons
+    background: #ffffff
+    padding-bottom: 0
+    padding-left: 1%
+    padding-right: 1%
+    padding-top: 20px
+    position: relative
+    &:after
+      content: ""
+      display: block
+      height: 2px
+      width: 98%
+      left: 1%
+      bottom: 0
+      background: $color-main
+      position: absolute
+    &__btn
+      padding-left: 20px
+      padding-right: 20px
+      cursor: pointer
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &-delivery
+    display: none
+    background: #ffffff
+    padding: 10px 30px 30px 30px
+    &__block
+      width: 100%
+      justify-content: space-between
+    &__box
+      flex-direction: column
+      background: #f2f2f2
+      width: 31%
+      & p 
+        margin-bottom: 0px
+        margin-top: 10px
+  &-pickup
+    display: none
+    background: #ffffff
+    height: 70px
+    text-align: center
+    padding-top: 20px
+  &-concomitant
+    background: #ffffff
+    padding-top: 20px
+    padding-bottom: 20px
+    &__row
+      position: relative
+      padding-top: 20px
+      padding-bottom: 20px 
+      margin-left: 20px
+      margin-right: 20px 
+      padding-left: 10px
+      padding-right: 10px
+      align-items: center
+      &:after
+        content: ""
+        display: block
+        height: 1px
+        width: 100%
+        left: 0
+        top: 0
+        background: $color-main
+        position: absolute
+      &-delivery
+        background: #f2f2f2
+        display: none
+    &__title
+      font-size: 1.5em
+      max-width: 380px
+      text-transform: uppercase
+    &__value
+      font-size: 1.5em
+    &__price
+      font-size: 1.8em
+      & sup 
+        color: $color-text
+        padding-left: 5px
+  &-order 
+    padding: 0
+    &__button
+      height: 70px
+      display: flex
+      align-items: center
+      padding: 20px
+      font-size: 1.2em
+      text-transform: uppercase
+      &-catalog
+        background: #f2f2f2
+        display: block
+        line-height: 1.5em
+.order 
+  &-block 
+    margin-top: 20px
+    width: 100%
+    &__title
+      font-size: 1.5em
+      margin-bottom: 30px
+    &__icon
+      width: 40px
+      height: 40px
+      position: absolute
+      right: 25px
+      top: 25px
+  &-item 
+    background: #ffffff
+    padding: 30px
+    flex-direction: column
+    position: relative
+    margin-bottom: 30px
+  &-delivery
+    width: 49%
+    &__textarea, &__pickup
+      display: none
+  &-pickup
+    width: 49%
+    &__row
+      display: flex
+      margin-left: auto
+      margin-right: auto
+      &-name
+        text-align: center
+        display: inline-block
+        margin-top: 20px
+        margin-bottom: 20px
+        font-size: 1.1em
+    &__button
+      cursor: pointer
+      color: $color-main
+      padding: 10px 14px
+      text-transform: uppercase
+      &-active
+        background: $color-main
+        color: #ffffff
+    &__input
+      margin-left: auto
+      margin-right: auto
+      width: 30px
+      height: 30px
+      padding: 2px
+      text-align: center
+    &__input::-webkit-outer-spin-button, &__input::-webkit-inner-spin-button
+      display: none
+  &-textarea
+    resize: none
+    height: 100px
+    border: 1px solid #ccc
+  &-form 
+    margin-top: 30px
+    margin-bottom: 0
+    &__check
+      &-flag 
+        min-width: 15px
+        min-height: 15px
+        display: block
+        margin-right: 10px
+        background-image: url(../img/catalog/icons_attributive.png)
+        background-size: 350%
+        background-position: 0 0
+    &__btn
+      max-height: 50px
+      margin-left: auto
+      padding-left: 30px
+      padding-right: 30px
+    &__input-file
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+    &__file-name
+      display: none
+      margin-left: auto
+      margin-top: 10px
+  &__btn
+    max-width: 300px  
+    height: 50px
+    text-transform: uppercase
+    cursor: pointer
+    &:last-child
+      margin-top: 20px
+
+
+.attributive-check__checkBox:checked + .order-form__check-flag 
+  background-position: 0 -19px
+
+
+
+@media (min-width:1200px)
+  .cart
+    &-item
+      &__name:hover
+        color: $color-main
+      &__remove svg:hover
+        fill: $color-main
+@media (max-width:992px)
+  .cart
+    &-item 
+      height: 185px
+      font-size: 0.8em
+      &:last-child:after
+        content: none
+      &__box
+        padding-top: 10px
+      &__remove
+        right: 10px
+        & svg
+          width: 15px !important
+          height: 15px !important
+    &-concomitant
+      font-size: 0.55em
+      &__title
+        max-width: 250px
+        font-weight: bold
+    &-order 
+      &__button
+        height: 50px
+        padding: 15px
+  .order
+    &-block 
+      &__title
+        max-width: 280px
+        & span 
+          white-space: nowrap
+@media (max-width:786px)
+  .cart
+    &-item 
+      padding: 10px
+      height: 150px
+      &:after
+        width: 100%
+        left: 0
+      &__remove
+        right: 0
+      &__info
+        flex-wrap: wrap
+      &__price
+        max-width: 100%
+        text-align: left
+        width: 100%
+        &-value
+          margin-left: 0
+    &-concomitant
+      font-size: 0.7em
+      padding-bottom: 0
+      &__row
+        margin-left: 0
+        margin-right: 0
+    &-order 
+      &__button
+        width: 100%
+        margin: 10px
+        background: #ffffff
+        border: 1px solid $color-main
+        text-align: center
+        font-size: 2em
+        &-order 
+          display: none
+  .order 
+    &-block 
+      font-size: 0.9em
+      &__icon
+        width: 25px
+        height: 25px
+        right: 10px
+    &-form 
+      &__btn, &__file-name
+        margin-right: auto
+        margin-left: 0
+@media (max-width:546px)
+  .cart
+    &-item 
+      flex-direction: column
+      height: 350px
+      font-size: 1em  
+      &__image, &__box
+        width: 100%
+        margin-right: 0
+      &__image
+        max-width: 90%
+        max-height: 220px
+        margin-left: auto
+        margin-right: auto
+      &__name
+        font-size: 1.2em
+        padding-bottom: 10px
+        margin-bottom: 0
+        &:after
+          content: none
+      &__weight
+        font-size: 1.2em
+      &__remove
+        top: calc(100% - 30px)
+      &__price
+        flex-direction: column
+        & sub 
+          font-size: 0.6em
+          font-weight: bold
+          margin-left: 5px
+      &__amount 
+        font-size: 1.7em
+    &-concomitant
+      &__row
+        &-delivery
+          font-size: 0.9em
+      &__title
+        max-width: 75%
+  .order
+    &-block-1
+      flex-direction: column
+    &-item 
+      width: 100%

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=ru>
 <head>
-<title>Сравнение товаров</title>
+<title>Корзина</title>
 <meta charset=UTF-8>
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 <meta http-equiv=X-UA-Compatible content="ie=edge">
@@ -965,470 +965,203 @@
       <div class=m_header-wrapper></div>
       </div>
       </header>
-      <div class="click-modal click-modal1 passive">
-        <div class="header-modal__box click-modal__box">
-        <i class="fas fa-times flex-center click-modal__close header-modal__close">
-        <svg xmlns=http://www.w3.org/2000/svg style=fill:#fff;width:25px;height:25px viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
-        </i>
-        <p class=header-modal__title>Купить в 1 клик</p>
-        <form action=# class=header-modal__form id=header__form>
-        <input required type=text class=header-modal__input placeholder="Ваше имя">
-        <input required type=email class=header-modal__input placeholder="Email">
-        <input required type=tel class=header-modal__input placeholder=Телефон*>
-        <span class="click-modal__lable">Ваш заказ:<span class="click-modal__value"></span></span>
-        <div class=header-modal__check>
-        <input required type=checkbox checked=checked class=header-modal__checkbox>
-        <span class=header-modal__text>Даю согласие на обработку персональных данных в соответствии с
-        <a href=# target=_blank>пользовательским соглашением</a>
-        </span>
-        </div>
-        <button class="click-modal__button border-main">Отправить</button>
-        </form>
-        </div>
-    </div>
+   
 
-<section class="contacts delivery compare">
+<section class="contacts delivery cart">
   <div class="container">
 
     <div class="breadcrumbs dflex">
       <a href="index.html" class="breadcrumbs__first">Главная</a>
         <!-- /.breadcrumbs__first -->
       <svg class="breadcrumbs__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.04 172"><title>icon-next</title><g  data-name="Слой 2"><g  data-name="Слой 1"><path d="M1.51,8.4A4.83,4.83,0,0,1,0,4.87,4.31,4.31,0,0,1,1.51,1.51,4.75,4.75,0,0,1,5,0,4.74,4.74,0,0,1,8.4,1.51L89.53,82.64A4.31,4.31,0,0,1,91,86a4.83,4.83,0,0,1-1.51,3.53l-81.13,81a3.61,3.61,0,0,1-1.6,1.18A5.16,5.16,0,0,1,5,172a5.63,5.63,0,0,1-1.93-.34,3.64,3.64,0,0,1-1.6-1.18,4.57,4.57,0,0,1-1.34-3.36,5.15,5.15,0,0,1,1.34-3.53L79.11,86Z"/></g></g></svg>
-      <a href="news.html" class="breadcrumbs__second">Сравнение товаров</a> 
+      <a href="news.html" class="breadcrumbs__second">Корзина</a> 
       <!-- /.breadcrumbs__second -->
     </div>
     <!-- /.breadcrumbs -->
 
     <div class="transport__title catalog-title__box main-line dflex flex-center">
-      <h2 class="catalog__title high__title">Сравнение товаров</h2>
+      <h2 class="catalog__title high__title">Ваша корзина</h2>
       <!-- /.catalod__title -->
     </div>
 
   </div>
 
   <div class="container">
-    <p class="compare-no text-center">НЕТ ТОВАРОВ ДЛЯ СРАВНЕНИЯ</p>
-    
-    <div class="compare-box">
-      <div class="compare-list dflex">
-        <div class="compare-list__box-1 dflex jcontent-sb">
-          <div class="compare-list__value">
-            <img src="img/placeholder.png" data-src="img/compare/Balance-1.svg" alt="" class="b-lazy compare-list__value-icon">
-            <span class="compare-list__value-text">
-              <span class="compare-list__value-numb color-main"></span>
-              товаров в списке сравнения</span>
+    <div class="cart-box-1 dflex">
+      <div class="cart-item dflex">
+        <a href="" class="cart-item__image dflex">
+          <img src="img/placeholder.png" data-src="img/cart/item_1.jpg" alt="" class="b-lazy cart-item__img">
+        </a>
+        <div class="cart-item__box dflex">
+          <a href="" class="cart-item__name">СЕЙФ РИПОСТ СПУТНИК Р-01</a>
+          <div class="cart-item__info dflex jcontent-sb">
+            <div class="cart-item__weight">ВЕС (КГ): <b> 4.00</b></div>
+            <div class="cart-item__calc dflex">
+              <button class="cart-item__button cart-item__minus">-</button>
+              <input type="number" disabled value="1" class="cart-item__amount"></input>
+              <button class="cart-item__button cart-item__plus">+</button>
             </div>
-            <div class="compare-list__clean">
-              <img src="img/placeholder.png" data-src="img/compare/trash.svg" alt="" class="b-lazy compare-list__clean-icon">
-              <span class="compare-list__clean-text">Очистить список</span>
+            <div class="cart-item__price dflex">
+              <span data-price="4645.00" class="cart-item__price-value color-main">4645.00</span>
+              <sub class="cart-item__price-rub">руб</sub>
             </div>
-          </div>
-          <div class="compare-list__box-2 dflex">
-            <div class="compare-item__name"></div>
-            <span class="compare-list__lable color-main">Наличие</span>
-            <span class="compare-list__lable color-main">Цена</span>
-            <span class="compare-list__lable color-main">Количество слотов</span>
-            <span class="compare-list__lable color-main">Взоломостойкость</span>
-            <span class="compare-list__lable color-main">Огнестойкость</span>
-            <span class="compare-list__lable color-main">Тип замка</span>
-            <span class="compare-list__lable color-main">Внешние размеры (вхшхг)</span>
-            <span class="compare-list__lable color-main">Внутрение размеры (вхшхг)</span>
-            <span class="compare-list__lable color-main">Количество полок (шт)</span>
-            <span class="compare-list__lable color-main">Трейзер</span>
-            <span class="compare-list__lable color-main">Вес (кг)</span>
-            <span class="compare-list__lable color-main">Внутренний объем (л)</span>
-            <span class="compare-list__lable color-main">Гарантия</span>
-            <span class="compare-list__lable color-main">Производитель</span>
-            <span class="compare-list__lable color-main compare-list__desc">Краткое описание</span>
           </div>
         </div>
-        <div class="compare-slider__box">
-            <div class="compare-slider__buttons flex-center main-third-top__buttons">
-              <div class="compare-slider__button blazy-button flex-center main-third-top__button main-third-top__button-left main-third-top__button-left-1">
-                <svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 91.04 172"><title>icon-back</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M11.93,86l77.6,77.6a5.15,5.15,0,0,1,1.34,3.53,4.56,4.56,0,0,1-1.34,3.36,3.64,3.64,0,0,1-1.6,1.18A5.64,5.64,0,0,1,86,172a5.18,5.18,0,0,1-1.76-.34,3.61,3.61,0,0,1-1.6-1.18l-81.13-81A4.83,4.83,0,0,1,0,86a4.31,4.31,0,0,1,1.51-3.36L82.64,1.51a4.68,4.68,0,0,1,6.89,0A4.31,4.31,0,0,1,91,4.87,4.83,4.83,0,0,1,89.53,8.4Z"/></g></g></svg>
-              </div>
-              <div class="compare-slider__button blazy-button flex-center main-third-top__button main-third-top__button-right main-third-top__button-right-1">
-                <svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 91.04 172"><title>icon-next</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M1.51,8.4A4.83,4.83,0,0,1,0,4.87,4.31,4.31,0,0,1,1.51,1.51,4.75,4.75,0,0,1,5,0,4.74,4.74,0,0,1,8.4,1.51L89.53,82.64A4.31,4.31,0,0,1,91,86a4.83,4.83,0,0,1-1.51,3.53l-81.13,81a3.61,3.61,0,0,1-1.6,1.18A5.16,5.16,0,0,1,5,172a5.63,5.63,0,0,1-1.93-.34,3.64,3.64,0,0,1-1.6-1.18,4.57,4.57,0,0,1-1.34-3.36,5.15,5.15,0,0,1,1.34-3.53L79.11,86Z"/></g></g></svg>
-              </div>
-            </div>
-        <div id="compare-slider" class="compare-slider dflex">
-            
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_1.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_2.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_3.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_4.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_1.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_2.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_3.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            <div class="compare-item dflex">
-                <div class="compare-item__box-1 dflex jcontent-sb">
-                  <a class="compare-item__image flex-center" href="#">
-                    <img src="img/placeholder.png" data-src="img/compare/slide_4.jpg" alt="" class="compare-item__img b-lazy">
-                  </a>
-                  <div class="compare-item__buttons">
-                    <button class="border-main compare-item__buy color-main">КУПИТЬ</button>
-                    <button class="border-main compare-item__click button-main"> КУПИТЬ В 1 КЛИК</button>
-                  </div>
-                  <div class="compare-item__icons">
-                    <div class="compare-item__icon compare-item__icon-bookmarks">
-                        <svg class="compare-item__icon-img add" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 32 32" style stroke=#fff xml:space=preserve>
-                          <style type=text/css>.st0{fill:none;stroke:#ccc;stroke-width:1.0006;stroke-miterlimit:10}</style>
-                          <path class=st0 d="M16,23l-9,6l4-10l-9-6h10l4-10l4,10h10l-9,6l4,10L16,23z"/>
-                        </svg>
-                        <svg class="remove compare-item__icon-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26"> <image id="star" width="28" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOS0oh+jtAAABHUlEQVQ4y5WUPY7CMBCFn/lpgpSGAyAhrgBHSIFWIhIllFSUexEOgChzBQpOkZ4uxSolTahQHkWI144zDhk3GY+/vMkbK4oQYwTgJRUHMocNfuSi8ije8MJarFJac5YsOZPqcqsHKCgc+iqOmZMk/zhqPyGBW9YR9wNvGrz2AecsNSgYNBCN0QNrN0hxiF/sGrsLTIzsiXujnuBUCccfD7+JvLKr7nnK5Css4dQ1p0s3N0dje+XT1VrSOGI+HOjhXgMXDFk4YMGwe457BM5egH33JU9bvzDtanVlHM6YGdnKD170wTNDhjzr/OIDa2MyRnov+ug2DLLBo9ayX1fpHmUwtbTMFTGzDTKLS0erqbv8z83fY4An/DFBUT++AQYertpwxtIWAAAAAElFTkSuQmCC"/>
-                        </svg>
-                      <span class="compare-item__icon-desc compare-item__icon__bookmarks">В закладки</span>
-                    </div>
-                    <div class="compare-item__icon compare-item__icon-compare">
-                        <svg class="compare-item__icon-img add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="23" viewBox="0 0 28 23">
-                          <image id="Balance-1" width="28" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAQAAACyw+fcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCRICOjEXq+dhAAABtElEQVQ4y9WTMUsjURSFvwwKiilSJLhBSbJsClHWekGL/ILFUvwFWwlWQQgh/8DCFBbaWIiNsFjIlltYyIKNoN0GBScY8tSwicmCkrNFJi9jZgKLnWcYeOfOmfcN985DjLjW1VRT66Oej9FXko+0rZulwGfgFxVuGajCn94ion7pggwVG4gS4RPwG9Gy1Tl+sOKtPfSi7nSvtP2UKbkqqyxXU7aWllFViz3XJx5yRowPfLO7ZzgA1ri2lR3uaPCF1QFxXq4mFZNRyteAkko+l5JRTJNyNS+EA0CRbTo02GWTUdpklwYdtin2iVnVFBVCcdWVDCUmVVdcCEVVU7ZHLLDldc6wRz6Ul2cPA0CLLQqAsjIeD6FpPVjmgJjUg6ZtJiqjrEOesm9SNfbZCPA22KdmXYsy+Yi6RIZiL4wDUPJuePb9Yd74HZ4C+9//R+XJ4YTuEO8oEDvi5ZXvcoLSasqvRyUCzUno8VWmqbTDDTmMdy7aVFmiHiDWWaJqM4YcN2PAOSlWWKbLT455Dp3jFRm+ksPhlO90/McqqEFXQ+TwRr2jF8Oac8kMABPAXwBcFoZD/wAZ+SuhzormSgAAAABJRU5ErkJggg=="/>
-                        </svg>
-                      <span class="compare-item__icon-desc">Удалить</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="compare-list__box-2 dflex">
-                <a href="" class="compare-item__name">Сейф Onix Tantalum NTF-32HE</a>
-                <span class="compare-item__lable color-main compare-item__more-passive">В наличии<span class="compare-item__lable compare-item__more color-main">ПОДРОБНЕЕ..</span></span>
-                <span class="compare-item__lable compare-item__lable-price color-main">22 981 <sup>руб</sup></span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">1 класс</span>
-                <span class="compare-item__lable">60Б</span>
-                <span class="compare-item__lable">Электронный</span>
-                <span class="compare-item__lable">318x440x382</span>
-                <span class="compare-item__lable">196x334x218</span>
-                <span class="compare-item__lable">1</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">48.00</span>
-                <span class="compare-item__lable">-</span>
-                <span class="compare-item__lable">5 лет</span>
-                <span class="compare-item__lable">Onmix</span>
-                <span class="compare-item__lable compare-item__desc">Сейф Onix Tantalum NTF-32HE — выгодная цена в Москве — всего 22 981.00 руб! Спешите купить в нашем интернет-магазине</span>
-              </div>
-            </div>
-            
+        <div class="cart-item__remove">
+          <svg xmlns=http://www.w3.org/2000/svg style=width:25px;height:25px viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+          </input>
         </div>
       </div>
-        
-  
+      <div class="cart-item dflex">
+        <a href="" class="cart-item__image dflex">
+          <img src="img/placeholder.png" data-src="img/cart/item_2.jpg" alt="" class="b-lazy cart-item__img">
+        </a>
+        <div class="cart-item__box dflex">
+          <a href="" class="cart-item__name">СЕЙФ VALBERG ASM 25</a>
+          <div class="cart-item__info dflex jcontent-sb">
+            <div class="cart-item__weight">ВЕС (КГ): <b> 14.00</b></div>
+            <div class="cart-item__calc dflex">
+              <button class="cart-item__button cart-item__minus">-</button>
+              <input type="number" disabled value="1" class="cart-item__amount"></input>
+              <button class="cart-item__button cart-item__plus">+</button>
+            </div>
+            <div class="cart-item__price dflex">
+              <span data-price="7469.50" class="cart-item__price-value color-main">7469.50</span>
+              <sub class="cart-item__price-rub">руб</sub>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item__remove">
+          <svg xmlns=http://www.w3.org/2000/svg style=width:25px;height:25px viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+          </i>
+        </div>
+      </div>
+      <div class="cart-item dflex">
+        <a href="" class="cart-item__image dflex">
+          <img src="img/placeholder.png" data-src="img/cart/item_3.jpg" alt="" class="b-lazy cart-item__img">
+        </a>
+        <div class="cart-item__box dflex">
+          <a href="" class="cart-item__name">СЕЙФ SAFETRONICS PT-23 M</a>
+          <div class="cart-item__info dflex jcontent-sb">
+            <div class="cart-item__weight">ВЕС (КГ): <b> 34.00</b></div>
+            <div class="cart-item__calc dflex">
+              <button class="cart-item__button cart-item__minus">-</button>
+              <input type="number" disabled value="1" class="cart-item__amount"></input>
+              <button class="cart-item__button cart-item__plus">+</button>
+            </div>
+            <div class="cart-item__price dflex">
+              <span data-price="18215.50" class="cart-item__price-value color-main">18215.50</span>
+              <sub class="cart-item__price-rub">руб</sub>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item__remove">
+          <svg xmlns=http://www.w3.org/2000/svg style=width:25px;height:25px viewBox="0 0 53.74 53.74"><title>X</title><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+          </i>
+        </div>
+      </div>
+    </div>
+    <div class="dflex cart-buttons desctop">
+      <button class="cart-buttons__btn item-text__btn item-text__btn_active">ДОСТАВКА
+        <img alt="" class="item-text__btnIconD" src="img/item/mkad-truck-2.svg" data-src="img/item/mkad-truck.svg" data-src-second="img/item/mkad-truck-2.svg">
+      </button>
+      <button class="cart-buttons__btn item-text__btn">САМОВЫВОЗ
+        <img alt="" class="item-text__btnIconD" src="img/item/самовывоз.svg" data-src="img/item/самовывоз.svg" data-src-second="img/item/самовывоз-2.svg">
+      </button>
+    </div>
+    <div class="cart-delivery desctop dflex">
+      <div class="cart-delivery__block dflex">
+          <div class="item-delivery__mkad flex-center">
+            <p>Вес (кг): <b id="weight">52.00</b></p>
+            <p>Москва (в пределах МКАД)</p>
+            <p>В область на растояние</p>
+            <div class="item-delivery__calc dflex">
+              <button class="item-delivery__btnMinus">-</button>
+              <input value="0" min="0" type="number" class="item-delivery__input">
+              <button class="item-delivery__btnPlus">+</button>
+              <span class="item-delivery__calcText">км. от МКАД</span>
+            </div>
+          </div>
+        <div class="cart-delivery__box flex-center">
+          <p>ДО ПОДЪЕЗДА</p>
+          <p class="item-delivery__priceValue">0 руб.</p>
+        </div>
+        <div class="cart-delivery__box flex-center">
+          <p>РАЗГРУЗКА</p>
+              <small>(при наличии лифта)</small>
+              <p>50 руб.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cart-pickup desctop flex-center"
+    ><span class="cart-pickup__text">Наш оператор согласует с вами возможность самовывоза после оформления заказа</span>
+  </div>
+    <div class="cart-concomitant">
+      <div class="cart-concomitant__row dflex jcontent-sb">
+        <span class="cart-concomitant__title">Итого</span>
+        <small class="cart-concomitant__value">eiw</small>
+        <strong class="cart-concomitant__price color-main">30 356.50<sup>руб</sup></strong>
+      </div>
+      <div class="cart-concomitant__row cart-concomitant__row-delivery dflex jcontent-sb">
+        <span class="cart-concomitant__title">ИТОГО С ДОСТАВКОЙ И РАЗГРУЗКОЙ (ЕСЛИ ТРЕБУЕТСЯ)</span>
+        <strong class="cart-concomitant__price color-main">30 806.50<sup>руб</sup></strong>
+      </div>
+      <div class="cart-order cart-concomitant__row dflex jcontent-sb">
+        <a href="" class="cart-order__button cart-order__button-catalog">вернуться в каталог</a>
+        <a href="" class="cart-order__button button-main cart-order__button-order">Оформить заказ</a>
+      </div>
     </div>
   </div>
+  <div class="container">
+    <div class="order-block-1 order-block dflex jcontent-sb">
+      <div class="order-delivery dflex order-item">
+        <span class="order-block__title color-main">Доставка: <b id="price_delivery">0</b> руб. <img src="img/placeholder.png" data-src="img/cart/truck.svg" alt="" class="b-lazy order-block__icon"></span>
+        <i class="order-delivery__desc dflex">Адрес доставки</i>
+        <textarea name="" class="order-textarea order-delivery__textarea dflex"></textarea>
+        <span class="order-delivery__pickup">Самовывоз</span>
+      </div>
+      <div class="order-pickup dflex order-item">
+          <span class="order-block__title color-main">Разгрузка: <b id="price_pickup">450 руб.</b> <span id="value_pickup">(3 шт.)<span id="weight_pickup"> (52.00 кг.) </span></span><img src="img/placeholder.png" data-src="img/cart/delivery.svg" alt="" class="b-lazy order-block__icon"></span>
+        <div class="order-pickup__row">
+          <span class="flex-center order-pickup__button order-pickup__button-active border-main">нужна</span>
+          <span class="flex-center order-pickup__button border-main">не нужна</span>
+        </div>
+        <span class="order-pickup__row-name">Лифт</span>
+        <div class="order-pickup__row">
+          <span class="flex-center order-pickup__button order-pickup__button-active border-main">есть</span>
+          <span class="flex-center order-pickup__button border-main">нет</span>
+        </div>
+        <span class="order-pickup__row-name">Этаж</span>
+        <input type="number" class="order-pickup__input">
+      </div>
+    </div>
+    <div class="order-item">
+      <span class="order-block__title color-main">Контакты </span>
 
+      <form action="" class="dflex jcontent-sb order-form contacts-form">
+          <div class="contacts-form__coll dflex">
+            <input required type="text" placeholder="Ваше имя" class="contacts-form__input">
+            <input required type="number" placeholder="Телефон*" class="contacts-form__input">
+            <input required type="email" placeholder="Email" class="contacts-form__input">
+          </div>
+          <div class="contacts-form__coll dflex">
+            <textarea class="contacts-form__textarea"></textarea>
+            <div class="contacts-form__check-box">
+              <label class="contacts-form__check attributive-check dflex">
+                <input type="checkbox" class="attributive-check__checkBox">
+                <i class="order-form__check-flag"></i>
+                <span class="attributive-check__text">Даю согласие на обработку персональных данных в соответствии с <a href="#" class="color-main">пользовательским соглашением</a></span>
+              </label>
+            </div>
+              <input type="file" id="file" name="file" class="order-form__input-file"></input>
+              <label for="file" class="contacts-form__btn order__btn contacts-button border-main color-main flex-center">Прикрепить файл</label>
+              <span class="order-form__file-name">Название файла:</span>
+              <button class="order-form__btn order__btn border-main button-main flex-center">Отправить</button>
+            </div>
+        </form>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -1484,7 +1217,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/header.js"></script>
 <script src="js/main.js"></script>
-<script src="js/compare.js"></script>
+<script src="js/cart.js"></script>
 
 </body>
 </html>
