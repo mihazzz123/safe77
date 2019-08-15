@@ -995,7 +995,7 @@
         <div class="cart-item__box dflex">
           <a href="" class="cart-item__name">СЕЙФ РИПОСТ СПУТНИК Р-01</a>
           <div class="cart-item__info dflex jcontent-sb">
-            <div class="cart-item__weight">ВЕС (КГ): <b> 4.00</b></div>
+            <div class="cart-item__weight">ВЕС (КГ): <b class="item_weight" data-weight="4.00"> 4.00</b></div>
             <div class="cart-item__calc dflex">
               <button class="cart-item__button cart-item__minus">-</button>
               <input type="number" disabled value="1" class="cart-item__amount"></input>
@@ -1019,7 +1019,7 @@
         <div class="cart-item__box dflex">
           <a href="" class="cart-item__name">СЕЙФ VALBERG ASM 25</a>
           <div class="cart-item__info dflex jcontent-sb">
-            <div class="cart-item__weight">ВЕС (КГ): <b> 14.00</b></div>
+            <div class="cart-item__weight">ВЕС (КГ): <b class="item_weight" data-weight="14.00"> 14.00</b></div>
             <div class="cart-item__calc dflex">
               <button class="cart-item__button cart-item__minus">-</button>
               <input type="number" disabled value="1" class="cart-item__amount"></input>
@@ -1043,7 +1043,7 @@
         <div class="cart-item__box dflex">
           <a href="" class="cart-item__name">СЕЙФ SAFETRONICS PT-23 M</a>
           <div class="cart-item__info dflex jcontent-sb">
-            <div class="cart-item__weight">ВЕС (КГ): <b> 34.00</b></div>
+            <div class="cart-item__weight">ВЕС (КГ): <b class="item_weight" data-weight="34.00"> 34.00</b></div>
             <div class="cart-item__calc dflex">
               <button class="cart-item__button cart-item__minus">-</button>
               <input type="number" disabled value="1" class="cart-item__amount"></input>
@@ -1076,20 +1076,20 @@
             <p>Москва (в пределах МКАД)</p>
             <p>В область на растояние</p>
             <div class="item-delivery__calc dflex">
-              <button class="item-delivery__btnMinus">-</button>
-              <input value="0" min="0" type="number" class="item-delivery__input">
-              <button class="item-delivery__btnPlus">+</button>
+              <button class="item-delivery__btnMinus cart-delivery__minus">-</button>
+              <input value="0" min="0" type="number" class="item-delivery__input cart-delivery__amount">
+              <button class="item-delivery__btnPlus cart-delivery__plus">+</button>
               <span class="item-delivery__calcText">км. от МКАД</span>
             </div>
           </div>
         <div class="cart-delivery__box flex-center">
           <p>ДО ПОДЪЕЗДА</p>
-          <p class="item-delivery__priceValue">0 руб.</p>
+          <p class="item-delivery__priceValue">700 руб.</p>
         </div>
         <div class="cart-delivery__box flex-center">
           <p>РАЗГРУЗКА</p>
-              <small>(при наличии лифта)</small>
-              <p>50 руб.</p>
+              <small id="delivery_status">(при наличии лифта)</small>
+              <p class="item_unload">0</p>
         </div>
       </div>
     </div>
@@ -1099,12 +1099,18 @@
     <div class="cart-concomitant">
       <div class="cart-concomitant__row dflex jcontent-sb">
         <span class="cart-concomitant__title">Итого</span>
-        <small class="cart-concomitant__value">eiw</small>
-        <strong class="cart-concomitant__price color-main">30 356.50<sup>руб</sup></strong>
+        <small class="cart-concomitant__value"></small>
+        <div class="cart-concomitant__price-box">
+          <strong class="cart-concomitant__price color-main price_total">30 356.50</strong>
+          <span class="cart-concomitant__rub">руб</span>
+        </div>
       </div>
       <div class="cart-concomitant__row cart-concomitant__row-delivery dflex jcontent-sb">
         <span class="cart-concomitant__title">ИТОГО С ДОСТАВКОЙ И РАЗГРУЗКОЙ (ЕСЛИ ТРЕБУЕТСЯ)</span>
-        <strong class="cart-concomitant__price color-main">30 806.50<sup>руб</sup></strong>
+        <div class="cart-concomitant__price-box">
+          <strong class="finally_price cart-concomitant__price color-main">30 806.50</strong>
+          <span class="cart-concomitant__rub">руб</span>
+        </div>
       </div>
       <div class="cart-order cart-concomitant__row dflex jcontent-sb">
         <a href="" class="cart-order__button cart-order__button-catalog">вернуться в каталог</a>
@@ -1113,23 +1119,24 @@
     </div>
   </div>
   <div class="container">
-    <div class="order-block-1 order-block dflex jcontent-sb">
+    <div class="order-block-1 order-block jcontent-sb">
       <div class="order-delivery dflex order-item">
-        <span class="order-block__title color-main">Доставка: <b id="price_delivery">0</b> руб. <img src="img/placeholder.png" data-src="img/cart/truck.svg" alt="" class="b-lazy order-block__icon"></span>
+        <span class="order-block__title color-main">Доставка: <b id="price_delivery">0</b><img src="img/placeholder.png" data-src="img/cart/truck.svg" alt="" class="b-lazy order-block__icon"></span>
         <i class="order-delivery__desc dflex">Адрес доставки</i>
         <textarea name="" class="order-textarea order-delivery__textarea dflex"></textarea>
         <span class="order-delivery__pickup">Самовывоз</span>
       </div>
       <div class="order-pickup dflex order-item">
-          <span class="order-block__title color-main">Разгрузка: <b id="price_pickup">450 руб.</b> <span id="value_pickup">(3 шт.)<span id="weight_pickup"> (52.00 кг.) </span></span><img src="img/placeholder.png" data-src="img/cart/delivery.svg" alt="" class="b-lazy order-block__icon"></span>
+          <span class="order-block__title color-main">Разгрузка: <b id="price_pickup">450 руб.</b> 
+            <span id="value_pickup">(3 шт.)</span><span id="weight_pickup"> (52.00 кг.) </span><img src="img/placeholder.png" data-src="img/cart/delivery.svg" alt="" class="b-lazy order-block__icon"></span>
         <div class="order-pickup__row">
-          <span class="flex-center order-pickup__button order-pickup__button-active border-main">нужна</span>
+          <span class="flex-center order-pickup__button order-pickup__button-active unload-active border-main">нужна</span>
           <span class="flex-center order-pickup__button border-main">не нужна</span>
         </div>
         <span class="order-pickup__row-name">Лифт</span>
         <div class="order-pickup__row">
           <span class="flex-center order-pickup__button order-pickup__button-active border-main">есть</span>
-          <span class="flex-center order-pickup__button border-main">нет</span>
+          <span class="flex-center order-pickup__button border-main lift-active">нет</span>
         </div>
         <span class="order-pickup__row-name">Этаж</span>
         <input type="number" class="order-pickup__input">
