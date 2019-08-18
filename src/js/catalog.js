@@ -17,29 +17,26 @@ $(document).ready(function() {
         secFilterHide = $('.filterSecond-touchstone').find('.hiden').length;
         secFilterAdd = $('.filterSecond-touchstone').find('.added').length;
         if(secFilter == secFilterAdd){
-          btnShowMore.hide();
-          btnShowAll.hide();
-          btnHideAllSec.show();
+          btnShowMore.removeClass('dflex');
+          btnShowAll.removeClass('dflex');
+          btnHideAllSec.addClass('dflex');
         } else {
-          btnShowAll.show();
-          btnHideAll.show();
+          btnShowAll.addClass('dflex');
+          btnHideAll.addClass('dflex');
         }
-        console.log(secFilter);
-        console.log(secFilterAdd);
-        console.log(secFilterHide);
       });
     btnShowAll.on('click', function() {
       $('.hiden').addClass('added').removeClass('hiden').css({'display' : 'block'});
-      btnShowMore.hide();
-      btnShowAll.hide();
-      btnHideAllSec.show();
+      btnShowMore.removeClass('dflex');
+      btnShowAll.removeClass('dflex');
+      btnHideAllSec.addClass('dflex');
     });   
     btnHideAll.add(btnHideAllSec).on('click', function() {
       $('.added').addClass('hiden').removeClass('added').attr('style', '');
-      btnShowMore.show();
-      btnShowAll.hide();
-      btnHideAll.hide();
-      btnHideAllSec.hide();
+      btnShowMore.addClass('dflex');
+      btnShowAll.removeClass('dflex');
+      btnHideAll.removeClass('dflex');
+      btnHideAllSec.removeClass('dflex');
     }); 
   
       
@@ -55,7 +52,13 @@ $(document).ready(function() {
     // $('.attributive-result').removeClass('attributive-result_active');
     var i = attrOpen.index($(this));
     attributive.eq(i).toggleClass('attributive-active');
-    $('.svg-filter').eq(i).toggleClass('svg-filter-active');
+    if(attributive.hasClass('attributive-active')){
+      $('.svg-filter').eq(i).addClass('svg-filter-active');
+    } else {
+      setTimeout(function() {
+        $('.svg-filter').eq(i).removeClass('svg-filter-active');
+      }, 200);
+    }
     $('.attributive-result').eq(i).addClass('attributive-result'+[i]);
     attributive.eq(i).on('click', '.attributive-check', function() {
       $('.attributive-result').removeClass('attributive-result_active');

@@ -166,7 +166,7 @@
   background: #fff
   width: 30%
   height: 100%
-  max-height: 130px
+  max-height: 100px
   overflow: hidden
   padding: 20px 30px
   font-size: 1em
@@ -174,10 +174,13 @@
   &_active
     height: 100%
     max-height: 5000px
+    // & .filter-title
+    //   padding-bottom: 30px
+    //   padding-top: 15px
   &-title
     // border-bottom: 1px solid #ccc
-    padding-bottom: 50px
-    padding-top: 30px
+    padding-bottom: 40px
+    padding-top: 20px
     font-weight: 600
   &__icon
     width: 35px
@@ -262,7 +265,7 @@
     &__button
       display: none
       background: #ffffff
-      padding: 5px 15px
+      padding: 5px
       margin-bottom: 10px
       border: 1px solid #C0C0C0
       border-radius: 0.7em
@@ -270,9 +273,10 @@
       color: #515151
       text-align: center
       white-space: nowrap
+      justify-content: space-between
       transition: all .3s
       & svg
-        margin-left: 7px
+        margin-left: 3px
        
 .showMore
   display: block
@@ -385,11 +389,7 @@
   background: url(../img/catalog/icons_attributive.png)
   background-size: 300%
   background-position: 1px 0
-.breadcrumbs__chevron
-  width: 0.9em
-  height: 0.6em
-  background: #f2f2f2
-  fill: #686868
+
 
 .svg-filter
   width: 20px

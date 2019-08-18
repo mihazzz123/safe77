@@ -41,11 +41,17 @@ $(document).ready(function() {
     dots: false,
     infinite: false,
     speed: 200,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: '<div class="slick-button slick-button-left"></div>',
     nextArrow: '<div class="slick-button slick-button-right"></div>',
     responsive: [
+          {
+            breakpoint: 1650,
+            settings: {
+              slidesToShow: 4
+            }
+          },
           {
             breakpoint: 1200,
             settings: {
@@ -231,11 +237,13 @@ $(document).ready(function() {
       iconRemove.removeClass('dflex');
       icons.attr('style', '');
     }
+    bookmarks();
+    comparisons();
   });
 
   $('.tdslide').on('click', '.tdslide-onclick-button', function(event) {
     event.preventDefault();
-    $('body').css({'overflow' : 'hidden'})
+    $('body').css({'overflow' : 'hidden'});
     $('.click-modal').removeClass('passive').addClass('active');
     $('.click-modal__box').css({'transform' : 'scale(1)'});
     var name = $(this).parents('.tdslide-wrapper').find('.tdslide-title').text();
@@ -244,7 +252,7 @@ $(document).ready(function() {
   });
   $('.compare-item').on('click', '.compare-item__click', function(event) {
     event.preventDefault();
-    $('body').css({'overflow' : 'hidden'})
+    $('body').css({'overflow' : 'hidden'});
     $('.click-modal').removeClass('passive').addClass('active');
     $('.click-modal__box').css({'transform' : 'scale(1)'});
     var name = $(this).parents('.compare-item').find('.compare-item__name').text();
@@ -256,6 +264,16 @@ $(document).ready(function() {
     $('.click-modal__box').attr('style', '');
     $('body').attr('style', '');
   });
+  $('.item-price__sale').on('click', function(event) {
+    event.preventDefault();
+    $('body').css({'overflow' : 'hidden'});
+    $('.click-modal').removeClass('passive').addClass('active');
+    $('.click-modal__box').css({'transform' : 'scale(1)'});
+    var name = $(this).parents('.item-text').find('.item-text__title').text();
+    $('.sale-modal__textarea').text(name);
+    console.log(name);
+  });
+  
   $(function($){
     $(document).mouseup(function (e){ 
       var div = $('.header-modal__box'); 
@@ -267,4 +285,57 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('.tdslide-icons').each(function() {
+    $(this).find('.tdslide-icon').eq(0).addClass('bookmarks');
+    $(this).find('.tdslide-icon').eq(1).addClass('comparison');
+  });
+  $('.compare-item__icons').each(function() {
+    $(this).find('.compare-item__icon').eq(0).addClass('bookmarks');
+    $(this).find('.compare-item__icon').eq(1).addClass('comparison');
+  });
+
+  function bookmarks() {
+    if(window.matchMedia('(max-width: 546px)').matches){
+      $('.m_header-callback').hide();
+      $('.m_header-links-1').addClass('dflex');
+    }
+    var bookmark = $('.bookmarks');
+        bookmark = $('.bookmarks.added').length;
+        $('.header-svg.not-active path').css({'fill' : '#a50103', 'stroke' : '#a50103'});
+        $('.bookmark_count').show();
+        $('.bookmark_count').text(bookmark);
+        if(bookmark == 0){
+          $('.header-svg.not-active path').attr('style', '');
+          $('.bookmark_count').hide();
+          $('.m_header-callback').show();
+          $('.m_header-links-1').removeClass('dflex');
+        }
+  }
+  function comparisons() {
+    if(window.matchMedia('(max-width: 546px)').matches){
+      $('.m_header-callback').hide();
+      $('.m_header-links-1').addClass('dflex');
+    }
+    var comparison = $('.comparison');
+        comparison = $('.comparison.added').length;
+        $('.header-svg.match-count path, .header-svg.match-count circle').css({'stroke' : '#a50103'});
+        $('.header-svg.match-count path').eq(2).css({'fill' : '#a50103'});
+        $('.match_count').show();
+        $('.match_count').text(comparison);
+        if(comparison == 0){
+          $('.header-svg.match-count path, .header-svg.match-count circle').attr('style', '');
+          $('.match_count').hide();
+          $('.m_header-callback').show();
+          $('.m_header-links-1').removeClass('dflex');
+        }
+  }
+  // comparisons();
+
+  $('.tdslide-buy-button').click(function() {
+    $(this).addClass('click');
+    var cartCount = $('.click').length;
+    $('.value').text(cartCount);
+  });
+
 });

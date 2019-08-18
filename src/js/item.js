@@ -92,38 +92,53 @@ $(document).ready(function() {
       textarea2.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off').attr('required', 'required');
       
       // Калькулятор стоимости доставки
-      var minus = $('.item-delivery__btnMinus'),
-      plus = $('.item-delivery__btnPlus'),
-      input = $('.item-delivery__input'),
-      priceVal = $('.item-delivery__priceValue');
-
-      input.keyup(function() {
-        var inputRes = +input.val();
-        input.val(parseInt(input.val()) - 1);
-        input.change();
-        priceVal.text(700 + inputRes);
-
-      });
-      
-      minus.click(function() {
-        if(input.val() == 0){
-            return false;
-          } else {
-            input.val(parseInt(input.val()) - 1);
-            input.change();
-          var inputRes = +input.val();
-          priceVal.text(700 + inputRes);
-          return false;
+      $('.cart-delivery__minus').click(function() {
+        var res = $('.cart-delivery__amount').val();
+        if(res > 0){
+          res = +res - 1;
+          $('.cart-delivery__amount').val(res).attr('value', res);
         }
+        delivery();
       });
-          
-      plus.click(function() {
-        input.val(parseInt(input.val()) + 1);
-        input.change();
-        var inputRes = +input.val();
-        priceVal.text(700 + inputRes);
-        return false;
+      $('.cart-delivery__plus').click(function() {
+        var res = $('.cart-delivery__amount').val();
+        res = +res + 1;
+        $('.cart-delivery__amount').val(res).attr('value', res);
+        delivery();
       });
+      $('.cart-delivery__amount').keyup(function() {
+        var inputRes = $(this).val();
+        $('.cart-delivery__amount').attr('value', inputRes);
+        delivery();
+      });
+
+      var priceDelivery = 0;
+      function delivery() {
+        var mkad = $('.item-delivery__input').attr('value');
+        priceDelivery = 0;
+        var moscow = 40;
+        if(mkad == 0){
+          $('.item-delivery__priceValue').text('700 руб.');
+          priceDelivery = 700;
+        } else if (mkad > 0 && mkad < 5){
+          $('.item-delivery__priceValue').text('900 руб.');
+          priceDelivery = 900;
+        } else if (mkad == 0){
+          $('.item-delivery__priceValue').text('0 руб.');
+          priceDelivery = 0;
+        } else if (mkad > 0 && mkad < 5){
+          $('.item-delivery__priceValue').text('200 руб.');
+          priceDelivery = 200;
+        } else if (mkad > 5){
+          priceDelivery = (+mkad - 5) * +moscow + 900;
+          $('.item-delivery__priceValue').text(priceDelivery + ' руб.');
+        } else if (mkad > 5){
+          priceDelivery = (+mkad - 5) * +moscow + 200;
+          $('.item-delivery__priceValue').text(priceDelivery + ' руб.');
+          finallyPrice();
+        }
+      }
+      delivery();
           
   // Слайдер 
     
@@ -132,8 +147,10 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    infinite: false,
+    infinite: true,
     arrows: false,
+    touchMove: false,
+    touchThreshold: 1,
     asNavFor: '#slider-bar_D'
   });
   $('#slider-bar_D').slick({
@@ -141,11 +158,13 @@ $(document).ready(function() {
     slidesToScroll: 1,
     infinite: false,
     focusOnSelect: true,
-    asNavFor: '#sliderD',
+    asNavFor: '#sliderD,#slider-modal',
     prevArrow: $('.prev-arrowD'),
     nextArrow: $('.next-arrowD'),
     arrows: true,
-    // centerMode: true,
+    touchMove: false,
+    touchThreshold: 1,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1400,
@@ -156,17 +175,26 @@ $(document).ready(function() {
           slidesToShow: 4,
           centerMode: false
         }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+        }
       }
     ]
   });
-
+  
   // $("#sliderD .slick-track").on('transitionstart', function() {
-  //   var n = $(this).find('.slick-current').attr('data-slick-index');
-
-  $('#sliderD').on('click', '.slick-current', function() {
+    //   var n = $(this).find('.slick-current').attr('data-slick-index');
+    
+    // var n = 0;
+    $('#sliderD').on('click', '.slick-current', function() {
+      // n = $(this).attr('data-slick-index');
+    // sliderModal();
+    // $('#slider-modal').slickGoTo(n);
     $('.slick-track').addClass('notransition');
-    var n = $(this).attr('data-slick-index');
-    $('#slider-modal').slickGoTo(n);
     $('.item-modal').removeClass('passive');
     $('.item-modal').addClass('active');
     $('body').css({'overflow' : 'hidden'});
@@ -174,21 +202,27 @@ $(document).ready(function() {
       $('.slick-track').removeClass('notransition');
     }, 500);
   });
+  // function sliderModal() {
+    // console.log(n);
+    $('#slider-modal').slick({
+      // slickGoTo: n,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // infinite: false,
+      prevArrow: $('.item-modal__prev'),
+      nextArrow: $('.item-modal__next'),
+      asNavFor: '#sliderD',
+      arrows: true
+    });
+  // }
   
   
-  
-  $('#slider-modal').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: $('.item-modal__prev'),
-    nextArrow: $('.item-modal__next'),
-    arrows: true
-  });
   
   $('.item-slider__zoomD').click(function() {
+    // sliderModal();
     $('.slick-track').addClass('notransition');
-    var n = $('#sliderD').find('.slick-active').attr('data-slick-index');
-    $('#slider-modal').slickGoTo(n);
+    // n = $('#sliderD').find('.slick-active').attr('data-slick-index');
+    // $('#slider-modal').slickGoTo(n);
     $('.item-modal').removeClass('passive');
     $('.item-modal').addClass('active');
     $('body').css({'overflow' : 'hidden'});
@@ -251,6 +285,8 @@ $(document).ready(function() {
     asNavFor: '#slider-bar_M',
     centerMode: true,
     centerPadding: '40px',
+    touchMove: false,
+    touchThreshold: 1,
     responsive: [
       {
         breakpoint: 786,
@@ -273,11 +309,13 @@ $(document).ready(function() {
       ]
   });
   $('#slider-bar_M').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
     focusOnSelect: true,
-    asNavFor: '#sliderM',
+    touchMove: false,
+    touchThreshold: 1,
+    asNavFor: '#sliderM,#slider-modal',
     prevArrow: $('.prev-arrowM'),
     nextArrow: $('.next-arrowM'),
     arrows: true,
@@ -288,14 +326,14 @@ $(document).ready(function() {
           prevArrow: $('.prev-arrowM'),
           nextArrow: $('.next-arrowM'),
           arrows: true,
-          slidesToShow: 5,
+          slidesToShow: 4,
           centerMode: false
         }
       },
       {
         breakpoint: 546,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         }
       },
       {
@@ -309,8 +347,8 @@ $(document).ready(function() {
   
   $('.item-slider__zoomM').click(function() {
     $('.slick-track').addClass('notransition');
-    var n = $('#sliderM').find('.slick-current').attr('data-slick-index');
-    $('#slider-modal').slickGoTo(n);
+    // var n = $('#sliderM').find('.slick-current').attr('data-slick-index');
+    // $('#slider-modal').slickGoTo(n);
     $('.item-modal').removeClass('passive');
     $('.item-modal').addClass('active');
     $('body').css({'overflow' : 'hidden'});
@@ -321,8 +359,8 @@ $(document).ready(function() {
   
   $('#sliderM').on('click', '.slick-current', function() {
     $('.slick-track').addClass('notransition');
-    var n = $(this).attr('data-slick-index');
-    $('#slider-modal').slickGoTo(n);
+    // var n = $(this).attr('data-slick-index');
+    // $('#slider-modal').slickGoTo(n);
     $('.item-modal').removeClass('passive');
     $('.item-modal').addClass('active');
     $('body').css({'overflow' : 'hidden'});
@@ -384,8 +422,8 @@ $(document).ready(function() {
   var textarea1M = $('#textarea_1M'),
   textarea2M = $('#textarea_2M');
   
-  textarea1M.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off').attr('required', 'required');
-  textarea2M.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off').attr('required', 'required');
+  textarea1M.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off');
+  textarea2M.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off');
   
   $('#specificationM_link').click(function(event) {
     event.preventDefault();

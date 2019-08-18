@@ -1,5 +1,6 @@
 .compare
   margin-bottom: 50px
+  font-size: 1.1em
   &-no 
     display: none
   &-box 
@@ -40,15 +41,16 @@
       padding-top: 20px
       padding-bottom: 15px
       flex-direction: column
+      font-size: 1.1em
     &__lable
-      display: inline-block
+      display: flex
+      align-items: center
       text-transform: uppercase
       font-size: 0.7em
       padding-left: 30px
       // padding-top: 12px
       // padding-bottom: 12px
-      line-height: 37px
-      height: 37px
+      min-height: 37px
       &:nth-child(2n)
         background: lighten(#cccccc, 17%)
     &__desc
@@ -62,7 +64,7 @@
     flex-direction: column
     flex-wrap: nowrap
     // max-width: 230px
-    width: 25%
+    width: 24%
     margin-right: 2px
     padding-bottom: 50px
     &__box-1
@@ -219,6 +221,13 @@
 
 
 
+@media (min-width:1400px)
+  .compare
+    &-list
+      max-width: 290px
+      min-width: 290px
+    &-slider__box 
+      width: calc(100% - 290px)
 @media (max-width:1200px)
   .compare
     &-list
@@ -229,18 +238,23 @@
 @media (max-width:997px)
   .compare
     &-list
-      min-width: 170px
-      max-width: 170px
+      min-width: 180px
+      max-width: 180px
+      &__lable
+        font-size: 0.65em
+    &-item 
+      &__name
+        font-size: 0.9em
     &-slider__box
-      width: calc(100% - 170px)
+      width: calc(100% - 180px)
     &-slider
       &__buttons
         top: -45px
 @media (max-width:786px)
   .compare
     &-list
-      min-width: 130px
-      max-width: 130px
+      min-width: 140px
+      max-width: 140px
       &__lable, &__name
         padding-left: 10px
         line-height: 12px
@@ -254,7 +268,7 @@
         flex-direction: column
         align-items: flex-start
     &-slider__box
-      width: calc(100% - 130px)
+      width: calc(100% - 140px)
     &-item 
       &__box-1
         height: 250px
@@ -263,10 +277,12 @@
 @media (max-width:546px)
   .compare
     &-list
-      min-width: 100px
-      max-width: 100px
+      min-width: 120px
+      max-width: 120px
+      &__lable
+        font-size: 0.6em
     &-slider__box
-      width: calc(100% - 100px)
+      width: calc(100% - 120px)
 
 
 

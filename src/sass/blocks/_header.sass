@@ -24,7 +24,7 @@
       background: none
       border: none
       border-bottom: 1px solid $color-main
-      font-size: 1em
+      font-size: 1.2em
       color: $color-main
       +latoLight
       &::-webkit-input-placeholder
@@ -217,7 +217,7 @@
         height: 20px !important
   &-nav 
     font-size: 1.02em
-    height: 75px
+    height: 100%
     background: #fff
     padding: 0 20px
     display: flex
@@ -238,6 +238,7 @@
     &__item
       padding: 25px 0 25px 0
       color: $color-main
+      border-bottom: 1px solid #ffffff
     &__item, .header-catalog
       transition: 0s
       z-index: 1
@@ -261,8 +262,8 @@
       vertical-align: middle
       font-size: 1em
     &__box
-      border-bottom: 9px solid #a50103
-      margin-bottom: -10px
+      // border-bottom: 9px solid #a50103
+      // margin-bottom: -8px
       position: relative
       cursor: pointer
     &__item, &__subItem
@@ -278,7 +279,8 @@
       visibility: hidden
     &__item
       left: 0
-      top: 63px
+      top: 56px
+      border-top: 10px solid $color-main
       margin-left: -20px
       box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5)
       visibility: hidden
@@ -450,13 +452,22 @@
       height: 20px
       margin: 15px
   &-links 
-    width: 33%
+    display: flex
     text-align: center
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: flex-end
     &-2
       margin-left: 15px
       display: none
     &__link
+      width: 48%
       font-size: 1.2em
+      display: flex
+      justify-content: flex-end
+      margin-right: 5px
+      & svg 
+        margin-right: 0
       &:last-child
         margin-left: 10px
   &-callback
@@ -524,7 +535,7 @@
       +latoBold
       border-bottom: 1px dashed
   &__cart
-    font-size: 1em
+    font-size: 1.1em
     align-self: center
     padding-bottom: 20px
     height: 60px
@@ -589,7 +600,7 @@
     width: 99.9%
     position: static !important
   &__active
-    transition: .5s ease-in-out
+    transition: .25s ease-in-out
     opacity: 1 !important
     max-height: 320px !important
     height: auto !important
@@ -604,7 +615,7 @@
   height: auto
   background: #ffffff
   overflow: scroll
-  transition: .5s ease-in-out
+  transition: .25s ease-in-out
 .m_form-search
   overflow-x: hidden
   padding: 0 10px
@@ -667,3 +678,10 @@
 
 .m_header-catalog i
   z-index: -1
+
+
+
+.bookmark_count, .match_count
+  padding-right: 5px
+  font-size: 1.3em
+  color: $color-main

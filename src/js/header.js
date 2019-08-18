@@ -262,17 +262,15 @@ $(document).ready(function() {
     headerModal.removeClass('header-modal__active active');
     //$('body').attr('style', '');
      headerModal.attr('style', '');
-  });
-
-  var placeholder = 'Сообщение';
+    });
+    
+    var placeholder = 'Сообщение';
     $('.contacts-form__textarea').attr('placeholder', placeholder);
-    $('.contacts-form__textarea').attr('required', 'required');
     $('.header-modal__textarea').attr('placeholder', placeholder);
-    $('.header-modal__textarea').attr('required', 'required');
     $('.header-modal__textarea').focus(function () {
-    if($(this).val() === placeholder){
-      $(this).attr('value', '');
-    }
+      if($(this).val() === placeholder){
+        $(this).attr('value', '');
+      }
     });
     $('.header-modal__textarea').blur(function () {
       if($(this).val() === ''){
@@ -280,24 +278,32 @@ $(document).ready(function() {
       }
     });
     $('.contacts-form__textarea').focus(function () {
-    if($(this).val() === placeholder){
-      $(this).attr('value', '');
-    }
+      if($(this).val() === placeholder){
+        $(this).attr('value', '');
+      }
     });
     $('.contacts-form__textarea').blur(function () {
       if($(this).val() === ''){
         $(this).attr('value', placeholder);
       }
     });
-
-  $(function($) {
-    $(document).mouseup(function (e) {
-      if (!$('.header-modal__box').is(e.target)
-      & $('.header-modal__box').has(e.target).length === 0) {
-        headerModal.removeClass('header-modal__active');
-        $('body').attr('style', '');
+    
+    $(function($) {
+      $(document).mouseup(function (e) {
+        if (!$('.header-modal__box').is(e.target)
+        & $('.header-modal__box').has(e.target).length === 0) {
+          headerModal.removeClass('header-modal__active');
+          $('body').attr('style', '');
       }
     });
   });
-
+  
+  $('.header-modal-cities a').on('click', function() {
+    var city = $(this).text();
+    $('.header-city__text').text(city);
+    headerModal.removeClass('header-modal__active active');
+    //$('body').attr('style', '');
+     headerModal.attr('style', '');
+  });
+  
 });

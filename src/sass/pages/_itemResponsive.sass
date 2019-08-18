@@ -6,14 +6,32 @@
         padding: 40px
       &__slideBar
         height: 20%
-  .item-modal__slide
-    width: 70%
+  // .item-modal__slide
+  //   min-width: 50%
 @media (max-width: 1200px)
-  .item-modal__slide
-    max-width: 70%
-@media (min-width: 1200px)
-  .item-modal__slide
-    max-width: 45%
+  // .item-modal__slide
+  //   max-width: 70%
+  .item
+    &-price
+      font-size: 1em
+      &__btn
+        padding: 10px 15px
+        margin-right: 2%
+      &__rating-star
+        width: 20px
+        height: 22px
+    &-text 
+      &__btn
+        font-size: 1em
+    &-delivery__mkad
+      text-align: center
+@media (min-width: 992px)  //MOBILE
+  .desctop
+    display: block
+  .mobile
+    display: none !important
+  // .item-modal__slide
+  //   max-width: 45%
   .item
     &-modal__btn:hover
       transform: rotate(90deg)
@@ -35,11 +53,6 @@
     &-delivery__btnMinus, &-delivery__btnPlus
       &:hover
         color: $color-main
-@media (min-width: 992px)  //MOBILE
-  .desctop
-    display: block
-  .mobile
-    display: none !important
 @media (max-width: 992px)  //MOBILE
   .desctop
     display: none !important
@@ -56,6 +69,7 @@
       margin-bottom: 20px
     &-text 
       width: 100%
+      border-left: 0
       &__title
         width: 100%
         text-align-last: left
@@ -63,14 +77,14 @@
       &__brand
         border: 0
         width: 60%
+        justify-content: space-between
       &__rating
         width: 40px
       &__btn
-        padding: 15px 0  15px 0
+        padding: 15px 10px 
     &-slider
       width: 100%
       max-width: 100%
-      border-right: 0
       padding-right: 0
       &__zoom
         top: 55%
@@ -85,11 +99,11 @@
         padding-bottom: 20px
       &__imgActive
         max-height: 350px
-        width: 50%
+        width: 65%
         margin-right: auto
         margin-left: auto
       &__icons
-        height: 100px
+        height: 135px
         top: 20%
       &__slideBar
         padding-top: 0
@@ -146,6 +160,8 @@
         width: 100%
         justify-content: space-between
         transition: 0.5s
+        // padding-left: 5px
+        // padding-right: 5px
         &Title 
           text-align: left
           width: 15%
@@ -173,15 +189,37 @@
       display: flex
       height: auto
       padding: 10px
+      font-size: 1.2em
       &__row
         flex-direction: column
         text-align: center
+      &__desc, &__box
+          font-size: 0.7em
       &__mkad
         width: 100%
-        margin-bottom: 10px
+        margin-bottom: 30px
+        margin-top: 15px
+        font-size: 0.8em
+        & span 
+          display: flex
+          align-items: center
+          flex-wrap: wrap
+      &__btnMinus
+        margin-left: 10px
+      &__calc
+          display: flex
+          align-items: center
       &__block
         width: 100%
         margin-bottom: 10px
+      &__box
+        flex-direction: column
+        width: 98%
+        background: #f2f2f2
+        margin-bottom: 20px
+        & p 
+          margin-bottom: 0px
+          margin-top: 5px
       &__desc
         padding: 10px 0
         margin: 0
@@ -192,6 +230,7 @@
       padding: 10px
       &__text
         text-align: center
+        font-size: 0.8em
     &-payment
       display: flex
       padding: 10px
@@ -201,8 +240,10 @@
         width: 100%
         text-align: center
       &__title
+        font-size: 0.9em
         margin-bottom: 25px
       &__link
+        font-size: 0.8em
         margin-bottom: 15px
       &__item
         width: 48%
@@ -210,7 +251,7 @@
     &-guarantee
       height: auto
       display: flex
-      font-size: 1.2em
+      font-size: 0.95em
     &-buttons
       border: 15px solid $color-main
       max-height: 100%
@@ -257,7 +298,7 @@
           font-size: 1em
         &Spec 
           padding-bottom: 0
-          font-size: 1.1em
+          font-size: 0.9em
         &Feed
           padding: 10px
     &-feedback
@@ -301,19 +342,27 @@
       &__slide
         padding-bottom: 0
       &__imgActive
-        width: 60%
+        width: 75%
         // min-width: 250px
         // min-height: 250px
     &-feedback
-      font-size: 1.2em
+      font-size: 1em
+      width: 100%
+      padding: 15px
       &__title
-        width: 100%
+        float: left
+        padding-top: 10px
+        padding-right: 10px
+        width: auto
+      &__text
+        font-size: 0.9em
     &-form
       flex-direction: column
       padding-top: 20px
       padding-left: 0
       &__opinion-text
-        width: 100%
+        margin-right: 10px
+        // width: 100%
       &__col
         width: 100% !important
         padding: 0 10px
@@ -323,14 +372,19 @@
         margin-left: 0
         margin-right: auto
         margin-top: 25px
-        padding: 20px 35px
+        padding: 15px 25px
   .item-modal__slide
     max-width: 80%
+  #textarea_2M
+    height: 70px
 @media (max-width: 546px)
   .item
     &-chevronRight, &-chevronLeft
       width: 10px
       bottom: 13%
+    &-delivery__calc
+      justify-content: center
+      flex-direction: column
     &-text 
       &__brandImg
         display: none !important
@@ -339,8 +393,6 @@
       &__btnSvg
         width: 15px
         height: 15px
-    &-feedback
-      width: 100%
     &-buttons
       &__svg
         margin: 0
@@ -383,6 +435,11 @@
       &__next
         right: 5px
         padding-right: 0
+    &-feedback
+      width: 86%
+      &__title
+        float: none
+
   // #slider-bar_M 
   //   & .slick-list
   //     width: 100%

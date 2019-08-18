@@ -13,6 +13,14 @@ body
   font-family: sans-serif
   transition: 0.5s
 
+input[type='number'] 
+  -moz-appearance: textfield
+  
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  
+
 a 
   color: $color-text
   text-decoration: none
@@ -32,6 +40,7 @@ button, input, a, li, ul, textarea, select, option, img
   bottom: 15px
   right: 10px
   z-index: 5
+  cursor: pointer
 .goTop
   transform: rotate(-90deg)
   fill: #ffffff
@@ -142,13 +151,6 @@ button, input, a, li, ul, textarea, select, option, img
   margin-bottom: 30px
   position: relative
   flex-wrap: wrap
-  &__first, &__second
-    background: #f2f2f2
-    display: block
-    padding-right: 15px
-    padding-left: 15px
-    // white-space: nowrap
-    font-size: 0.9em
   &:after
     content: ""
     display: block
@@ -160,6 +162,22 @@ button, input, a, li, ul, textarea, select, option, img
     width: 100%
     margin-top: -1px
     z-index: -1
+  &__first, &__second
+    background: #f2f2f2
+    display: block
+    padding-right: 5px
+    padding-left: 5px
+    // white-space: nowrap
+    font-size: 0.9em
+    &:first-child
+      padding-left: 20px
+    &:last-child
+      padding-right: 20px
+  &__chevron
+    width: 0.9em
+    height: 0.6em
+    background: #f2f2f2
+    fill: #686868
     
 
 .svg
@@ -186,9 +204,19 @@ button, input, a, li, ul, textarea, select, option, img
   //   max-width: 1850px
   //   margin: 0 auto
 // HOVER
-@media (min-width: 1200px)
+// @media (min-width: 1400px)
+//   .header-nav__item:hover:before
+//     bottom: 3px !important
+//   .header-catalog__box:hover:before
+//     bottom: 0 !important
+// @media (min-width: 1200px)
+//   .header-nav__item:hover:before
+//     bottom: 1px !important
+//   .header-catalog__box:hover:before
+//     bottom: 0 !important
+@media (min-width: 992px)
   #btnTop:hover
-    background: darken($color-main, 4%)
+    background: darken($color-main, 5%)
   .header-form__button:hover
     background: $color-main
     color: #ffffff
@@ -202,26 +230,18 @@ button, input, a, li, ul, textarea, select, option, img
       stroke-miterlimit: 10
   .header-nav__item:hover
     color: #ffffff
-    &:before
-      height: 100%
-      border-bottom: 1px solid #ffffff
-      bottom: 1px
+    background: $color-main
+    border-bottom: 1px solid #ffffff
+    // &:before
+    //   height: 100%
+    //   bottom: 0px
     .header-catalog
       color: #ffffff
       transition: 0s
     svg
       fill: #fff
-  .header-nav__item:before
-    content: ""
-    // transition: 0.3s
-    background: $color-main
-    z-index: -1
-    height: 0
-    width: 100%
-    display: block
-    position: absolute
+  .header-catalog__box:hover
     bottom: 0
-    left: 0
   .header-cart a:hover
     background: $color-main
     & .header-svg

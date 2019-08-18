@@ -74,8 +74,10 @@ function itemsPrise() {
     finallyPrice();
   });
   var sumUnload = 0;
+
   function itemsUnload() {
     if($('.lift-active').hasClass('order-pickup__button-active') && $('.unload-active').hasClass('order-pickup__button-active')){
+      finallyPrice();
       if(level >= 1){
         var priceLevel = +level * 350;
         sumUnload = pickupPrice + priceLevel;
@@ -137,13 +139,28 @@ function itemsPrise() {
   });
   
   // удаление товара
+  var items = $('.cart-item').length;
   $('.cart-item__remove').on('click', function() {
     $(this).parents('.cart-item').remove();
+    items = $('.cart-item').length;
     itemsCount();
     itemsWeight();
     itemsPrise();
     delivery();
     finallyPrice();
+    cartItems();
+    if(items == 0){
+      $('.cart-concomitant__value').text('0');
+      $('#weight').text('0');
+      $('.price_total').text('0');
+      $('.finally_price').text('0');
+      $('.item_unload').text('0 руб.');
+      $('.item-delivery__priceValue').text('0 руб.');
+      $('#price_pickup').text('0 руб.');
+      $('#price_delivery').text('0 руб.');
+      $('#value_pickup').text('0 шт.');
+      $('#weight_pickup').text('0 кг.');
+    }
   });
   
   
@@ -169,12 +186,8 @@ function itemsPrise() {
     delivery();
     finallyPrice();
   });
-
-  function finallyPrice() {
-    var priceTotal = $('.price_total').text();
-    $('.finally_price').text(+priceTotal + +pickupPrice + +priceDelivery +sumUnload);
-  }
-  finallyPrice();
+  
+  
   console.log(sumUnload);
   // кнопки доставка и самовывоз
   $('.cart-buttons__btn').on('click', function() {
@@ -206,7 +219,7 @@ function itemsPrise() {
     $('.order-block').addClass('dflex');
     $('.order-item').addClass('dflex');
   });
-
+  
 
   $('.contacts-form__textarea').attr('placeholder', 'Реквизиты и примечания');
   
@@ -214,8 +227,14 @@ function itemsPrise() {
     $(this).parent('.order-pickup__row').find('.order-pickup__button').removeClass('order-pickup__button-active');
     $(this).addClass('order-pickup__button-active');
     itemsUnload();
+    finallyPrice();
   });
   
+  function cartItems() {
+    var items = $('.cart-item').length;
+    $('.value').text(items);
+  }
+  cartItems();
   
   
   
@@ -225,6 +244,16 @@ function itemsPrise() {
   });
   
   
+  function finallyPrice() {
+    var price1 = $('#price_pickup').text();
+    var price2 = $('#price_delivery').text();
+    var priceTotal = $('.price_total').text();
+    price1 = parseInt(price1);
+    price2 = parseInt(price2);
+    priceTotal = parseInt(priceTotal);
+    $('.finally_price').text(price1 + price2 + priceTotal);
+  }
+  finallyPrice();
   
   
   
