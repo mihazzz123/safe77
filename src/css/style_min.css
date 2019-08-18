@@ -4567,7 +4567,7 @@ footer {
       padding-bottom: 20px; }
     .item-slider__imgActive {
       max-height: 350px;
-      width: 65%;
+      min-height: auto;
       margin-right: auto;
       margin-left: auto; }
     .item-slider__icons {
@@ -4855,8 +4855,6 @@ footer {
     opacity: 1; }
   .item-slider__slide {
     padding-bottom: 0; }
-  .item-slider__imgActive {
-    width: 75%; }
   .item-feedback {
     font-size: 1em;
     width: 100%;
@@ -4940,8 +4938,6 @@ footer {
   .item-buttons__result-value {
     padding-left: 5px;
     width: auto; }
-  .item-slider__imgActive {
-    width: 80%; }
   .item-slider__zoom {
     top: 60%; }
   .item-modal__prev, .item-modal__next {
