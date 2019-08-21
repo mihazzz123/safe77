@@ -20,6 +20,7 @@
       margin-left: auto 
     &__tag
       font-size: 0.9em
+      white-space: nowrap
     &__value
       margin: 0
       font-size: 1em
@@ -28,6 +29,7 @@
       &-first
         padding-left: 5px
         padding-right: 5px
+        white-space: nowrap
     &__pageMeter
       display: block
       height: 25px
@@ -65,9 +67,11 @@
     font-weight: 600
     margin: 30px 0
     line-height: 15px
-    vertical-align: center
+    vertical-align: middle
     & svg 
       margin-left: 10px
+      vertical-align: middle
+      margin-top: -2px
 
 .good
   margin-bottom: 20px
@@ -133,7 +137,7 @@
         overflow: auto
         color: $color-text
       &_second
-        max-height: 130px
+        max-height: 115px
         width: 17%
     &__arrow
       border-color: #888 transparent transparent transparent
@@ -148,6 +152,7 @@
       width: 0
       transition: 0.3s
       z-index: 1
+      cursor: pointer
       &_active
         transform: rotate(180deg)
     &__option, &__selected
@@ -158,6 +163,8 @@
       padding: 5px
       max-width: 250px
       width: 100%
+    &__selected
+      white-space: nowrap
   &-selected
     background: lighten(#cccccc, 10%)
 
@@ -273,13 +280,19 @@
       color: #515151
       text-align: center
       white-space: nowrap
+      align-items: center
       justify-content: space-between
       transition: all .3s
       & svg
         margin-left: 3px
+        display: inline-block
+        margin-bottom: -2px
+        vertical-align: middle
+      &-text 
+        display: inline-block
+        // height: 1em
+        vertical-align: middle
        
-.showMore
-  display: block
 
 .attributive
   max-height: 0px
@@ -377,7 +390,9 @@
     &__flag
       display: block
       width: 15px
+      min-width: 15px
       height: 15px
+      min-height: 15px
       margin-right: 10px
       position: relative
       background: url(../img/catalog/icons_attributive.png)

@@ -32,12 +32,21 @@
     display: flex
   .header-nav__item
     font-size: 0.9em !important
+  .header-cart a 
+    width: 28px
+    height: 28px
+    margin-left: 5px
+    & .value 
+      left: 10px
+      bottom: 1px
 @media (min-width: 992px)
   .m_header, .tdslide-icon
     display: none
 @media (max-width: 992px)
   .m_header-city
     font-size: 1em
+    &__text
+      margin-top: 0
   .button-main
     line-height: 21px
   .m_header-catalog, .m_header-catalog__subItem
@@ -58,7 +67,8 @@
     &::-webkit-scrollbar-track
       border-radius: 10px
       background-color: #ffffff
-
+  .m_header-callback__phone
+    margin-left: auto
   .sdslide__button
     font-size: 0.8em
   .sdslider-arrow-right
@@ -137,6 +147,8 @@
     transition: all 0.5s
   .bookmark_count, .match_count
     font-size: 1.5em
+  .tdslide-mobbuton 
+    width: 65%
 @media (max-width: 546px)
   .header-modal-city-search, .header-search-items3
     width: 270px
@@ -157,7 +169,7 @@
     &-1
       display: none
     &-2
-      display: block
+      display: flex
   .m_header__logo img
     height: auto
     width: 100%
@@ -179,7 +191,7 @@
     padding-left: 0
   .header-form__input
     margin-right: 10px
-    font-size: 1.2em
+    font-size: 1em
   .tdslide-img
     min-height: 19em
   .tdslide-img img
@@ -199,3 +211,7 @@
     font-size: 0.8em
   .header-search-items3
     width: 250px
+  .header-form__input
+    font-size: 0.9em
+  .m_header-catalog
+    overflow-x: hidden

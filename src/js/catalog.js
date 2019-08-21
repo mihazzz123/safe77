@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   if(window.matchMedia('(max-width: 992px)').matches){
     $('.filter').removeClass('filter_active');
-  };
+  }
 
   var btnShowAll = $('.showAll'),
       btnShowMore = $('.showMore'),

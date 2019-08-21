@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
   // калькулятор количества товаров, стоимости доставки и веса
   $('.cart-item__minus').on('click', function() {
@@ -9,8 +12,10 @@ $(document).ready(function() {
     if(calcResult > 0){
       result.val(calcResult).attr('value', calcResult);
       var priceResult = price * calcResult;
-      priceTag.text(priceResult);
+      priceTag.attr('data-price-res', priceResult);
+      priceTag.text(priceResult.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
     }
+    itemsPrise();
   });
   $('.cart-item__plus').on('click', function() {
     var calcResult = $(this).parent('.cart-item__calc').find('.cart-item__amount').attr('value');
@@ -20,7 +25,9 @@ $(document).ready(function() {
     calcResult ++;
     result.val(calcResult).attr('value', calcResult);
     var priceResult = price * calcResult;
-    priceTag.text(priceResult);
+    priceTag.attr('data-price-res', priceResult);
+    priceTag.text(priceResult.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
+    itemsPrise();
   });
 
   var pickupPrice = 0;
@@ -32,8 +39,11 @@ $(document).ready(function() {
       $('.cart-concomitant__value').text(sum);
       $('#value_pickup').text('(' + sum + ' шт.) ');
       pickupPrice = sum * 350;
-      $('#price_pickup').text(pickupPrice + ' руб.');
-      $('.item_unload').text(pickupPrice + ' руб.');
+      $('#price_pickup').attr('data-price-res', pickupPrice);
+      $('.item_unload').attr('data-price-res', pickupPrice);
+      var pickupPriceRes = pickupPrice.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+      $('.item_unload').text(pickupPriceRes + ' руб.');
+      $('#price_pickup').text(pickupPriceRes + ' руб.');
     });
     finallyPrice();
   }
@@ -46,10 +56,13 @@ function itemsWeight() {
     var amount = $(this).parents('.cart-item').find('.cart-item__amount').attr('value');
     var sumSingle = $(this).attr('data-weight');
     sumSingle = +sumSingle * amount;
-    $(this).text(sumSingle);
+    $(this).attr('data-weight-res', sumSingle);
+    $(this).text(sumSingle.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
     sum = sum + +sumSingle;
-    $('#weight').text(sum);
-    $('#weight_pickup').text('(' + sum + ' кг.)')
+
+    $('#weight').text(sum.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
+    var weightRes = sum.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+    $('#weight_pickup').text('(' + weightRes + ' кг.)')
   });
   finallyPrice();
 }
@@ -58,9 +71,14 @@ itemsWeight();
 function itemsPrise() {
   var sum = 0;
   $('.cart-item__price-value').each(function() {
-    var priceSingle = $(this).text();
-    sum = sum + +priceSingle;
-    $('.price_total').text(sum);
+    var priceSingle = $(this).attr('data-price');
+    var priceSingleNew = $(this).attr('data-price-res');
+    sum = sum + +priceSingle + +priceSingleNew;
+    // sum = sum + +priceSingleNew;
+    console.log(priceSingle);
+    var sumRes = sum.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+    $('.price_total').attr('data-weight-res', sum);
+    $('.price_total').text(sumRes);
   });
   finallyPrice();
   }
@@ -81,8 +99,11 @@ function itemsPrise() {
       if(level >= 1){
         var priceLevel = +level * 350;
         sumUnload = pickupPrice + priceLevel;
-        $('#price_pickup').text(sumUnload + ' руб.');
-        $('.item_unload').text(sumUnload + ' руб.');
+        var sumUnloadRes = sumUnload.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+        $('#price_pickup').attr('data-price-res', sumUnload);
+        $('.item_unload').attr('data-price-res', sumUnload);
+        $('#price_pickup').text(sumUnloadRes + ' руб.');
+        $('.item_unload').text(sumUnloadRes + ' руб.');
         $('#delivery_status').text(level + ' этаж (без лифта)');
         finallyPrice();
       }
@@ -103,26 +124,36 @@ function itemsPrise() {
       $('.item-delivery__priceValue').text('700 руб.');
       $('#price_delivery').text('700 руб.');
       priceDelivery = 700;
+      $('#price_delivery').attr('data-price-res', 700);
     } else if (sum == 1 && mkad > 0 && mkad < 5){
       $('.item-delivery__priceValue').text('900 руб.');
       $('#price_delivery').text('900 руб.');
       priceDelivery = 900;
+      $('#price_delivery').attr('data-price-res', 900);
     } else if (sum > 1 && mkad == 0){
       $('.item-delivery__priceValue').text('0 руб.');
       $('#price_delivery').text('0 руб.');
       priceDelivery = 0;
+      $('#price_delivery').attr('data-price-res', 0);
     } else if (sum > 1 && mkad > 0 && mkad < 5){
       $('.item-delivery__priceValue').text('200 руб.');
       $('#price_delivery').text('200 руб.');
       priceDelivery = 200;
+      $('#price_delivery').attr('data-price-res', 200);
     } else if (sum == 1 && mkad > 5){
       priceDelivery = (+mkad - 5) * +moscow + 900;
-      $('.item-delivery__priceValue').text(priceDelivery + ' руб.');
-      $('#price_delivery').text(priceDelivery + ' руб.');
+      $('.item-delivery__priceValue').attr('data-price-res', priceDelivery);
+      $('#price_delivery').attr('data-price-res', priceDelivery);
+      var priceDeliveryRes = priceDelivery.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+      $('.item-delivery__priceValue').text(priceDeliveryRes + ' руб.');
+      $('#price_delivery').text(priceDeliveryRes + ' руб.');
     } else if (sum > 1 && mkad > 5){
       priceDelivery = (+mkad - 5) * +moscow + 200;
-      $('.item-delivery__priceValue').text(priceDelivery + ' руб.');
-      $('#price_delivery').text(priceDelivery + ' руб.');
+      $('.item-delivery__priceValue').attr('data-price-res', priceDelivery);
+      $('#price_delivery').attr('data-price-res', priceDelivery);
+      var priceDeliveryRes = priceDelivery.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+      $('.item-delivery__priceValue').text(priceDeliveryRes + ' руб.');
+      $('#price_delivery').text(priceDeliveryRes + ' руб.');
       finallyPrice();
     }
   }
@@ -147,8 +178,8 @@ function itemsPrise() {
     itemsWeight();
     itemsPrise();
     delivery();
-    finallyPrice();
     cartItems();
+    finallyPrice();
     if(items == 0){
       $('.cart-concomitant__value').text('0');
       $('#weight').text('0');
@@ -245,17 +276,18 @@ function itemsPrise() {
   
   
   function finallyPrice() {
-    var price1 = $('#price_pickup').text();
-    var price2 = $('#price_delivery').text();
-    var priceTotal = $('.price_total').text();
+    var price1 = $('#price_pickup').attr('data-price-res');
+    var price2 = $('#price_delivery').attr('data-price-res');
+    var priceTotal = $('.price_total').attr('data-weight-res');
     price1 = parseInt(price1);
     price2 = parseInt(price2);
     priceTotal = parseInt(priceTotal);
-    $('.finally_price').text(price1 + price2 + priceTotal);
+    final = +price1 + +price2 + +priceTotal;
+    $('.finally_price').text(final.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
   }
   finallyPrice();
   
-  
+
   
   
 });

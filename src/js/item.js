@@ -88,8 +88,8 @@ $(document).ready(function() {
       var textarea1 = $('#textarea_1'),
       textarea2 = $('#textarea_2');
       
-      textarea1.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off').attr('required', 'required');
-      textarea2.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off').attr('required', 'required');
+      textarea1.attr('placeholder', 'Коментарии к оценке').attr('autocomplete', 'off');
+      textarea2.attr('placeholder', 'Текст сообщения').attr('autocomplete', 'off');
       
       // Калькулятор стоимости доставки
       $('.cart-delivery__minus').click(function() {

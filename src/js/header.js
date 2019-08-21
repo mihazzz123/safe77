@@ -88,14 +88,15 @@ $(document).ready(function() {
       'visibility': 'hidden'
     });
   });
-
+  
   // Фома поиска
   var searchOpen = $('.header-search'),
-      search = $('.header-form'),
-      searchClose = $('.header-form__close');
-
+  search = $('.header-form'),
+  searchClose = $('.header-form__close');
+  
   searchOpen.on('click', function() {
     search.addClass('header-form__active active');
+    $('.header-form__input1').focus();
   });
 
   searchClose.on('click', function() {
@@ -110,8 +111,9 @@ $(document).ready(function() {
   }
     var searchInput = $(this).val();
   $('.header-search-items li a').each(function() {
+    var searchTitleLower = $(this).text().toLowerCase();
     var searchTitle = $(this).text();
-    if (searchTitle.indexOf(searchInput) >= 0 ) {
+    if (searchTitle.indexOf(searchInput) >= 0 || searchTitleLower.indexOf(searchInput) >= 0) {
       $(this).parents('li').show();
     } else {
       $(this).parents('li').hide();
@@ -130,8 +132,9 @@ $(document).ready(function() {
   $('.m_form-search').css('min-height', '320px');
   var searchInput = $(this).val();
   $('.header-search-items li a').each(function() {
+    var searchTitleLower = $(this).text().toLowerCase();
     var searchTitle = $(this).text();
-    if (searchTitle.indexOf(searchInput) >= 0 ) {
+    if (searchTitle.indexOf(searchInput) >= 0 || searchTitleLower.indexOf(searchInput) >= 0) {
       $(this).parents('li').show();
     } else {
       $(this).parents('li').hide();
@@ -305,5 +308,10 @@ $(document).ready(function() {
     //$('body').attr('style', '');
      headerModal.attr('style', '');
   });
+
+  if(window.matchMedia('(max-width: 1280px)').matches){
+    $('.footer-logo span').text('ОФИЦИАЛЬНЫЙ ДИЛЕР ПРОИЗВОДСТВО НА ЗАКАЗ');
+  }
+  
   
 });
