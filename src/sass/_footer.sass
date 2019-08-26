@@ -43,7 +43,21 @@ footer
 		&:hover a
 			color: $color-main
 			text-decoration: underline
-
+	&-slogan
+		align-items: center
+		justify-content: center
+		& span, & a
+			vertical-align: middle
+			display: inline-block
+			white-space: nowrap
+			margin: 2px 0
+		& small
+			display: inline-block
+			font-size: 1.2em
+			font-weight: normal
+			padding-left: 5px
+			padding-right: 5px
+			margin-bottom: 2px
 
 .footer-1
 	width: 30%
@@ -73,6 +87,21 @@ footer
 		font-size: 0.75em
 		max-width: 600px
 
+@media (max-width: 1400px)
+	.footer-slogan
+		font-size: 0.85em
+@media (max-width: 1200px)
+	.footer-slogan
+		font-size: 1em
+		flex-direction: column
+		align-items: flex-start
+		max-width: 190px
+		margin-left: auto
+		margin-right: auto
+		& span 
+			text-align: left
+		& small
+			display: none
 @media (max-width: 992px)
 	.footer
 		font-size: 1.1em
@@ -89,6 +118,11 @@ footer
 			max-width: 35%
 			margin-left: auto
 			margin-right: auto
+		&-slogan
+			align-items: center
+			flex-direction: row
+			& small
+				display: inline-block
 @media (max-width: 786px)
 	.footer
 		&-2
@@ -98,8 +132,15 @@ footer
 @media (max-width: 546px)
 	.footer
 		&-2
+			border-right: none
 			padding-left: 7%
 		&-3 
 			padding-right: 7%
 		&-phone, &-mail 
 			max-width: 80%
+		&-link 
+			font-size: 1em
+		&-slogan
+			flex-direction: column
+			& small
+				display: none

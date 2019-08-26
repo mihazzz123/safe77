@@ -66,6 +66,7 @@
         background-color: #fff
       & ol
         padding: 0
+        margin: 0
         & li
           padding: 0 10px
           border-bottom: 1px solid #aaa
@@ -76,8 +77,8 @@
           & a
             line-height: 40px
   &-svg
-    width: 1.6em
-    height: 1.7em
+    width: 30px
+    height: 30px
   &-comparison
     padding-right: 30px
     & svg
@@ -159,9 +160,9 @@
         font-size: 1.2em
     &__text
       white-space: nowrap
-      margin-top: 5px
+      // margin-top: 5px
       margin-left: 5px
-      font-size: 1em
+      font-size: 1.2em
       border-bottom: 1px dashed $color-text
       +latoBold
   &-text 
@@ -172,6 +173,9 @@
       &:last-child
         padding-left: 10px
         border-left: 1px solid #000000
+      &-link
+        color: #696969
+        border-bottom: 1px dashed #515151
     &__slogan
       font-size: 1em
       white-space: nowrap
@@ -260,12 +264,13 @@
       text-transform: uppercase 
   &-catalog
     color: $color-main
+    // font-size: 1em
     &__li-active
       position: relative
     &__li-active i
       position: absolute
       right: 10px
-      top: 0
+      top: 5px
       display: block
       color: $color-text
       line-height: 39px
@@ -414,14 +419,15 @@
       align-items: center
       flex-direction: row
       margin-bottom: 15px
-      &:after
-        content: ""
-        display: block
-        position: absolute
-        height: 7px
-        width: 100%
-        background: $color-main
-        bottom: 0
+      border-bottom: 7px solid #a50103
+      // &:after
+      //   content: ""
+      //   display: block
+      //   position: absolute
+      //   height: 7px
+      //   width: 100%
+      //   background: $color-main
+      //   bottom: 0
       & a 
         color: $color-main
         text-decoration: underline
@@ -606,7 +612,7 @@
       width: 10px
       position: absolute
       right: 20px
-      top: 10px
+      top: 15px
 .catalog
   &__subItem-active
     width: 99.9%
@@ -697,3 +703,13 @@
   padding-right: 5px
   font-size: 1.3em
   color: $color-main
+
+
+
+
+.button-catalog
+  font-size: 1em !important
+
+
+.header-search-items
+  left: 0

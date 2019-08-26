@@ -11,6 +11,7 @@
     align-items: center
     text-align: right
     justify-content: flex-end
+    padding-top: 7px
     &_second
       width: 100%
     &__text, &__pageMeters
@@ -19,11 +20,11 @@
     &__pageMeters-second
       margin-left: auto 
     &__tag
-      font-size: 0.9em
+      // font-size: 0.9em
       white-space: nowrap
     &__value
       margin: 0
-      font-size: 1em
+      // font-size: 1em
       font-style: normal
       padding-left: 5px
       &-first
@@ -80,7 +81,7 @@
   & .tdslide-img
     margin: 60px 0 45px 0
   & .tdslide-icons
-    top: 85px
+    top: 100px
   &-title__second
     width: 100%
 .sort
@@ -114,8 +115,8 @@
       border-radius: 5px
       &-second
         width: 17%
-        & .sort-filter__arrow
-          left: 12%
+        // & .sort-filter__arrow
+          // left: 12%
     &__items
       position: absolute
       background: #ffffff
@@ -144,7 +145,7 @@
       border-style: solid
       border-width: 5px 4px 0 4px
       height: 0
-      left: 47%
+      right: 5px
       margin-left: -4px
       margin-top: -2px
       position: absolute
@@ -161,10 +162,11 @@
       // min-height: 30px
       cursor: pointer
       padding: 5px
-      max-width: 250px
+      // max-width: 250px
       width: 100%
     &__selected
       white-space: nowrap
+      position: relative
   &-selected
     background: lighten(#cccccc, 10%)
 
@@ -173,13 +175,13 @@
   background: #fff
   width: 30%
   height: 100%
-  max-height: 100px
   overflow: hidden
   padding: 20px 30px
   font-size: 1em
-  transition: .5s ease-in-out
+  // transition: .5s ease-in-out
   &_active
-    height: 100%
+    min-height: 100%
+    height: auto
     max-height: 5000px
     // & .filter-title
     //   padding-bottom: 30px
@@ -187,7 +189,7 @@
   &-title
     // border-bottom: 1px solid #ccc
     padding-bottom: 40px
-    padding-top: 20px
+    padding-top: 15px
     font-weight: 600
   &__icon
     width: 35px
@@ -206,6 +208,7 @@
     flex-direction: column
     flex-wrap: nowrap
     border-bottom: 1px solid #ccc
+    // transition: 0.35s
     &:nth-child(1)
       border-top: 1px solid #ccc
     &__title
@@ -233,6 +236,7 @@
       border: none
       background: #aaa
       color: #ffffff
+      // margin-bottom: 25px
       &:hover
         background: #828282
 
@@ -297,7 +301,7 @@
 .attributive
   max-height: 0px
   height: 100%
-  transition: .5s ease-in-out
+  transition: .3s ease-in-out
   // transform-origin: center top
   visibility: hidden
   transform-origin: top center
@@ -410,7 +414,7 @@
   width: 20px
   height: 15px
   transform: rotate(45deg)
-  transition: .25s ease-in-out
+  transition: .2s ease-in-out
   // transform-origin: center center
   &-active
     transform: rotate(0deg)

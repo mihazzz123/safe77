@@ -15,7 +15,12 @@
   .sort-filter__items_active
     & .sort-filter__option:hover
       background: #f2f2f2
-@media (min-width: 1700px)
+@media (min-width: 1600px)
+  .filterSecond
+    &-touchstone
+      &__item
+        &:nth-child(-n+3)
+          display: block !important
   .catalog__good
     width: 23%
   .good
@@ -29,7 +34,7 @@
     &s
       display: flex
       flex-direction: row
-      width: 50%
+      width: 55%
     &__form
       min-width: 100%
       &:after
@@ -41,7 +46,7 @@
         top: -5px
         background: #cccccc
       & .sort-filter__arrow
-        left: 94% !important
+        // left: 94% !important
       &-second
         min-width: 35%
         &:after
@@ -53,21 +58,23 @@
           top: -5px
           background: #cccccc
         & .sort-filter__arrow
-          left: 27% !important
+          // left: 27% !important
     &__items_first
       width: 100% !important
     &__items_second
       width: 35% !important
+  .catalog-tags
+    padding-top: 7px
 @media (min-width: 1400px)
   .sort-filter
     &__form
       width: 45%
       &-second
         width: 15%
-        & .sort-filter__arrow
-          left: 11%
-    &__arrow
-      left: 41%
+        // & .sort-filter__arrow
+          // left: 11%
+    // &__arrow
+      // left: 41%
     &__items
       width: 45%
       &_second
@@ -89,13 +96,6 @@
     &-activeShowAll
       height: auto
   .filter
-    max-height: 90px
-    padding: 30px 30px
-    &_active
-      max-height: 5000px 
-    &-title
-      padding: 0 0 35px 0
-      // border-bottom: 0
     &__title
       font-size: 0.8em
     &__icon 
@@ -106,30 +106,66 @@
       width: 73%
       &-second
         width: 25%
-        & .sort-filter__arrow
-          left: 18%
-    &__arrow
-      left: 68%
+        // & .sort-filter__arrow
+          // left: 18%
+    // &__arrow
+      // left: 68%
     &__items
       width: 73%
       &_second
         width: 25%
 @media (min-width: 992px)
   .good-addition
-    position: absolute;
-    background: white;
-    width: 100%;
-    margin-left: -10px;
-    padding-left: 10px;
+    position: absolute
+    background: white
+    width: 100%
+    margin-left: -10px
+    padding-left: 10px
     box-shadow: -1px 15px 14px 0px #00000087
     z-index: 10
+  .catalog__buttonMore
+    &:hover 
+      color: $color-main
+      & svg
+        fill: $color-main
+  .filter_active
+    height: 100%
+@media (max-width: 992px)
+  .filterSecond
+    &-touchstone
+      &__item
+          &:nth-child(-n+2)
+            display: none
+          &:nth-child(-n+1)
+            display: block !important
 @media (max-width: 992px)
   .catalog-box
     flex-direction: column
+    height: 100%
+  .attributive 
+    padding: 0 12px
   .filter
+    max-height: 90px
     width: 100%
+    padding: 0
+    &_active
+      min-height: 100% !important
+      height: auto !important
+      max-height: 5000px !important
+    &-title
+      padding: 0
+      margin-bottom: 35px
+      // border-bottom: 0
+      width: 100%
+      z-index: 3
+      padding: 30px
+      margin-bottom: 0
     &__title
       margin-right: auto
+    &-box 
+      padding: 0 30px
+    &__button-second
+      margin-bottom: 30px
   .sort-filters
     justify-content: flex-start
     flex-direction: column
@@ -138,24 +174,27 @@
     &__selected
       min-height: 25px
     &__form
-      width: 80%
+      width: 100%
       &-second
-        width: 25%
-        & .sort-filter__arrow
-          left: 18%
-    &__arrow
-      left: 75%
+        width: 35%
+        // & .sort-filter__arrow
+          // left: 18%
+    // &__arrow
+      // left: 75%
     &__items
-      width: 80%
+      width: 100%
       &_second
-        width: 25%
+        max-height: 133px
+        width: 35%
   .catalog
     &-tags
       padding: 0 10px
-      width: 55%
+      padding-top: 7px
+      // width: 100%
     &-sort
       align-items: flex-start
     &__good
+      font-size: 0.9em
       // max-width: 100%
       width: 46%
       &:last-child
@@ -172,7 +211,7 @@
       box-shadow: none !important
       padding: 5px
   .filterSecond
-    height: 50px
+    // height: 50px
     &-activeShowMore
       height: 170px
     &-activeShowAll
@@ -209,14 +248,15 @@
       width: 100%
       &-second
         width: 100%
-        & .sort-filter__arrow
-          left: 95%
-    &__arrow
-      left: 95%
+        // & .sort-filter__arrow
+          // left: 95%
+    // &__arrow
+      // left: 95%
     &__items
       width: 100%
       &_second
         width: 100%
+        max-height: 123px
     &__selected, &__option
       max-width: 100%
   .catalog-tags
@@ -227,19 +267,24 @@
       &-active
         margin-left: auto !important
   .filterSecond
-    height: 50px
+    // height: 50px
     &-activeShowMore
       height: 163px
     &-activeShowAll
       height: auto
   .filter
-    max-height: 90px
-    padding: 30px 20px
-    &_active
-      max-height: 5000px 
+    // height: 90px
+    // padding: 30px 20px
+    // &_active
+      // height: 100%
     &-title
-      padding: 0 0 25px 0
+      // margin-bottom: 30px
+      padding: 30px 20px
       border-bottom: 0
+    &-box 
+      padding: 0px 20px
+  .good .tdslide-icons
+    top: 9%
 @media (max-width: 546px)
   .catalog
     &__good
@@ -247,16 +292,18 @@
       width: 90%
       &:last-child
         margin-right: 0
-  .filterSecond
-    display: none !important
+  // .filterSecond
+  //   display: none !important
   .filter
-    max-height: 90px
-    padding: 30px 20px
-    &_active
-      max-height: 5000px 
+    // height: 90px
+    // padding: 30px 20px
+    // &_active
+    //   height: 100%
     &-title
-      padding: 0 0 25px 0
+      // padding: 0 0 30px 0
       border-bottom: 0
+    &__title
+      font-size: 1em
   .sort
     &-filter
       flex-wrap: wrap
@@ -272,6 +319,8 @@
       &__form
         margin-bottom: 0
         width: 100%
+      &__items_second
+        max-height: 128px
     &-select 
       width: 100%
   .catalog-tags
@@ -283,6 +332,7 @@
       display: flex
       width: 100%
       margin-right: 100%
+      flex-wrap: wrap
     &__tag
       padding-left: 0
     &__pageMeter
@@ -297,3 +347,21 @@
   //   &-img 
   //     padding-top: 50px
   //     padding-bottom: 50px
+  .filterSecond
+    flex-direction: column
+    &-touchstone
+      justify-content: center
+      &__item
+        max-height: 100px 
+        text-align: center
+    &-nav 
+      align-items: center
+      &__button
+        justify-content: center
+        width: 80%
+        & svg 
+          margin-left: 15px
+  .good .tdslide-icons
+    top: 13%
+
+    

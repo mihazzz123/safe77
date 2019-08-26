@@ -1,6 +1,6 @@
 @media (min-width: 1440px)
   .ftslider, .main__img
-    height: 400px
+    height: 550px
     
   // .header-catalog__box 
   //   border-bottom: 7px solid #a50103
@@ -12,6 +12,8 @@
     height: 18px
 
 @media (max-width: 1200px)
+  // .main .tdslide
+  //   font-size: 1em
   .header-catalog__item
     top: 57px
   // .header-catalog__box
@@ -39,10 +41,14 @@
     & .value 
       left: 10px
       bottom: 1px
+  .tdslide-icons 
+    top: 75px
 @media (min-width: 992px)
   .m_header, .tdslide-icon
     display: none
 @media (max-width: 992px)
+  .tdslide-icons 
+    top: 90px
   .m_header-city
     font-size: 1em
     &__text
@@ -118,13 +124,14 @@
   .header-modal-city-search, .header-search-items3
     width: 290px
   .tdslide-img
-    min-height: 14em
+    min-height: 16.5em
     & img 
       width: auto
       max-height: 14em
   .tdslide-desc .label
     width: auto
-
+  .tdslide-icons 
+    top: 9%
   .m_header-cart
     font-size: 0.9em
   .main-tags
@@ -150,6 +157,8 @@
   .tdslide-mobbuton 
     width: 65%
 @media (max-width: 546px)
+  .tdslide-icons 
+    top: 80px
   .header-modal-city-search, .header-search-items3
     width: 270px
   .header-modal-cities ul li
@@ -201,6 +210,16 @@
     height: 40px
   .tdslide-icon-2
     height: 40px
+  .bookmark_count, .match_count
+    line-height: 30px
+    height: 30px
+    font-weight: normal
+    display: flex
+    align-items: center
+  .match_count
+    font-size: 2.5em
+  .bookmark_count
+    font-size: 2.1em
 
 
 @media (max-width: 350px)

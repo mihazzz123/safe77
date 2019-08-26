@@ -1,11 +1,24 @@
 * 
   box-sizing: border-box
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
   &::selection 
     background: lighten($color-main, 15%)
     color: #fff
 
 boby, html
   font-size: 16px
+
+p, span, h1, h2, h3, h4, h5, h6, b, li, input, textarea, strong, a 
+  -webkit-touch-callout: text
+  -webkit-user-select: text
+  -moz-user-select: text
+  -ms-user-select: text
+  user-select: text
 
 body 
   background: #f2f2f2
@@ -39,7 +52,7 @@ button, input, a, li, ul, textarea, select, option, img
   position: fixed
   bottom: 15px
   right: 10px
-  z-index: 5
+  z-index: 99999
   cursor: pointer
 .goTop
   transform: rotate(-90deg)
@@ -143,6 +156,15 @@ button, input, a, li, ul, textarea, select, option, img
   margin: 0
   font-size: 2.2em
   font-weight: 400
+
+.noselect 
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+ 
 
 .breadcrumbs
   text-transform: uppercase
