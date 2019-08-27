@@ -105,14 +105,15 @@
       display: flex
       justify-content: center
       align-items: center
+      max-width: 90%
+      min-height: 300px
       // opacity: 1 !important
     &__imgActive
       display: inline-block
       width: auto
       max-width: 100%
-      min-height: 300px
       height: auto
-      max-height: 100%
+      max-height: 90%
       vertical-align: middle 
       margin-right: auto
       margin-left: auto
@@ -263,7 +264,7 @@
       left: -2px
       text-decoration: line-through
       position: absolute
-      top: -35px
+      top: -25px
     &__text
       padding-bottom: 10px
       margin-right: auto
@@ -287,6 +288,7 @@
     &__mkad, &__block
       flex-direction: column
       & p 
+        display: block
         margin: 0
         line-height: 25px
     &__block
@@ -311,6 +313,8 @@
       -webkit-appearance: none
       display: none
       margin: 0
+    &__input
+      font-size: 1.4em
     &__btnPlus
       cursor: pointer
       margin-right: 20px
@@ -362,8 +366,9 @@
       text-decoration: underline
       position: absolute
   &-buttons
-    position: relative
-    padding: 15px
+    // position: relative
+    border: 15px solid $color-main
+    // padding: 15px
     min-height: 250px
     &:after
       content: ""
@@ -383,6 +388,7 @@
       border: none
       width: 24%
       cursor: pointer
+      text-align: center
       &-active
         background: #ffffff
         color: $color-main
@@ -395,6 +401,7 @@
       &Desc 
         line-height: 1.4em
         font-size: 1.2em
+        min-height: 150px
       &Spec
         // position: absolute
         font-size: 1.1em
@@ -403,8 +410,9 @@
           text-align: center
           padding: 30px 15px
       &Opt 
-        padding: 50px
-        height: 150px
+        padding: 50px 50px 20px 50px
+        height: auto
+        flex-direction: column
       &Fed
         position: absolute
       &-row
@@ -433,6 +441,55 @@
         transition: 0.5s
     &__producer a
       color: #0c85aa
+  &-options
+    &D
+      display: flex
+      flex-direction: column
+      width: 100%
+      background: #ffffff
+    &__title
+      display: flex
+      align-items: center
+      border-bottom: 1px solid #cccccc
+      height: 50px
+      width: 100%
+    &__subtitle
+      display: inline-block
+      font-size: 1.2em
+      color: $color-text
+    &__close
+      width: 20px
+      height: 20px
+      display: block
+      margin-left: auto
+      margin-right: 10px
+      opacity: 0.5
+      cursor: pointer
+      transition: 0.2s
+      transform: rotate(-45deg)
+      &-active
+        transform: rotate(0deg)
+    &__box
+      display: none
+      justify-content: flex-start
+      flex-direction: column
+      // height: 0
+      // overflow: hidden
+      // transition: 0.5s
+      padding: 30px 30px
+      &-active
+        // height: auto
+    &__desc
+      padding-bottom: 30px
+      display: inline-block
+    &__image
+      display: flex
+      justify-content: flex-start
+    &__img
+      height: auto
+      max-height: 100%
+      width: auto
+      max-width: 100%
   &-feedbacks
     display: flex
     justify-content: space-between
@@ -560,3 +617,15 @@
   height: 232px
 #textarea_2
   height: 240px
+
+
+.cart-delivery__box
+  justify-content: space-between !important
+  padding-bottom: 5px
+
+.item-delivery__priceValue, .item_unload
+  font-weight: bold
+  & p 
+    display: inline-block
+  & span 
+    font-weight: normal

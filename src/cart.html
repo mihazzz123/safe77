@@ -1102,14 +1102,14 @@
         <span class="cart-concomitant__title">Итого</span>
         <small class="cart-concomitant__value"></small>
         <div class="cart-concomitant__price-box">
-          <strong class="cart-concomitant__price color-main price_total"></strong>
+          <span class="cart-concomitant__price color-main price_total"></span>
           <span class="cart-concomitant__rub">руб</span>
         </div>
       </div>
       <div class="cart-concomitant__row cart-concomitant__row-delivery dflex jcontent-sb">
         <span class="cart-concomitant__title">ИТОГО С ДОСТАВКОЙ И РАЗГРУЗКОЙ (ЕСЛИ ТРЕБУЕТСЯ)</span>
         <div class="cart-concomitant__price-box">
-          <strong class="finally_price cart-concomitant__price color-main"></strong>
+          <span class="finally_price cart-concomitant__price color-main"></span>
           <span class="cart-concomitant__rub">руб</span>
         </div>
       </div>
@@ -1122,6 +1122,53 @@
     </div>
   </div>
   <div class="container">
+
+      <div class="order-item">
+          <span class="order-block__title color-main">Контакты </span>
+    
+          <form action="" class="dflex jcontent-sb order-form contacts-form">
+              <div class="contacts-form__coll dflex">
+                <input type="text" placeholder="Ваше имя" class="contacts-form__input">
+                <input required type="number" placeholder="Телефон*" class="contacts-form__input">
+                <input type="email" placeholder="Email" class="contacts-form__input">
+                <span class="order-form__file-name">
+                    Название файла:</span>
+                    <input type="file" id="file" name="file" class="order-form__input-file"></input>
+                    <label for="file" class="contacts-form__btn order__btn contacts-button border-main color-main flex-center">
+                      
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 454.886 454.886" style="enable-background:new 0 0 454.886 454.886;"
+                      xml:space="preserve">
+                   <g>
+                     <g>
+                       <path d="M257.762,454.886c-41.798,0-75.812-34-75.812-75.812V136.465c-0.056-12.127,4.65-23.587,13.252-32.235
+                         c17.18-17.266,47.294-17.266,64.474,0c8.602,8.648,13.311,20.108,13.254,32.312v212.2c0,8.387-6.785,15.168-15.168,15.168
+                         c-8.377,0-15.158-6.781-15.158-15.168V136.465c0.014-4.13-1.559-7.95-4.415-10.839c-5.745-5.746-15.754-5.746-21.499,0
+                         c-2.858,2.889-4.427,6.708-4.413,10.767v242.681c0,25.086,20.405,45.49,45.485,45.49c25.086,0,45.49-20.404,45.49-45.49V106.141
+                         c0-41.801-34.009-75.814-75.812-75.814c-41.803,0-75.817,34.014-75.817,75.814v212.28c0,8.382-6.781,15.163-15.161,15.163
+                         s-15.161-6.781-15.161-15.163v-212.28C121.302,47.623,168.92,0,227.441,0s106.144,47.623,106.144,106.141v272.933
+                         C333.584,420.886,299.584,454.886,257.762,454.886z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                        </svg>
+                        Прикрепить файл
+                  </label>
+              </div>
+              <div class="contacts-form__coll dflex">
+                <textarea class="contacts-form__textarea"></textarea>
+                <div class="contacts-form__check-box">
+                  <label class="contacts-form__check attributive-check dflex">
+                    <input type="checkbox" class="attributive-check__checkBox">
+                    <i class="order-form__check-flag"></i>
+                    <span class="attributive-check__text">Даю согласие на обработку персональных данных в соответствии с <a href="#" class="color-main">пользовательским соглашением</a></span>
+                  </label>
+                </div>
+                <div class="order-form__buttons dflex">
+                  
+                  <button class="order-form__btn order__btn border-main button-main flex-center">Отправить</button>
+                </div>
+                </div>
+            </form>
+        </div>
+
     <div class="order-block-1 order-block jcontent-sb">
       <div class="order-delivery dflex order-item">
         <span class="order-block__title color-main">Доставка: <b id="price_delivery">0</b><img src="img/placeholder.png" data-src="img/cart/truck.svg" alt="" class="b-lazy order-block__icon"></span>
@@ -1145,50 +1192,8 @@
         <input type="number" class="order-pickup__input">
       </div>
     </div>
-    <div class="order-item">
-      <span class="order-block__title color-main">Контакты </span>
 
-      <form action="" class="dflex jcontent-sb order-form contacts-form">
-          <div class="contacts-form__coll dflex">
-            <input type="text" placeholder="Ваше имя" class="contacts-form__input">
-            <input required type="number" placeholder="Телефон*" class="contacts-form__input">
-            <input type="email" placeholder="Email" class="contacts-form__input">
-          </div>
-          <div class="contacts-form__coll dflex">
-            <textarea class="contacts-form__textarea"></textarea>
-            <div class="contacts-form__check-box">
-              <label class="contacts-form__check attributive-check dflex">
-                <input type="checkbox" class="attributive-check__checkBox">
-                <i class="order-form__check-flag"></i>
-                <span class="attributive-check__text">Даю согласие на обработку персональных данных в соответствии с <a href="#" class="color-main">пользовательским соглашением</a></span>
-              </label>
-            </div>
-            <div class="order-form__buttons dflex">
-              <span class="order-form__file-name">
-                Название файла:</span>
-                <input type="file" id="file" name="file" class="order-form__input-file"></input>
-                <label for="file" class="contacts-form__btn order__btn contacts-button border-main color-main flex-center">
-                  
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 454.886 454.886" style="enable-background:new 0 0 454.886 454.886;"
-                  xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M257.762,454.886c-41.798,0-75.812-34-75.812-75.812V136.465c-0.056-12.127,4.65-23.587,13.252-32.235
-                     c17.18-17.266,47.294-17.266,64.474,0c8.602,8.648,13.311,20.108,13.254,32.312v212.2c0,8.387-6.785,15.168-15.168,15.168
-                     c-8.377,0-15.158-6.781-15.158-15.168V136.465c0.014-4.13-1.559-7.95-4.415-10.839c-5.745-5.746-15.754-5.746-21.499,0
-                     c-2.858,2.889-4.427,6.708-4.413,10.767v242.681c0,25.086,20.405,45.49,45.485,45.49c25.086,0,45.49-20.404,45.49-45.49V106.141
-                     c0-41.801-34.009-75.814-75.812-75.814c-41.803,0-75.817,34.014-75.817,75.814v212.28c0,8.382-6.781,15.163-15.161,15.163
-                     s-15.161-6.781-15.161-15.163v-212.28C121.302,47.623,168.92,0,227.441,0s106.144,47.623,106.144,106.141v272.933
-                     C333.584,420.886,299.584,454.886,257.762,454.886z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
-                    </svg>
-                    Прикрепить файл
-              </label>
-              <button class="order-form__btn order__btn border-main button-main flex-center">Отправить</button>
-            </div>
-            </div>
-        </form>
-    </div>
+    
   </div>
   
 </section>

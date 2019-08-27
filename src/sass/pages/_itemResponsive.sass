@@ -6,12 +6,23 @@
         padding: 40px
       &__slideBar
         height: 20%
+    &-modal    
+      &__slide
+        max-width: 40%
   // .item-modal__slide
   //   min-width: 50%
+@media (min-width: 1200px)
+  .item
+    &-modal    
+      &__slide
+        max-width: 40%
 @media (max-width: 1200px)
   // .item-modal__slide
   //   max-width: 70%
   .item
+    &-modal    
+      &__slide
+        max-width: 40%
     &-price
       font-size: 1em
       &__btn
@@ -20,11 +31,19 @@
       &__rating-star
         width: 20px
         height: 22px
+    &-delivery__mkad
+      font-size: 0.9em
     &-text 
       &__btn
-        font-size: 1em
+        font-size: 0.9em
     &-delivery__mkad
       text-align: center
+    // &-text__btn
+      // font-size: 0.8em
+    &-payment__desc
+      font-size: 0.8em
+    &-payment__title
+      font-size: 0.9em
 @media (min-width: 992px)  //MOBILE
   .desctop
     display: block
@@ -61,6 +80,9 @@
     flex-direction: column
     align-items: center
   .item
+    &-modal    
+      &__slide
+        max-width: 50%
     &-row
       flex-direction: row
       width: 100%
@@ -87,7 +109,7 @@
       max-width: 100%
       padding-right: 0
       &__zoom
-        top: 55%
+        top: 50%
       &__activeBox
         // max-width: 300px
         // max-height: 300px
@@ -122,6 +144,7 @@
     &-chevronRight, &-chevronLeft
       opacity: 1
       height: 30px
+      bottom: 20%
     &-price 
       flex-direction: column
       padding: 0
@@ -152,6 +175,8 @@
         font-size: 1em
         margin-bottom: 10px
         border-bottom: 1px solid #cccccc
+      &__long-price
+        top: -30px 
     &-text 
       padding-left: 0
       &__btns
@@ -337,8 +362,14 @@
       align-items: flex-start
 @media (max-width: 786px)
   .item
+    &-modal    
+      &__slide
+        max-width: 70%
     &-chevronRight, &-chevronLeft
       opacity: 1
+      bottom: 15%
+    &-item__calc
+      margin-left: auto
     &-slider
       &__slide
         padding-bottom: 0
@@ -346,6 +377,8 @@
         // width: 75%
         // min-width: 250px
         // min-height: 250px
+      &__zoom
+        top: 57%
     &-feedback
       font-size: 1em
       width: 100%
@@ -374,10 +407,27 @@
         margin-right: auto
         margin-top: 25px
         padding: 15px 25px
-  .item-modal__slide
-    max-width: 80%
   #textarea_2M
     height: 70px
+  .item-buttons__resultOpt
+    padding: 20px 20px 10px 20px
+  .item-options
+    &__box
+      padding: 0 15px
+      &-active
+        padding: 15px 15px
+    &__title
+      height: auto
+      // text-align: center
+      padding: 10px 0
+      font-size: 0.9em
+    &__subtitle
+      padding-right: 10px
+    &__close
+      min-width: 15px
+      width: 15px
+      min-height: 15px
+      height: 15px
 @media (max-width: 546px)
   .item
     &-chevronRight, &-chevronLeft
@@ -440,9 +490,18 @@
       width: 86%
       &__title
         float: none
-
+@media (max-width: 400px)
+  .item-buttons__button
+    font-size: 0.9em
+  .item-buttons__btn
+    padding-left: 10px
+    padding-right: 25px
   // #slider-bar_M 
   //   & .slick-list
   //     width: 100%
   //     margin: 0
   //     padding: 0 
+  .item-chevronRight, .item-chevronLeft
+    bottom: 10%
+  .item-slider__zoom 
+    top: 65%

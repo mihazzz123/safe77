@@ -70,7 +70,7 @@
     &__amount::-webkit-outer-spin-button, &__amount::-webkit-inner-spin-button
       display: none
     &__price
-      font-size: 2em
+      font-size: 1.6em
       width: 100%
       max-width: 240px
       text-align: right
@@ -173,7 +173,8 @@
     &__value
       font-size: 1.5em
     &__price
-      font-size: 1.8em
+      font-size: 2em
+      font-weight: bold
   &-order 
     padding: 0
     &__button
@@ -215,6 +216,7 @@
     flex-direction: column
     position: relative
     margin-bottom: 30px
+    margin-top: 30px
   &-delivery
     width: 49%
     &__textarea, &__pickup
@@ -223,6 +225,7 @@
     width: 49%
     &__row
       display: flex
+      justify-content: center
       margin-left: auto
       margin-right: auto
       &-name
@@ -288,7 +291,8 @@
     text-transform: uppercase
     cursor: pointer
     max-height: 50px
-    margin-left: 30px
+    margin-left: auto
+    margin-top: 10px
     position: relative
     & svg
       height: 30px

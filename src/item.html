@@ -973,7 +973,7 @@
    
   <div class="item-modal passive flex-center">
     <div class="item-modal__btn flex-center">
-      <b class="item-modal__close"></b>
+      <span class="item-modal__close"></span>
     </div>
     <div class="item-modal__slider flex-center" id="slider-modal">
       <div class="item-modal__sliderBox flex-center">
@@ -990,6 +990,12 @@
       </div>
       <div class="item-modal__sliderBox">
         <img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-modal__slide">
+      </div>
+      <div class="item-modal__sliderBox">
+        <img src="img/placeholder.png" data-src="img/item/slide_6.jpg" alt="" class="b-lazy item-modal__slide">
+      </div>
+      <div class="item-modal__sliderBox">
+        <img src="img/placeholder.png" data-src="img/item/slide_7.jpg" alt="" class="b-lazy item-modal__slide">
       </div>
       
     </div>
@@ -1082,6 +1088,8 @@
                <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_3.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
                <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_4.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
                <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_6.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_7.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
               <!-- <img class="b-lazy item-slider__imgActive" src="img/placeholder.png" data-src="img/item/slide_1.jpg" alt=""> -->
               
             <!-- </div> -->
@@ -1094,6 +1102,8 @@
             <div class="item-slider__slideBox"><img src="img/placeholder.png" data-src="img/item/slide_3.jpg" alt="" class="b-lazy item-slider__image"></div>
             <div class="item-slider__slideBox"><img src="img/placeholder.png" data-src="img/item/slide_4.jpg" alt="" class="b-lazy item-slider__image"></div>
             <div class="item-slider__slideBox"><img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-slider__image"></div>
+            <div class="item-slider__slideBox"><img src="img/placeholder.png" data-src="img/item/slide_6.jpg" alt="" class="b-lazy item-slider__image"></div>
+            <div class="item-slider__slideBox"><img src="img/placeholder.png" data-src="img/item/slide_7.jpg" alt="" class="b-lazy item-slider__image"></div>
             
           </div>
 
@@ -1147,21 +1157,21 @@
         <!-- /.item-price dflex -->
 
         <div class="item-text__btns item-text__btnsD dflex jcontent-sb">
-          <button class="item-text__btn item-text__btnD item-text__btn_active flex-center">ДОСТАВКА
+          <div class="item-text__btn item-text__btnD item-text__btn_active flex-center">ДОСТАВКА
             <img alt="" class="item-text__btnIconD" src="img/item/mkad-truck-2.svg" data-src="img/item/mkad-truck.svg" data-src-second="img/item/mkad-truck-2.svg">
-          </button>
+          </div>
           <!-- /.item-text__btn -->
-          <button class="item-text__btn item-text__btnD flex-center">САМОВЫВОЗ
+          <div class="item-text__btn item-text__btnD flex-center">САМОВЫВОЗ
             <img alt="" class="item-text__btnIconD" src="img/item/самовывоз.svg" data-src="img/item/самовывоз.svg" data-src-second="img/item/самовывоз-2.svg">
-          </button>
+          </div>
           <!-- /.item-text__btn -->
-          <button class="item-text__btn item-text__btnD flex-center">ОПЛАТА
+          <div class="item-text__btn item-text__btnD flex-center">ОПЛАТА
             <img alt="" class="item-text__btnIconD" src="img/item/rub.svg" data-src="img/item/rub.svg" data-src-second="img/item/rub-2.svg">
-          </button>
+          </div>
           <!-- /.item-text__btn -->
-          <button class="item-text__btn item-text__btnD flex-center">ГАРАНТИИ
+          <div class="item-text__btn item-text__btnD flex-center">ГАРАНТИИ
             <img alt="" class="item-text__btnIconD" src="img/item/ribbon.svg" data-src="img/item/ribbon.svg" data-src-second="img/item/ribbon-2.svg"> 
-          </button>
+          </div>
           <!-- /.item-text__btn -->
         </div>
         <!-- /.item-text__btns -->
@@ -1182,12 +1192,15 @@
 
             <div class="cart-delivery__box flex-center">
               <p>ДО ПОДЪЕЗДА</p>
-              <p class="item-delivery__priceValue">700 руб.</p>
+              <span class="item_unload">
+                <p class="item-delivery__priceValue">700 </p>
+                <span> руб </span>
+              </span>
             </div>
             <div class="cart-delivery__box flex-center">
               <p>РАЗГРУЗКА</p>
               <small id="delivery_status">(при наличии лифта)</small>
-              <p class="item_unload">350</p>
+              <p class="item_unload">350 <span> руб </span></p>
             </div>
 
           </div>
@@ -1250,13 +1263,13 @@
 
       <div id="item-buttons" class="item-buttons desctop">
         <div class="item-buttons__nav item-buttons__navD dflex jcontent-sb">
-          <button class="item-buttons__btn item-buttons__btnD item-buttons__btn-active btnDesc">ОПИСАНИЕ</button>
+          <div class="item-buttons__btn item-buttons__btnD item-buttons__btn-active btnDesc">ОПИСАНИЕ</div>
           <!-- /.item-buttons__btn -->
-          <button id="btnSpecifications" class="item-buttons__btn item-buttons__btnD btnSpecifications">ХАРАКТЕРИСТИКИ</button>
+          <div id="btnSpecifications" class="item-buttons__btn item-buttons__btnD btnSpecifications">ХАРАКТЕРИСТИКИ</div>
           <!-- /.item-buttons__btn -->
-          <button id="btnOptions" class="item-buttons__btn item-buttons__btnD btnOptions">ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ (<span id="options_value"></span>)</button>
+          <div id="btnOptions" class="item-buttons__btn item-buttons__btnD btnOptions">ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ (<span id="options_value"></span>)</div>
           <!-- /.item-buttons__btn -->
-          <button class="item-buttons__btn item-buttons__btnD btnFeedback">ОТЗЫВЫ (<span id="feedback_value"></span>)</button>
+          <div class="item-buttons__btn item-buttons__btnD btnFeedback">ОТЗЫВЫ (<span id="feedback_value"></span>)</div>
           <!-- /.item-buttons__btn -->
         </div>
         <!-- /.item-buttons__nav dflex jcontent-sb -->
@@ -1268,7 +1281,7 @@
         <div id="specification" class="item-buttons__resultSpec item-buttons__result item-buttons__resultD item-buttons__result res_btnSpecifications">
          <div class="item-button__result_btnSpec margin-auto">
            <div class="item-buttons__result-row dflex flex-center">
-             <p class="item-buttons__result-lable">взломостойкость:</p>
+             <p class="item-buttons__result-lable">Взломостойкость:</p>
              <p class="item-buttons__result-value">H0 класс</p>
              <!-- /.item-buttons__result-lable -->
            </div>
@@ -1315,7 +1328,50 @@
         </div>
         <!-- /.item-buttons__result -->
         <div id="options" class="item-buttons__resultOpt item-buttons__resultD item-buttons__result res_btnDesc">
-          <!-- <div class="item-optionsD"></div> -->
+          <div class="item-optionsD">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+          <div class="item-optionsD">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+          <div class="item-optionsD">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+          <div class="item-optionsD">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
         </div>
         <!-- /.item-buttons__result -->
         <div class="item-buttons__resultFeed item-buttons__result item-buttons__resultD res_btnFeed">
@@ -1384,7 +1440,7 @@
       <!-- MOBILE -->
       <div class="item-box dflex jcontent-sb mobile">
 
-          <h1 class="item-text__title">Сейф Рипост Спутник Р-01</h1>
+          <span class="item-text__title">Сейф Рипост Спутник Р-01</span>
 
           <div class="item-row dflex">
             <div class="item-text__brand dflex">
@@ -1460,6 +1516,8 @@
               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_3.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_4.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
               <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+              <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_6.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
+              <div class="item-slider__slide"><img src="img/placeholder.png" data-src="img/item/slide_7.jpg" alt="" class="b-lazy item-slider__imgActive"></div>
               <!-- <img class="b-lazy item-slider__imgActive" src="img/placeholder.png" data-src="img/item/slide_1.jpg" alt=""> -->
               
             <!-- </div> -->
@@ -1472,6 +1530,8 @@
               <div class="item-slider__slideBox flex-center"><img src="img/placeholder.png" data-src="img/item/slide_3.jpg" alt="" class="b-lazy item-slider__image"></div>
               <div class="item-slider__slideBox flex-center"><img src="img/placeholder.png" data-src="img/item/slide_4.jpg" alt="" class="b-lazy item-slider__image"></div>
               <div class="item-slider__slideBox flex-center"><img src="img/placeholder.png" data-src="img/item/slide_5.jpg" alt="" class="b-lazy item-slider__image"></div>
+              <div class="item-slider__slideBox flex-center"><img src="img/placeholder.png" data-src="img/item/slide_6.jpg" alt="" class="b-lazy item-slider__image"></div>
+              <div class="item-slider__slideBox flex-center"><img src="img/placeholder.png" data-src="img/item/slide_7.jpg" alt="" class="b-lazy item-slider__image"></div>
               
             </div>
 
@@ -1525,17 +1585,20 @@
 
             <div class="item-delivery__box flex-center">
               <p>ДО ПОДЪЕЗДА</p>
-              <b class="item-delivery__priceValue">700 руб.</b>
+              <span class="item_unload">
+                  <p class="item-delivery__priceValue">700 </p>
+                  <span> руб </span>
+                </span>
             </div>
             <div class="item-delivery__box flex-center">
               <p>РАЗГРУЗКА</p>
               <small id="delivery_status">(при наличии лифта)</small>
-              <b class="item_unload">350 руб.</b>
+              <span class="item_unload">350 <span> руб </span></span>
             </div>
                 
               </div>
               <!-- /.itemdelivery__row dflex jcontent-sb -->
-              <p class="item-delivery__desc">Доставка в выходные дни осуществляется при предварительном согласовании в будние дни.</p>
+              <p class="item-delivery__desc">Доставка в выходные дни осуществляется при предварительном согласовании в будние дни</p>
             </div>
             <!-- /.item-delivery dflex jcontent-sb -->
         </div>
@@ -1631,7 +1694,7 @@
       <div class="item-buttons__nav item-buttons__navM dflex jcontent-sb">
         
         <div class="item-buttons__button">
-          <button class="item-buttons__btn item-buttons__btnM btnDesc">ОПИСАНИЕ <i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></button>
+          <div class="item-buttons__btn item-buttons__btnM btnDesc">ОПИСАНИЕ <i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></div>
           <!-- /.item-buttons__btn -->
           
           <div class="item-buttons__resultDesc item-buttons__result res_btnDesc">
@@ -1642,7 +1705,7 @@
         </div>
             
         <div class="item-buttons__button">
-          <button class="item-buttons__btn item-buttons__btnM btnSpecifications">ХАРАКТЕРИСТИКИ<i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></button>
+          <div class="item-buttons__btn item-buttons__btnM btnSpecifications">ХАРАКТЕРИСТИКИ<i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></div>
           <!-- /.item-buttons__btn -->
             
           <div id="specificationM" class="item-buttons__resultSpec item-buttons__result res_btnSpecifications">
@@ -1697,20 +1760,59 @@
         </div>
 
           <div class="item-buttons__button">
-            <button class="item-buttons__btn item-buttons__btnM btnOptions">ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ (<span id="options_valueM"></span>)<i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></button>
+            <div class="item-buttons__btn item-buttons__btnM btnOptions">ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ (<span id="options_valueM"></span>)<i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></div>
             <!-- /.item-buttons__btn -->
 
             <div id="optionsM" class="item-buttons__resultOpt item-buttons__result res_btnDesc">
-              <!-- <div class="item-optionsM"></div>
-              <div class="item-optionsM"></div>
-              <div class="item-optionsM"></div>
-              <div class="item-optionsM"></div> -->
+          <div class="item-optionsM">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
             </div>
-            <!-- /.item-buttons__result -->
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+          <div class="item-optionsM">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+          <div class="item-optionsM">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+          <div class="item-optionsM">
+            <div class="item-options__title dflex jcontent-sb">
+              <span class="item-options__subtitle">Окраска перламутр/лак/мат в любой цвет 22 600 руб</span>
+                <svg class="item-options__close" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg>
+            </div>
+            <div class="item-options__box">
+              <span class="item-options__desc">По образцу заказчика или RAL.</span>
+              <div class="item-options__image flex-center">
+                <img src="img/placeholder.png" data-src="img/item/options_1.jpg" alt="" class="b-lazy item-options__img"></div>
+            </div>
+          </div>
+            </div>
           </div>
 
           <div class="item-buttons__button">
-            <button class="item-buttons__btn item-buttons__btnM btnFeedback">ОТЗЫВЫ (<span id="feedback_valueM"></span>)<i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></button>
+            <div class="item-buttons__btn item-buttons__btnM btnFeedback">ОТЗЫВЫ (<span id="feedback_valueM"></span>)<i class="fas fa-times item-buttons__svg header-form__close"><svg class="item-text__btnSvg" xmlns="http://www.w3.org/2000/svg" style="fill: #555" viewBox="0 0 53.74 53.74"><g data-name="Слой 2"><g data-name="Слой 1"><path d="M47.38,53.74,0,6.36,6.36,0,53.74,47.38Z"/><path d="M53.74,6.36,39.16,20.95l-6.36-6.36L47.38,0Z"/><path d="M0,47.38,14.61,32.77,21,39.13,6.36,53.74Z"/></g></g></svg></i></div>
             <!-- /.item-buttons__btn -->
 
             <div class="item-buttons__resultFeed item-buttons__result res_btnFeed">
@@ -1781,11 +1883,11 @@
       </div>
       <!-- /.item-buttons -->
 
-      <
+      
       <div class=main-third-1 style="margin-top: 100px;">
         <div class=main-third-top>
         <div class="main-third-top__line main-third-top__line-1"></div>
-        <div class=main-third-top__title>Самые покупаемые сейфы</div>
+        <div class=main-third-top__title>СМОТРИТЕ ТАК ЖЕ</div>
         <div class="main-third-top__line main-third-top__line-2"></div>
         <div class="flex-center main-third-top__buttons">
         <div class="blazy-button flex-center main-third-top__button main-third-top__button-left main-third-top__button-left-1">
