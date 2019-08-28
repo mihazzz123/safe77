@@ -17,17 +17,22 @@
       width: 100%
       height: 100%
       flex-direction: row
+      & .slick-list, .slick-track
+        max-height: 100%
+        height: 100%
     &__slide
       margin: auto
       max-width: 100%
       width: auto
       min-width: 200px
-      max-height: 100%
+      max-height: 90%
       height: auto
       min-height: 200px
     &__sliderBox
-      max-height: 90%
-      height: auto
+      height: 90%
+      display: flex !important
+      align-items: center
+      // height: auto
       // min-width: 80%
       // max-width: 85%
       outline: none
@@ -82,7 +87,7 @@
     height: 20px
     position: absolute
     cursor: pointer
-    bottom: 5%
+    bottom: 7%
   &-chevronRight
     right: 10px
   &-chevronLeft
@@ -91,14 +96,17 @@
     position: relative
     width: 35%
     max-width: 600px
-    height: 110%
+    height: auto
+    // max-height: 100%
     flex-direction: column
     padding-right: 15px
+    justify-content: space-between
     &__activeBox
       position: relative
       min-height: 300px
-      height: auto
-      max-height: 100%
+      height: 86%
+      // height: auto
+      // max-height: 100%
       display: flex
       align-items: center
     &__slide
@@ -151,7 +159,8 @@
     &__slideBox
       display: flex !important
       min-height: 90px
-      height: 100%
+      // height: 100%
+      height: auto
       align-items: center
     &__image
       display: block
@@ -279,12 +288,16 @@
       flex-direction: column
       &Tag 
         margin-bottom: 10px
+  &-delivery, &-pickup, &-payment, &-guarantee
+    // height: 0
+    display: flex
   &-delivery
-    display: none
+    // display: flex
+    // height: 0
     flex-direction: column
     padding: 20px 10px 0 20px
     max-width: 1000px
-    height: 200px
+    // height: 200px
     &__mkad, &__block
       flex-direction: column
       & p 
@@ -323,16 +336,16 @@
     &__desc
       padding: 40px 0 20px 0
   &-pickup
-    height: 200px
-    display: none
+    // height: 0px
+    // display: none
     padding: 20px
     &__text
       font-weight: 600
       background: #f2f2f2
       padding: 35px 50px
   &-payment
-    height: 200px
-    display: none
+    // height: 0px
+    // display: none
     flex-direction: row
     flex-wrap: nowrap
     padding: 20px 10px
@@ -351,8 +364,8 @@
     &__link
       text-decoration: underline
   &-guarantee
-    height: 200px
-    display: none
+    // height: 0px
+    // display: none
     padding: 20px 10px
     max-width: 900px
     &__desc
@@ -577,12 +590,12 @@
     &:focus
       outline: none
   & .slick-list 
-    height: 100%
+    // height: 100%
     padding: 0px 2px
     box-sizing: content-box
 #slider-bar_D, #sliderD, #slider-bar_M, #sliderM 
   & .slick-track
-    height: 100%
+    // height: 100%
     display: flex
     align-items: center
     justify-content: center
