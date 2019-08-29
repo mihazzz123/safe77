@@ -2,10 +2,10 @@
   .item
     &-slider
       &__activeBox
-        height: 80%
-        padding: 40px
+        // height: 80%
+        // padding: 20px
       &__slideBar
-        height: 20%
+        // height: 20%
     // &-modal    
       // &__slide
         // max-width: 80%
@@ -100,6 +100,10 @@
     // &-modal    
     //   &__slide
     //     max-width: 50%
+    &-box-2 
+      background: #ffffff
+      padding: 20px 20px 0 20px
+      margin-bottom: -20px
     &-row
       flex-direction: row
       width: 100%
@@ -151,17 +155,17 @@
         // margin-bottom: 10px
         // padding-right: 20px
         // padding-left: 20px
-        height: 100%
+        height: auto
       &__slideBox
         margin-top: 0
-        height: 100%
+        height: auto
         padding: 20px 4px 10px 4px
       &__image
         // max-width: 110px
     &-chevronRight, &-chevronLeft
       opacity: 1
       height: 30px
-      bottom: 20%
+      bottom: 17%
     &-price 
       flex-direction: column
       padding: 0
@@ -207,7 +211,7 @@
       &__btn
         width: 100%
         justify-content: space-between
-        transition: 0.5s
+        transition: 0.25s
         // padding-left: 5px
         // padding-right: 5px
         &Title 
@@ -218,13 +222,14 @@
           width: 25px
           height: 25px
           margin: 0
-          transition: 0.5s
+          transition: 0.25s
           &_active
             transform: rotate(90deg)
             & svg
               fill: #fff !important
       &__button
         flex-direction: column
+        margin-bottom: 10px
         // height: auto
         // max-height: 66px
         overflow: hidden
@@ -232,7 +237,7 @@
         &_active
           // max-height: 650px
           border: 1px solid $color-main
-          margin-bottom: 10px
+          // margin-bottom: 10px
     &-delivery
       display: flex
       // height: auto
@@ -309,19 +314,20 @@
       &__button
         overflow: hidden
         margin-bottom: 5px
-        transition: 0.5s
-        max-height: 50px
+        transition: 0.25s
+        // max-height: 50px
         &_active
-          height: auto
-          max-height: 1500px
+          // height: auto
+          // max-height: 1500px
       &__svg  
         width: 25px
         height: 25px
         position: absolute
         right: 20px
-        top: 15px
+        top: calc(50% - 12.5px)
+        line-height: 1
         transform: rotate(135deg)
-        transition: 0.5s
+        transition: 0.25s
       &__nav
         flex-direction: column
         width: 100%
@@ -329,8 +335,10 @@
         margin-bottom: 0
         width: 100%
         position: relative
-        padding: 20px 0
-        padding-right: 25px
+        padding: 0
+        padding-right: 15px
+        height: 65px
+        line-height: 65px
         &_active
           background: darken($color-main, 7%)
           color: #FFFFFF
@@ -341,6 +349,7 @@
       &__result
         display: flex
         position: relative
+        min-height: auto
         &Desc 
           padding: 20px
           font-size: 1em
@@ -386,7 +395,7 @@
   .item
     &-chevronRight, &-chevronLeft
       opacity: 1
-      bottom: 15%
+      bottom: 14%
     &-item__calc
       margin-left: auto
     &-slider
@@ -447,6 +456,12 @@
       width: 15px
       min-height: 15px
       height: 15px
+@media (max-width: 640px)
+  .item
+    &-chevronRight, &-chevronLeft
+      bottom: 12%
+      width: 15px
+      height: 20px
 @media (max-width: 546px)
   .item
     &-chevronRight, &-chevronLeft
@@ -537,5 +552,5 @@
     max-width: 290px
 
 
-.slick-initialized .slick-slide
+.item .slick-initialized .slick-slide
   display: flex
